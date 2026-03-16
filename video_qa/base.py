@@ -14,12 +14,14 @@ from decord import VideoReader
 from transformers import (
     logging,
     LlavaOnevisionForConditionalGeneration, LlavaOnevisionProcessor,
+    Qwen2_5_VLForConditionalGeneration, Qwen2_5_VLProcessor,
 )
 from torchvision import transforms
 import logzero
 from logzero import logger
 
 from inference.llavaov_hermes import load_model as llavaov_hermes_load_model
+from inference.qwenvl_hermes import load_model as qwenvl_hermes_load_model
 from qwen_vl_utils.vision_process import (
     VIDEO_TOTAL_PIXELS, FPS_MAX_FRAMES, VIDEO_MIN_PIXELS, VIDEO_MAX_PIXELS, FRAME_FACTOR, IMAGE_FACTOR, smart_resize
 )
@@ -42,7 +44,25 @@ MODELS = {
         'model_class': LlavaOnevisionForConditionalGeneration,
         'processor_class': LlavaOnevisionProcessor,
         'model_path': 'CUSTOM_PATH/llava-onevision-qwen2-72b-ov-hf',
-    }
+    },
+    'qwen2.5_vl_3b': {
+        'load_func': qwenvl_hermes_load_model,
+        'model_class': Qwen2_5_VLForConditionalGeneration,
+        'processor_class': Qwen2_5_VLProcessor,
+        'model_path': 'CUSTOM_PATH/Qwen2.5-VL-3B-Instruct',
+    },
+    'qwen2.5_vl_7b': {
+        'load_func': qwenvl_hermes_load_model,
+        'model_class': Qwen2_5_VLForConditionalGeneration,
+        'processor_class': Qwen2_5_VLProcessor,
+        'model_path': 'CUSTOM_PATH/Qwen2.5-VL-7B-Instruct',
+    },
+    'qwen2.5_vl_72b': {
+        'load_func': qwenvl_hermes_load_model,
+        'model_class': Qwen2_5_VLForConditionalGeneration,
+        'processor_class': Qwen2_5_VLProcessor,
+        'model_path': 'CUSTOM_PATH/Qwen2.5-VL-72B-Instruct',
+    },
 }
 
 class BaseVQA:
