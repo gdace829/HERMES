@@ -19,7 +19,7 @@ def exec(cmd, sub=False, device=None):
 BENCHMARK_CONFIGS = {
     "videomme": {
         "streaming": False,
-        "anno_path": "data/videomme/videomme.json",
+        "anno_path": "data/videomme.json",
         "eval_cmds": [
             "python video_qa/eval/eval_multiple_choice.py general --results_path {results_path}",
             "python video_qa/eval/eval_multiple_choice.py videomme --results_path {results_path} --anno_path {anno_path}",
@@ -27,14 +27,14 @@ BENCHMARK_CONFIGS = {
     },
     "mvbench": {
         "streaming": False,
-        "anno_path": "data/mvbench/mvbench.json",
+        "anno_path": "data/mvbench.json",
         "eval_cmds": [
             "python video_qa/eval/eval_multiple_choice.py general --results_path {results_path}",
         ],
     },
     "egoschema": {
         "streaming": False,
-        "anno_path": "data/egoschema/egoschema.json",
+        "anno_path": "data/egoschema.json",
         "eval_cmds": [
             "python video_qa/eval/eval_multiple_choice.py egoschema --results_path {results_path}",
         ],
@@ -55,14 +55,14 @@ BENCHMARK_CONFIGS = {
     },
     "ovobench": {
         "streaming": True,
-        "anno_path": "data/ovobench/ovobench_realtime_backeward.json",
+        "anno_path": "data/ovobench_realtime_backeward.json",
         "eval_cmds": [
             "python video_qa/eval/eval_multiple_choice.py general --results_path {results_path}",
         ],
     },
     "streamingbench": {
         "streaming": True,
-        "anno_path": "data/streamingbench/streamingbench_realtime.json",
+        "anno_path": "data/streamingbench_realtime.json",
         "eval_cmds": [
             "python video_qa/eval/eval_multiple_choice.py general --results_path {results_path}",
         ],

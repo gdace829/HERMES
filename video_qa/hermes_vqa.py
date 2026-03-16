@@ -57,13 +57,9 @@ class HermesVQA(BaseVQA):
                     video_chunk = video_tensor[current_frame_idx:next_encode_end]
                     self.qa_model.encode_video_chunk(video_chunk)
                     current_frame_idx = next_encode_end
-                    self.qa_model.clip_counter += 1
 
-                    if self.qa_model.use_predicted_question and (self.qa_model.clip_counter % self.qa_model.predict_interval == 0):
-                        logger.info(f"Processed {self.qa_model.clip_counter} clips, triggering question prediction and KV compression")
-                        local_q, global_q = self.qa_model.predict_and_compress(
-                            max_new_tokens=100, temperature=0
-                        )
+                    logger.info(f"Triggering question prediction and KV compression")
+                    self.qa_model.predict_and_compress()
 
             if 'choices' in sample:
                 choices = sample['choices']

@@ -7,9 +7,9 @@ from transformers import LlavaOnevisionForConditionalGeneration
 from transformers import AutoProcessor
 from transformers import DynamicCache
 from logzero import logger
-from abstract_hermes import Abstract_Hermes
+from inference.abstract_hermes import Abstract_Hermes
 
-from reindex_1d_official import (
+from inference.reindex_1d_official import (
     _get_rotary_module,
     get_cache_seq_len,
     contiguous_kv,
@@ -20,7 +20,7 @@ from reindex_1d_official import (
 )
 
 
-class LlavaOneVision_Hermes(Abstract_Hermes):
+class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Hermes):
     def __init__(self, config, processor, n_frame_tokens, init_prompt_ids, n_local, topk, chunk_size, kv_size, streaming=True):
         super().__init__(processor, n_frame_tokens, init_prompt_ids, n_local, topk, chunk_size, kv_size)
         self.streaming = streaming
@@ -346,7 +346,7 @@ class LlavaOneVision_Hermes(Abstract_Hermes):
         pixel_values_videos = self.processor.video_processor(
             video_chunk, return_tensors="pt"
         ).pixel_values_videos.to(self.device, self.dtype)
-        video_features = self._get_video_features(pixel_values_videos)
+        video_features = self.get_video_features(pixel_values_videos)
 
         start_pos_per_layer = self._get_next_start_pos_per_layer()
         q_len = video_features.shape[1]
@@ -552,6 +552,7 @@ class LlavaOneVision_Hermes(Abstract_Hermes):
         for i in range(len(refined_scores) - 2, -1, -1):
             current_type = layer_configs[i]['layer_type']
             
+            # TODO: change hard code here
             if current_type == 'long-term':
                 gamma = 0.4  
             elif current_type == 'mid-term':
@@ -710,7 +711,6 @@ class LlavaOneVision_Hermes(Abstract_Hermes):
     def predict_and_compress(self):
         local_question, global_question = self.predict_next_question()
         self.pseudo_forward(local_question, global_question)
-        return local_question, global_question
 
     @torch.inference_mode()
     def question_answering(self, input_text, max_new_tokens=128, temperature=0, repetition_penalty=1.1, pseudo_forward=False):
@@ -917,6 +917,7 @@ def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
     
     model._layer_position_ids = {}
     model._hook_handles = []
+    model._register_forward_hooks()
     
     logger.info(f'n_init: {init_prompt_ids.shape[1] if n_init is None else n_init}')
     logger.info(f'n_local: {n_local}')

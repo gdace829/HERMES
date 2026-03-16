@@ -19,7 +19,7 @@ from torchvision import transforms
 import logzero
 from logzero import logger
 
-from llavaov_hermes import load_model as llavaov_hermes_load_model
+from inference.llavaov_hermes import load_model as llavaov_hermes_load_model
 from qwen_vl_utils.vision_process import (
     VIDEO_TOTAL_PIXELS, FPS_MAX_FRAMES, VIDEO_MIN_PIXELS, VIDEO_MAX_PIXELS, FRAME_FACTOR, IMAGE_FACTOR, smart_resize
 )
@@ -35,7 +35,7 @@ MODELS = {
         'load_func': llavaov_hermes_load_model,
         'model_class': LlavaOnevisionForConditionalGeneration,
         'processor_class': LlavaOnevisionProcessor,
-        'model_path': 'CUSTOM_PATH/llava-onevision-qwen2-7b-ov-hf',
+        'model_path': '/inspire/hdd/project/exploration-topic/public/hwzhang/models/llava-onevision-qwen2-7b-ov-hf',
     },
     'llava_ov_72b': {
         'load_func': llavaov_hermes_load_model,
