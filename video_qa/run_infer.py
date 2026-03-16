@@ -22,7 +22,7 @@ BENCHMARK_CONFIGS = {
         "anno_path": "data/videomme.json",
         "eval_cmds": [
             "python video_qa/eval/eval_multiple_choice.py general --results_path {results_path}",
-            "python video_qa/eval/eval_multiple_choice.py videomme --results_path {results_path} --anno_path {anno_path}",
+            "python video_qa/eval/eval_multiple_choice.py videomme --results_path {results_path}",
         ],
     },
     "mvbench": {

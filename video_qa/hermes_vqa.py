@@ -94,6 +94,10 @@ class HermesVQA(BaseVQA):
             if task is not None:
                 record_entry['task'] = task
 
+            duration_category = video_sample.get('duration_category', None)
+            if duration_category is not None:
+                record_entry['duration_category'] = duration_category
+
             self.record.append(record_entry)
 
 

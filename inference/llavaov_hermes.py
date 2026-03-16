@@ -372,7 +372,7 @@ class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Her
             attention_mask=None,
         )
         self.kv_cache = out.past_key_values
-        contiguous_kv(self.kv_cache)
+        self.kv_cache = contiguous_kv(self.kv_cache)
 
         self._append_position_ids(start_pos_per_layer, q_len)
         self.last_encoded_frames = video_chunk.shape[0]
@@ -918,6 +918,7 @@ def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
     model._layer_position_ids = {}
     model._hook_handles = []
     model._register_forward_hooks()
+    model._patch_rotary_embeddings()
     
     logger.info(f'n_init: {init_prompt_ids.shape[1] if n_init is None else n_init}')
     logger.info(f'n_local: {n_local}')

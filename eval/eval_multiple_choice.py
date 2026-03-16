@@ -1,5 +1,4 @@
 import os
-import json
 import argparse
 import pandas as pd
 
@@ -27,13 +26,14 @@ def calc_average_metric(results, save_dir, metric):
     print(f'#Samples: {len(results)}')
     print(f'Average {metric}: {average_metric:.2f}')
     print(f'save_dir: {save_dir}')
+    return average_metric
 
 
 # ---------------------------------------------------------------------------
 # OVOBench task-specific accuracy
 # ---------------------------------------------------------------------------
 
-PERCEPTION_TASKS = {
+OVO_PERCEPTION_TASKS = {
     'ACR': 'Action Recognition',
     'ATR': 'Attribute Recognition (AR)',
     'OJR': 'Object Recognition (OR)',
@@ -42,77 +42,128 @@ PERCEPTION_TASKS = {
     'FPD': 'Future Prediction (FP)',
 }
 
-TRACING_TASKS = {
+OVO_TRACING_TASKS = {
     'EPM': 'Episodic Memory',
     'HLD': 'Hallucination Detection',
     'ASI': 'Action Sequence Inference',
 }
 
+OVO_ALL_TASKS = {**OVO_PERCEPTION_TASKS, **OVO_TRACING_TASKS}
 
-def calc_task_specific_accuracy(df, save_dir):
-    """Calculate accuracy for each task and major category (OVOBench)."""
-    all_tasks = {**PERCEPTION_TASKS, **TRACING_TASKS}
+OVO_CATEGORIES = [
+    ("Real-Time Visual Perception", OVO_PERCEPTION_TASKS),
+    ("Backward Tracing", OVO_TRACING_TASKS),
+]
+
+# ---------------------------------------------------------------------------
+# StreamingBench task-specific accuracy
+# ---------------------------------------------------------------------------
+
+SB_REALTIME_TASKS = [
+    'Action Recognition',
+    'Attribute Recognition',
+    'Object Recognition',
+    'Spatial Understanding',
+    'Event Understanding',
+    'Text-Rich Understanding',
+    'Counting',
+    'Causal Reasoning',
+    'Clips Summarize',
+    'Prospective Reasoning',
+]
+
+SB_ALL_TASKS = SB_REALTIME_TASKS
+
+# ---------------------------------------------------------------------------
+# Unified task-specific accuracy
+# ---------------------------------------------------------------------------
+
+def _detect_benchmark(df):
+    """Auto-detect benchmark type from task column values."""
+    unique_tasks = set(df['task'].dropna().unique())
+    ovo_overlap = unique_tasks & set(OVO_ALL_TASKS.keys())
+    sb_overlap = unique_tasks & set(SB_ALL_TASKS)
+    if len(ovo_overlap) > len(sb_overlap):
+        return 'ovobench'
+    if len(sb_overlap) > 0:
+        return 'streamingbench'
+    return 'unknown'
+
+
+def calc_task_specific_accuracy(df):
+    """Calculate accuracy for each task and major category.
+
+    Auto-detects OVOBench vs StreamingBench from the task values.
+    Returns (benchmark, task_accuracies, category_results).
+    """
+    benchmark = _detect_benchmark(df)
+
+    if benchmark == 'ovobench':
+        task_list = list(OVO_ALL_TASKS.keys())
+        task_display = OVO_ALL_TASKS
+        categories = OVO_CATEGORIES
+        title = "OVOBench"
+    elif benchmark == 'streamingbench':
+        task_list = SB_ALL_TASKS
+        task_display = {t: t for t in SB_ALL_TASKS}
+        categories = []
+        title = "StreamingBench"
+    else:
+        task_list = sorted(df['task'].dropna().unique())
+        task_display = {t: t for t in task_list}
+        categories = []
+        title = "General"
 
     print("\n" + "=" * 60)
-    print("TASK-SPECIFIC ACCURACY (OVOBench)")
+    print(f"TASK-SPECIFIC ACCURACY ({title})")
     print("=" * 60)
 
     task_accuracies = {}
-    for code, name in all_tasks.items():
-        task_data = df[df['task'] == code]
+    for task_key in task_list:
+        task_data = df[df['task'] == task_key]
         if len(task_data) > 0:
             acc = task_data['qa_acc'].mean()
-            task_accuracies[code] = acc
-            print(f"{code} ({name}): {acc:.2f}% (n={len(task_data)})")
+            task_accuracies[task_key] = acc
+            display = task_display[task_key]
+            if display != task_key:
+                print(f"{task_key} ({display}): {acc:.2f}% (n={len(task_data)})")
+            else:
+                print(f"{task_key}: {acc:.2f}% (n={len(task_data)})")
 
-    print("\n" + "=" * 60)
-    print("MAJOR CATEGORY ACCURACY")
-    print("=" * 60)
+    category_results = []
+    if categories:
+        print("\n" + "=" * 60)
+        print("MAJOR CATEGORY ACCURACY")
+        print("=" * 60)
 
-    for category_name, task_map in [("Real-Time Visual Perception", PERCEPTION_TASKS),
-                                     ("Backward Tracing", TRACING_TASKS)]:
-        accs = [task_accuracies[c] for c in task_map if c in task_accuracies]
-        if accs:
-            cat_data = df[df['task'].isin(task_map.keys())]
-            print(f"{category_name}: {sum(accs) / len(accs):.2f}% "
-                  f"(n={len(cat_data)})")
-            print(f"  - Includes: {', '.join(task_map.keys())}")
+        for cat_name, task_map in categories:
+            if isinstance(task_map, dict):
+                keys = list(task_map.keys())
+            else:
+                keys = list(task_map)
+            accs = [task_accuracies[k] for k in keys if k in task_accuracies]
+            if accs:
+                cat_data = df[df['task'].isin(keys)]
+                cat_acc = sum(accs) / len(accs)
+                category_results.append((cat_name, keys, cat_acc, len(cat_data)))
+                print(f"{cat_name}: {cat_acc:.2f}% (n={len(cat_data)})")
+                print(f"  - Includes: {', '.join(keys)}")
 
     print("=" * 60 + "\n")
-
-    results_file = os.path.join(save_dir, 'task_breakdown.txt')
-    with open(results_file, 'w') as f:
-        f.write("=" * 60 + "\n")
-        f.write("TASK-SPECIFIC ACCURACY (OVOBench)\n")
-        f.write("=" * 60 + "\n")
-        for code, name in all_tasks.items():
-            if code in task_accuracies:
-                task_data = df[df['task'] == code]
-                f.write(f"{code} ({name}): {task_accuracies[code]:.2f}% "
-                        f"(n={len(task_data)})\n")
-        f.write("\n" + "=" * 60 + "\n")
-        f.write("MAJOR CATEGORY ACCURACY\n")
-        f.write("=" * 60 + "\n")
-        for category_name, task_map in [("Real-Time Visual Perception", PERCEPTION_TASKS),
-                                         ("Backward Tracing", TRACING_TASKS)]:
-            accs = [task_accuracies[c] for c in task_map if c in task_accuracies]
-            if accs:
-                cat_data = df[df['task'].isin(task_map.keys())]
-                f.write(f"{category_name}: {sum(accs) / len(accs):.2f}% "
-                        f"(n={len(cat_data)})\n")
-                f.write(f"  - Includes: {', '.join(task_map.keys())}\n")
-        f.write("=" * 60 + "\n")
-    print(f"Task breakdown saved to: {results_file}")
+    return benchmark, task_accuracies, category_results
 
 
 # ---------------------------------------------------------------------------
 # Prediction-choice error analysis
 # ---------------------------------------------------------------------------
 
-def analyze_pred_choice_errors(df, save_dir, debug=False):
-    """Count and optionally print rows with invalid pred_choice values."""
+def analyze_pred_choice_errors(df, debug=False):
+    """Count and optionally print rows with invalid pred_choice values.
+
+    Returns error_rate (float) for external file writing.
+    """
     if 'pred_choice' not in df.columns:
-        return
+        return None
     valid_choices = set('ABCDEFGH')
     n_errors = 0
     for _, row in df.iterrows():
@@ -125,11 +176,67 @@ def analyze_pred_choice_errors(df, save_dir, debug=False):
             if debug:
                 print(f'Video: {row["video_id"]}, Question: {row["question"]}, '
                       f'GT: {row["correct_choice"]}, Pred: {pred_choice}')
-    print(f'%Errors: {n_errors / len(df) * 100:.2f}')
+    error_rate = n_errors / len(df) * 100
+    print(f'%Errors: {error_rate:.2f}')
+    return error_rate
 
-    results_file = os.path.join(save_dir, 'task_breakdown.txt')
-    with open(results_file, 'a') as f:
-        f.write(f'\n%Errors: {n_errors / len(df) * 100:.2f}')
+
+# ---------------------------------------------------------------------------
+# Write evaluation results to file
+# ---------------------------------------------------------------------------
+
+def write_evaluation_report(save_dir, df, num_samples, average_acc,
+                            benchmark=None, task_accuracies=None,
+                            category_results=None, error_rate=None):
+    """Write a comprehensive evaluation report to a txt file."""
+    results_file = os.path.join(save_dir, 'eval_results.txt')
+
+    if benchmark == 'ovobench':
+        task_display = OVO_ALL_TASKS
+        title = "OVOBench"
+    elif benchmark == 'streamingbench':
+        task_display = {t: t for t in SB_ALL_TASKS}
+        title = "StreamingBench"
+    else:
+        task_display = ({k: k for k in task_accuracies}
+                        if task_accuracies else {})
+        title = "General"
+
+    with open(results_file, 'w', encoding='utf-8') as f:
+        f.write("=" * 60 + "\n")
+        f.write(f"EVALUATION RESULTS ({title})\n")
+        f.write("=" * 60 + "\n")
+        f.write(f"#Samples: {num_samples}\n")
+        f.write(f"Average qa_acc: {average_acc:.2f}\n")
+        f.write(f"save_dir: {save_dir}\n")
+
+        if task_accuracies is not None:
+            f.write("\n" + "=" * 60 + "\n")
+            f.write(f"TASK-SPECIFIC ACCURACY ({title})\n")
+            f.write("=" * 60 + "\n")
+            for task_key, acc in task_accuracies.items():
+                task_data = df[df['task'] == task_key]
+                display = task_display.get(task_key, task_key)
+                if display != task_key:
+                    f.write(f"{task_key} ({display}): {acc:.2f}% "
+                            f"(n={len(task_data)})\n")
+                else:
+                    f.write(f"{task_key}: {acc:.2f}% "
+                            f"(n={len(task_data)})\n")
+
+            if category_results:
+                f.write("\n" + "=" * 60 + "\n")
+                f.write("MAJOR CATEGORY ACCURACY\n")
+                f.write("=" * 60 + "\n")
+                for cat_name, keys, cat_acc, cat_n in category_results:
+                    f.write(f"{cat_name}: {cat_acc:.2f}% (n={cat_n})\n")
+                    f.write(f"  - Includes: {', '.join(keys)}\n")
+            f.write("=" * 60 + "\n")
+
+        if error_rate is not None:
+            f.write(f"\n%Errors: {error_rate:.2f}\n")
+
+    print(f"Evaluation report saved to: {results_file}")
 
 
 # ---------------------------------------------------------------------------
@@ -158,12 +265,14 @@ def generate_egoschema_submission(df, save_dir):
 # VideoMME duration-based evaluation
 # ---------------------------------------------------------------------------
 
-def eval_videomme_by_duration(df, anno_path, results_path):
-    """Merge results with Video-MME metadata and report accuracy by duration."""
-    with open(anno_path, 'r', encoding='utf-8') as f:
-        anno_data = json.load(f)
-    duration_map = {item['video_id']: item['duration_category'] for item in anno_data}
-    df['duration'] = df['video_id'].map(duration_map)
+def eval_videomme_by_duration(df, results_path):
+    """Report accuracy by duration using duration_category already in results."""
+    if 'duration_category' not in df.columns:
+        raise ValueError(
+            "Column 'duration_category' not found in results. "
+            "Make sure inference records duration_category for each sample."
+        )
+    df['duration'] = df['duration_category']
     merged = df
 
     duration_stats = merged.groupby('duration').agg(
@@ -238,8 +347,6 @@ def build_parser():
     p_vmme = sub.add_parser('videomme',
                             help='Evaluate VideoMME results by duration')
     p_vmme.add_argument('--results_path', type=str, required=True)
-    p_vmme.add_argument('--anno_path', type=str, required=True,
-                        help='Path to videomme.json with duration_category')
     p_vmme.add_argument('--debug', action='store_true')
 
     return parser
@@ -256,12 +363,19 @@ def main():
     if args.command == 'general':
         df = load_results(args)
         results = df.to_dict(orient='records')
-        calc_average_metric(results, args.save_dir, 'qa_acc')
+        average_acc = calc_average_metric(results, args.save_dir, 'qa_acc')
 
+        benchmark, task_accuracies, category_results = None, None, None
         if 'task' in df.columns:
-            calc_task_specific_accuracy(df, args.save_dir)
+            benchmark, task_accuracies, category_results = \
+                calc_task_specific_accuracy(df)
 
-        analyze_pred_choice_errors(df, args.save_dir, debug=args.debug)
+        error_rate = analyze_pred_choice_errors(
+            df, debug=args.debug)
+
+        write_evaluation_report(
+            args.save_dir, df, len(results), average_acc,
+            benchmark, task_accuracies, category_results, error_rate)
 
     elif args.command == 'egoschema':
         df = load_results(args)
@@ -269,7 +383,7 @@ def main():
 
     elif args.command == 'videomme':
         df = pd.read_csv(args.results_path)
-        eval_videomme_by_duration(df, args.anno_path, args.results_path)
+        eval_videomme_by_duration(df, args.results_path)
 
 
 if __name__ == '__main__':
