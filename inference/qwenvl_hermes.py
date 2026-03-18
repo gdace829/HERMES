@@ -80,8 +80,8 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
     Uses 3D M-RoPE (Multimodal RoPE) and inter-layer consistency optimization.
     """
 
-    def __init__(self, config, processor, n_frame_tokens, init_prompt_ids, n_local, topk, chunk_size, kv_size, streaming=True):
-        Abstract_Hermes.__init__(self, processor, n_frame_tokens, init_prompt_ids, n_local, topk, chunk_size, kv_size)
+    def __init__(self, config, processor, init_prompt_ids, kv_size, streaming=True):
+        Abstract_Hermes.__init__(self, processor, init_prompt_ids, kv_size)
         self.streaming = streaming
 
         num_layers = config.num_hidden_layers if hasattr(config, 'num_hidden_layers') else 28
@@ -125,7 +125,7 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
                 return args, kwargs
             return hook
 
-        for layer_idx, layer in enumerate(self.model.layers):
+        for layer_idx, layer in enumerate(self.language_model.layers):
             handle = layer.register_forward_pre_hook(make_hook(layer_idx), with_kwargs=True)
             self._hook_handles.append(handle)
 
@@ -293,10 +293,10 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
                     target_pos_pruned = summary_pos_tensor.expand(3, old_pos_pruned.shape[1])
 
                     cos_old, sin_old = compute_cos_sin_for_positions(
-                        self.model, old_pos_pruned.shape[1], old_pos_pruned, dtype, device
+                        self.language_model, old_pos_pruned.shape[1], old_pos_pruned, dtype, device
                     )
                     cos_new, sin_new = compute_cos_sin_for_positions(
-                        self.model, target_pos_pruned.shape[1], target_pos_pruned, dtype, device
+                        self.language_model, target_pos_pruned.shape[1], target_pos_pruned, dtype, device
                     )
                     cos_delta, sin_delta = rotary_delta(cos_old, sin_old, cos_new, sin_new)
 
@@ -392,7 +392,7 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
         video_input = self.processor(text=[""], videos=video_chunk, return_tensors="pt").to(self.device, self.dtype)
         pixel_values_videos = video_input["pixel_values_videos"]
         video_grid_thw = video_input["video_grid_thw"]
-        video_features = self._get_video_features(pixel_values_videos, video_grid_thw)[0].unsqueeze(0)
+        video_features = self.get_video_features(pixel_values_videos, video_grid_thw)[0].unsqueeze(0)
 
         self._ensure_dynamic_cache()
 
@@ -479,7 +479,7 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
         hidden_states = inputs_embeds
 
         for layer_idx in range(num_layers):
-            layer = self.model.layers[layer_idx]
+            layer = self.language_model.layers[layer_idx]
             past_k, past_v = past_key_values[layer_idx]
 
             layer_offset = global_offset_per_layer[layer_idx]
@@ -500,7 +500,7 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
             value_states = attn.v_proj(hidden_states_norm)
             value_states = value_states.view(batch, q_len, num_key_value_heads, head_dim).transpose(1, 2)
 
-            rotary_emb = _get_rotary_module(self.model)
+            rotary_emb = _get_rotary_module(self.language_model)
             dummy_h = torch.zeros((1, q_len, hidden_size), device=device, dtype=hidden_states.dtype)
             cos, sin = rotary_emb(dummy_h, position_ids_3d)
 
@@ -894,12 +894,12 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
 
 
 def load_model(model_path='Qwen/Qwen2.5-VL-7B-Instruct',
-               n_init=None, n_local=None, topk=64, chunk_size=1, kv_size=None, streaming=True):
+               n_init=None, kv_size=None, streaming=True, device="cuda"):
     device = 'cuda'
-    n_frame_tokens = 196
 
-    max_pixels = 768 * 28 * 28
-    processor = Qwen2_5_VLProcessor.from_pretrained(model_path, max_pixels=max_pixels)
+    #max_pixels = 768 * 28 * 28
+    #processor = Qwen2_5_VLProcessor.from_pretrained(model_path, max_pixels=max_pixels)
+    processor = Qwen2_5_VLProcessor.from_pretrained(model_path)
 
     system_prompt = '<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n'
     init_prompt_ids = processor.tokenizer(system_prompt, return_tensors="pt").input_ids.to(device)
@@ -916,11 +916,7 @@ def load_model(model_path='Qwen/Qwen2.5-VL-7B-Instruct',
     Abstract_Hermes.__init__(
         model,
         processor,
-        n_frame_tokens,
         init_prompt_ids.tolist(),
-        n_local,
-        topk,
-        chunk_size,
         kv_size,
     )
     model.streaming = streaming
@@ -943,11 +939,7 @@ def load_model(model_path='Qwen/Qwen2.5-VL-7B-Instruct',
     model._register_forward_hooks()
 
     logger.info(f'n_init: {init_prompt_ids.shape[1] if n_init is None else n_init}')
-    logger.info(f'n_local: {n_local}')
-    logger.info(f'topk: {topk}')
-    logger.info(f'chunk_size: {chunk_size}')
     logger.info(f'kv_size: {kv_size}')
-    logger.info(f'n_frame_tokens: {n_frame_tokens}')
 
     model.eval()
 

@@ -19,17 +19,17 @@ def contiguous_kv(past_key_values):
 def _get_rotary_module(llm) -> torch.nn.Module:
     if hasattr(llm, "rotary_emb"):
         return llm.rotary_emb
-    if hasattr(llm, "model") and hasattr(llm.model, "rotary_emb"):
-        return llm.model.rotary_emb
+    if hasattr(llm, "model") and hasattr(llm.language_model, "rotary_emb"):
+        return llm.language_model.rotary_emb
     if hasattr(llm, "layers"):
         if len(llm.layers) > 0 and hasattr(llm.layers[0], "self_attn"):
             if hasattr(llm.layers[0].self_attn, "rotary_emb"):
                 return llm.layers[0].self_attn.rotary_emb
-    if hasattr(llm, "model") and hasattr(llm.model, "layers"):
-        if len(llm.model.layers) > 0 and hasattr(llm.model.layers[0], "self_attn"):
-            if hasattr(llm.model.layers[0].self_attn, "rotary_emb"):
-                return llm.model.layers[0].self_attn.rotary_emb
-    raise AttributeError("Cannot find rotary_emb module on language_model")
+    if hasattr(llm, "model") and hasattr(llm.language_model, "layers"):
+        if len(llm.langauge_model.layers) > 0 and hasattr(llm.language_model.layers[0], "self_attn"):
+            if hasattr(llm.language_model.layers[0].self_attn, "rotary_emb"):
+                return llm.langauge_model.layers[0].self_attn.rotary_emb
+    #raise AttributeError("Cannot find rotary_emb module on language_model")
 
 def _get_mrope_section(llm) -> Tuple[int, int, int]:
     cfg = getattr(llm, "config", None)

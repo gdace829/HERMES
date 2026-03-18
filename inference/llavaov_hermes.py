@@ -21,8 +21,8 @@ from inference.reindex_1d import (
 
 
 class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Hermes):
-    def __init__(self, config, processor, n_frame_tokens, init_prompt_ids, n_local, topk, chunk_size, kv_size, streaming=True):
-        super().__init__(processor, n_frame_tokens, init_prompt_ids, n_local, topk, chunk_size, kv_size)
+    def __init__(self, config, processor, init_prompt_ids, kv_size, streaming=True):
+        super().__init__(processor, init_prompt_ids, kv_size)
         self.streaming = streaming
         
         num_layers = config.num_hidden_layers if hasattr(config, 'num_hidden_layers') else 32
@@ -872,9 +872,7 @@ class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Her
 
 
 def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
-               n_init=None, n_local=None, topk=64, chunk_size=1, kv_size=None, streaming=True):
-    device = 'cuda'
-    n_frame_tokens = 196
+               n_init=None, kv_size=None, streaming=True, device="cuda"):
     processor = AutoProcessor.from_pretrained(model_path, trust_remote_code=True)
     processor.tokenizer.padding_side = 'left'
     
@@ -894,11 +892,7 @@ def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
     Abstract_Hermes.__init__(
         model, 
         processor, 
-        n_frame_tokens, 
         init_prompt_ids.tolist(), 
-        n_local, 
-        topk, 
-        chunk_size,
         kv_size,
     )
     model.streaming = streaming
@@ -921,11 +915,7 @@ def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
     model._patch_rotary_embeddings()
     
     logger.info(f'n_init: {init_prompt_ids.shape[1] if n_init is None else n_init}')
-    logger.info(f'n_local: {n_local}')
-    logger.info(f'topk: {topk}')
-    logger.info(f'chunk_size: {chunk_size}')
     logger.info(f'kv_size: {kv_size}')
-    logger.info(f'n_frame_tokens: {n_frame_tokens}')
 
     model.eval()
 

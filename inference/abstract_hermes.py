@@ -3,13 +3,9 @@ import torch
 class Abstract_Hermes:
     kv_cache = None
 
-    def __init__(self, processor, n_frame_tokens, init_prompt_ids, n_local, topk, chunk_size, kv_size):
+    def __init__(self, processor, init_prompt_ids, kv_size):
         self.processor = processor
-        self.n_frame_tokens = n_frame_tokens
         self.init_prompt_ids = init_prompt_ids
-        self.n_local = n_local
-        self.topk = topk
-        self.chunk_size = chunk_size
         self.kv_size = kv_size
         self.last_encoded_frames = 0
         self.visual_start_idx = 14

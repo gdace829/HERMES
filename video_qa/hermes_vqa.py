@@ -17,7 +17,7 @@ class HermesVQA(BaseVQA):
     """
 
     @torch.inference_mode()
-    def analyze_a_video(self, video_sample, encode_chunk_size=8):
+    def analyze_a_video(self, video_sample, encode_chunk_size=16):
         video_path = video_sample['video_path']
 
         video_fps = video_sample.get('fps', None)
@@ -32,7 +32,7 @@ class HermesVQA(BaseVQA):
             video = self.load_video_frames(video_path, video_fps, clip=clip)
             video_tensor = torch.from_numpy(video)
         else:
-            video, resized_height, resized_width = self.load_video(video_path, clip=clip)
+            video = self.load_video(video_path, clip=clip)
             video_tensor = torch.from_numpy(video)
 
         self.qa_model.clear_cache()
