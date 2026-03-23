@@ -39,7 +39,7 @@ MODELS = {
     },
     'llava_ov_7b': {
         'load_func': llavaov_hermes_load_model,
-        'model_path': '/inspire/hdd/project/exploration-topic/public/hwzhang/models/llava-onevision-qwen2-7b-ov-hf',
+        'model_path': 'CUSTOM_PATH/llava-onevision-qwen2-7b-ov-hf',
     },
     'llava_ov_72b': {
         'load_func': llavaov_hermes_load_model,
@@ -51,7 +51,7 @@ MODELS = {
     },
     'qwen2.5_vl_7b': {
         'load_func': qwenvl_hermes_load_model,
-        'model_path': '/inspire/hdd/project/exploration-topic/public/hwzhang/models/Qwen2.5-VL-7B-Instruct',
+        'model_path': 'CUSTOM_PATH/Qwen2.5-VL-7B-Instruct',
     },
     'qwen2.5_vl_72b': {
         'load_func': qwenvl_hermes_load_model,
