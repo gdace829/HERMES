@@ -13,51 +13,48 @@ from PIL import Image
 from decord import VideoReader
 from transformers import (
     logging,
-    LlavaOnevisionForConditionalGeneration, LlavaOnevisionProcessor,
-    Qwen2_5_VLForConditionalGeneration, Qwen2_5_VLProcessor,
 )
 
 import logzero
 from logzero import logger
 
 from inference.llavaov_hermes import load_model as llavaov_hermes_load_model
-from inference.qwenvl_hermes import load_model as qwenvl_hermes_load_model
+
+
+def qwenvl_hermes_load_model(*args, **kwargs):
+    try:
+        from inference.qwenvl_hermes import load_model as _load_model
+    except Exception as exc:
+        raise ImportError(
+            "Failed to import inference.qwenvl_hermes. "
+            "Qwen models require a newer transformers version. "
+            "Please use llava models on old transformers, or upgrade for qwen."
+        ) from exc
+    return _load_model(*args, **kwargs)
 
 MODELS = {
     'llava_ov_0.5b': {
         'load_func': llavaov_hermes_load_model,
-        'model_class': LlavaOnevisionForConditionalGeneration,
-        'processor_class': LlavaOnevisionProcessor,
         'model_path': 'CUSTOM_PATH/llava-onevision-qwen2-0.5b-ov-hf',
     },
     'llava_ov_7b': {
         'load_func': llavaov_hermes_load_model,
-        'model_class': LlavaOnevisionForConditionalGeneration,
-        'processor_class': LlavaOnevisionProcessor,
         'model_path': '/inspire/hdd/project/exploration-topic/public/hwzhang/models/llava-onevision-qwen2-7b-ov-hf',
     },
     'llava_ov_72b': {
         'load_func': llavaov_hermes_load_model,
-        'model_class': LlavaOnevisionForConditionalGeneration,
-        'processor_class': LlavaOnevisionProcessor,
         'model_path': 'CUSTOM_PATH/llava-onevision-qwen2-72b-ov-hf',
     },
     'qwen2.5_vl_3b': {
         'load_func': qwenvl_hermes_load_model,
-        'model_class': Qwen2_5_VLForConditionalGeneration,
-        'processor_class': Qwen2_5_VLProcessor,
         'model_path': 'CUSTOM_PATH/Qwen2.5-VL-3B-Instruct',
     },
     'qwen2.5_vl_7b': {
         'load_func': qwenvl_hermes_load_model,
-        'model_class': Qwen2_5_VLForConditionalGeneration,
-        'processor_class': Qwen2_5_VLProcessor,
         'model_path': '/inspire/hdd/project/exploration-topic/public/hwzhang/models/Qwen2.5-VL-7B-Instruct',
     },
     'qwen2.5_vl_72b': {
         'load_func': qwenvl_hermes_load_model,
-        'model_class': Qwen2_5_VLForConditionalGeneration,
-        'processor_class': Qwen2_5_VLProcessor,
         'model_path': 'CUSTOM_PATH/Qwen2.5-VL-72B-Instruct',
     },
 }

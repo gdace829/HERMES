@@ -2,10 +2,10 @@ import re
 import time
 import torch
 import torch.nn.functional as F
-from transformers import DynamicCache
 from logzero import logger
-from transformers import Qwen2_5_VLForConditionalGeneration, Qwen2_5_VLProcessor
+from transformers import Qwen2_5_VLForConditionalGeneration, Qwen2_5_VLProcessor, DynamicCache
 from transformers.models.qwen2_5_vl.modeling_qwen2_5_vl import apply_multimodal_rotary_pos_emb
+
 from inference.abstract_hermes import Abstract_Hermes
 from inference.reindex_3d import (
     get_cache_seq_len,

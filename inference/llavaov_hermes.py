@@ -3,12 +3,10 @@ import time
 import torch
 import torch.nn.functional as F
 import types
-from transformers import LlavaOnevisionForConditionalGeneration
-from transformers import AutoProcessor
-from transformers import DynamicCache
+from transformers import LlavaOnevisionForConditionalGeneration, AutoProcessor, DynamicCache
 from logzero import logger
-from inference.abstract_hermes import Abstract_Hermes
 
+from inference.abstract_hermes import Abstract_Hermes
 from inference.reindex_1d import (
     _get_rotary_module,
     get_cache_seq_len,
@@ -334,7 +332,22 @@ class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Her
             self._position_ids_cache[layer_idx] = torch.arange(
                 curr_lens[layer_idx], device=self.device, dtype=torch.long
             )
-
+    
+    def get_video_features(self, pixel_values_videos):
+            batch_size, frames, channels, height, width = pixel_values_videos.shape
+            pixel_values_videos = pixel_values_videos.view(batch_size * frames, channels, height, width)
+            video_features = self.vision_tower(pixel_values_videos, output_hidden_states=True)
+            selected_video_feature = video_features.hidden_states[self.config.vision_feature_layer]
+            if self.config.vision_feature_select_strategy == "default":
+                selected_video_feature = selected_video_feature[:, 1:]
+            elif self.config.vision_feature_select_strategy == "full":
+                selected_video_feature = selected_video_feature
+            video_features = self.multi_modal_projector(selected_video_feature)
+            video_features = self.apply_pooling(video_features)
+            frames_after_merge = video_features.shape[0]
+            video_features = video_features.reshape(batch_size, frames_after_merge * video_features.shape[1], -1)  # (B, Nv*196, D)
+            return video_features
+    
     @torch.inference_mode()
     def encode_video_chunk(self, video_chunk):
         if video_chunk is None or (hasattr(video_chunk, "shape") and video_chunk.shape[0] == 0):
@@ -872,7 +885,7 @@ class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Her
 
 
 def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
-               n_init=None, kv_size=None, streaming=True, device="cuda"):
+               n_init=None, kv_size=None, streaming=True, device="cuda", sample_fps=0.5):
     processor = AutoProcessor.from_pretrained(model_path, trust_remote_code=True)
     processor.tokenizer.padding_side = 'left'
     
