@@ -41,6 +41,8 @@ pip install flash-attn --no-build-isolation
 
 ## 📦 Preparation
 
+### Model Preparation
+
 Create a `models` directory and download the model weights from HuggingFace:
 
 ```bash
