@@ -171,12 +171,12 @@ python video_qa/run_infer.py \
 
 | Argument | Description |
 |:---|:---|
-| `--model` | Model to use. Options: `llava_ov_0.5b`, `llava_ov_7b`, `llava_ov_72b`, `qwen2.5_vl_3b`, `qwen2.5_vl_7b`, `qwen2.5_vl_32b` |
-| `--dataset` | Benchmark dataset. Options: `videomme`, `mvbench`, `egoschema`, `rvs_ego`, `rvs_movie`, `ovobench`, `streamingbench` |
-| `--num_chunks` | Number of parallel processes for evaluation, typically set to the number of GPUs |
-| `--sample_fps` | Frame sampling rate (frames per second) from the video |
-| `--kv_size` | Maximum KV cache size for HERMES hierarchical memory management |
-| `--only_eval` | If set, skip inference and only run evaluation on existing results |
+| `model` | Model to use. Options: `llava_ov_0.5b`, `llava_ov_7b`, `llava_ov_72b`, `qwen2.5_vl_3b`, `qwen2.5_vl_7b`, `qwen2.5_vl_32b` |
+| `dataset` | Benchmark dataset. Options: `videomme`, `mvbench`, `egoschema`, `rvs_ego`, `rvs_movie`, `ovobench`, `streamingbench` |
+| `num_chunks` | Number of parallel processes for evaluation, typically set to the number of GPUs |
+| `sample_fps` | Frame sampling rate (frames per second) from the video |
+| `kv_size` | Maximum KV cache size for HERMES hierarchical memory management |
+| `only_eval` | If set, skip inference and only run evaluation on existing results |
 
 
 ## 📊 Evaluation
