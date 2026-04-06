@@ -198,7 +198,7 @@ class BaseVQA:
             "question": question,
             "prompt": self.qa_model.get_prompt(question)
         }
-        pred_answer = self.qa_model.question_answering(input_text, max_new_tokens=max_new_tokens, retrieved_indices=retrieved_indices)
+        pred_answer = self.qa_model.question_answering(input_text, max_new_tokens=max_new_tokens)
         return {
             'pred_answer': pred_answer.replace('\n', ''),
         }

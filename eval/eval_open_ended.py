@@ -39,8 +39,8 @@ class GPTService:
         self.model_name = "gpt-3.5-turbo-0125"
         self.max_tokens = 300
         self.client = openai.OpenAI(
-            base_url="http://35.164.11.19:3887/v1",  # TODO
-            api_key="sk-PNsw6nXAgFi4bk9PVo5pM6MDqIvUscgGSiW2paIENncwoh0O",  # TODO
+            base_url="",  # TODO
+            api_key="",  # TODO
         )
 
     def _gpt_response(self, user_prompt):
