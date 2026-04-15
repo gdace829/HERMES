@@ -14,7 +14,7 @@
 </div>
 
 ## 🔥 News
-- **[2026.04.06]** Accepted to ACL 2026 Main 🎉
+- **[2026.04.06]** HERMES is accepted to ACL 2026 Main 🎉
 - **[2026.03.23]** Full code released!
 - **[2025.01.23]** HERMES reached **#3 Paper of the day** on [Hugging Face Daily Papers](https://huggingface.co/papers/2601.14724)!
 - **[2025.01.21]** HERMES is available on [arXiv](https://arxiv.org/abs/2601.14724).
