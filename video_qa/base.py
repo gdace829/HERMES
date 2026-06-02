@@ -258,9 +258,87 @@ def work(QA_CLASS):
     parser.add_argument("--model", type=str, default="llava_ov_7b")
     parser.add_argument("--debug", type=str2bool, nargs='?', const=True, default=True)
     parser.add_argument("--kv_size", type=int)
+    parser.add_argument("--compress_mode", type=str, default="hermes", choices=["hermes", "streamingvlm"],
+                        help="KV cache compression strategy. 'hermes' (default): attention-guided; 'streamingvlm': simple sliding window.")
+    parser.add_argument("--head_budget_scores", type=str, default=None,
+                        help="Enable HERMES per-head voting budgets. Use 'pseudo', 'sparsemm', or a .npz/.json score file.")
+    parser.add_argument("--layer_budget_scores", type=str, default=None,
+                        help="Enable HERMES per-layer budgets. Use 'pseudo', 'sparsemm', or a .npz/.json score file.")
+    parser.add_argument("--layer_budget_variable", type=str2bool, nargs='?', const=True, default=False,
+                        help="If true, allow real per-layer KV cache lengths and install per-layer attention masks. Experimental for Qwen.")
+    parser.add_argument("--kv_head_budget_scores", type=str, default=None,
+                        help="Enable per-KV-head logical eviction. Use 'pseudo', 'sparsemm_qwen25', or a .npz/.json score file.")
+    parser.add_argument("--kv_head_budget_union_cap_ratio", type=float, default=1.0,
+                        help="Dense union cap relative to kv_size for per-KV-head logical eviction.")
+    parser.add_argument("--kv_head_budget_max_mask_q_len", type=int, default=128,
+                        help="Only apply per-head masks when q_len is at most this value, to avoid OOM on large video chunks.")
+    parser.add_argument(
+        "--kv_head_budget_scheme",
+        type=str,
+        default="relative",
+        choices=[
+            "relative",
+            "sparsemm",
+            "sparsemm_layer_total",
+            "sparsemm_layer",
+            "sparsemm_total",
+            "sparsemm_per_layer_total",
+            "sparsemm_layer_exact",
+            "sparsemm_per_layer",
+        ],
+        help=(
+            "Per-KV-head budget allocation. 'relative': old per-layer min/max ratios; "
+            "'sparsemm': SparseMM min-cache + global visual-score allocation with "
+            "num_keep average per layer-KV-head; 'sparsemm_layer_total': SparseMM "
+            "allocation with total budget num_keep*num_layers; "
+            "'sparsemm_per_layer_total': SparseMM allocation with each layer summing "
+            "to num_keep."
+        ),
+    )
+    parser.add_argument("--kv_head_budget_sparsemm_ratio", type=float, default=0.1,
+                        help="SparseMM floor ratio for each KV head when --kv_head_budget_scheme=sparsemm.")
+    parser.add_argument("--kv_head_budget_sparsemm_window_size", type=int, default=32,
+                        help="SparseMM recent/window budget added back after score allocation.")
+    parser.add_argument("--kv_head_ragged_decode", type=str2bool, nargs='?', const=True, default=False,
+                        help="Use experimental physical per-KV-head ragged cache for answer decode.")
+    parser.add_argument("--kv_head_ragged_prefill", type=str2bool, nargs='?', const=True, default=False,
+                        help="Use experimental physical per-KV-head ragged cache for video/text prefill and decode.")
+    parser.add_argument("--rolekv_ragged", type=str2bool, nargs='?', const=True, default=False,
+                        help="Use RoleKV-v2 role-aware physical per-KV-head ragged retention.")
+    parser.add_argument("--rolekv_head_classes", type=str,
+                        default="results/observations/head_classes_prev_current/head_classes.json",
+                        help="Head-class JSON built from offline previous/current eager profiling.")
+    parser.add_argument(
+        "--rolekv_ragged_mode",
+        type=str,
+        default="rolekv_quota",
+        choices=["baseline", "uniform", "norole", "rolekv", "rolekv_quota", "random", "random_quota", "inverted", "inverted_quota"],
+        help="RoleKV-v2 role assignment/retention mode for ragged compression.",
+    )
+    parser.add_argument("--rolekv_quota_ratio", type=float, default=0.7,
+                        help="Fraction of a role KV-head budget reserved for its target region.")
+    parser.add_argument("--rolekv_lambda_memory", type=float, default=0.2,
+                        help="Soft score bonus added to previous-memory tokens for memory-oriented KV heads.")
+    parser.add_argument("--rolekv_lambda_current", type=float, default=0.2,
+                        help="Soft score bonus added to latest-chunk tokens for current-sensitive KV heads.")
+    parser.add_argument("--rolekv_seed", type=int, default=0,
+                        help="Seed for random/inverted RoleKV control modes.")
+    parser.add_argument("--rolekv_role_min_votes", type=int, default=1,
+                        help="Minimum query-head votes needed to assign a KV head to a non-mixed role.")
     parser.add_argument("--streaming", type=str2bool, nargs='?', const=True, default=False,
                         help="Streaming (online) mode. If False (default), uses offline mode where should_compact is always True.")
     args = parser.parse_args()
+
+    budget_modes = [
+        bool(args.head_budget_scores),
+        bool(args.layer_budget_scores),
+        bool(args.kv_head_budget_scores),
+    ]
+    if sum(budget_modes) > 1:
+        raise ValueError(
+            "Use only one of --head_budget_scores, --layer_budget_scores, "
+            "or --kv_head_budget_scores."
+        )
 
     if not args.debug:
         logzero.loglevel(logging.INFO)
@@ -281,7 +359,100 @@ def work(QA_CLASS):
         kv_size=args.kv_size,
         streaming=args.streaming,
         sample_fps=args.sample_fps,
+        compress_mode=args.compress_mode,
     )
+
+    if args.head_budget_scores:
+        from head_analysis.hermes_head_budget import apply_head_budget
+
+        language_model = getattr(videoqa_model, "language_model", None)
+        language_config = getattr(language_model, "config", None)
+        num_heads = getattr(language_config, "num_attention_heads", None)
+        if num_heads is None and hasattr(language_model, "model"):
+            num_heads = getattr(language_model.model.config, "num_attention_heads", None)
+        if num_heads is None:
+            num_heads = 28
+
+        videoqa_model = apply_head_budget(
+            videoqa_model,
+            head_scores_path=args.head_budget_scores,
+            num_layers=videoqa_model.num_layers,
+            num_heads=num_heads,
+        )
+
+    if args.layer_budget_scores:
+        from head_analysis.hermes_layer_budget import apply_layer_budget
+
+        language_model = getattr(videoqa_model, "language_model", None)
+        language_config = getattr(language_model, "config", None)
+        num_heads = getattr(language_config, "num_attention_heads", None)
+        if num_heads is None and hasattr(language_model, "model"):
+            num_heads = getattr(language_model.model.config, "num_attention_heads", None)
+        if num_heads is None:
+            num_heads = 28
+
+        videoqa_model = apply_layer_budget(
+            videoqa_model,
+            layer_scores_path=args.layer_budget_scores,
+            num_layers=videoqa_model.num_layers,
+            num_heads=num_heads,
+            variable_lengths=args.layer_budget_variable,
+        )
+
+    if args.kv_head_budget_scores:
+        from head_analysis.hermes_kv_head_budget import apply_kv_head_budget
+
+        language_model = getattr(videoqa_model, "language_model", None)
+        language_config = getattr(language_model, "config", None)
+        num_heads = getattr(language_config, "num_attention_heads", None)
+        num_kv_heads = getattr(language_config, "num_key_value_heads", None)
+        if num_heads is None and hasattr(language_model, "model"):
+            num_heads = getattr(language_model.model.config, "num_attention_heads", None)
+        if num_kv_heads is None and hasattr(language_model, "model"):
+            num_kv_heads = getattr(language_model.model.config, "num_key_value_heads", None)
+        if num_heads is None:
+            num_heads = 28
+        if num_kv_heads is None:
+            num_kv_heads = 4
+
+        videoqa_model = apply_kv_head_budget(
+            videoqa_model,
+            kv_head_scores_path=args.kv_head_budget_scores,
+            num_layers=videoqa_model.num_layers,
+            num_query_heads=num_heads,
+            num_kv_heads=num_kv_heads,
+            budget_scheme=args.kv_head_budget_scheme,
+            sparsemm_ratio=args.kv_head_budget_sparsemm_ratio,
+            sparsemm_window_size=args.kv_head_budget_sparsemm_window_size,
+            union_cap_ratio=args.kv_head_budget_union_cap_ratio,
+            max_mask_q_len=args.kv_head_budget_max_mask_q_len,
+        )
+
+    if args.rolekv_ragged and not args.kv_head_ragged_prefill:
+        logger.warning("--rolekv_ragged requires physical ragged prefill; enabling --kv_head_ragged_prefill.")
+        args.kv_head_ragged_prefill = True
+
+    if args.kv_head_ragged_prefill:
+        from head_analysis.hermes_kv_head_ragged_prefill import apply_kv_head_ragged_prefill
+
+        videoqa_model = apply_kv_head_ragged_prefill(videoqa_model)
+        if args.rolekv_ragged:
+            from head_analysis.rolekv_ragged_policy import apply_rolekv_ragged_policy
+
+            videoqa_model = apply_rolekv_ragged_policy(
+                videoqa_model,
+                head_classes_path=args.rolekv_head_classes,
+                mode=args.rolekv_ragged_mode,
+                quota_ratio=args.rolekv_quota_ratio,
+                lambda_memory=args.rolekv_lambda_memory,
+                lambda_current=args.rolekv_lambda_current,
+                seed=args.rolekv_seed,
+                role_min_votes=args.rolekv_role_min_votes,
+            )
+    elif args.kv_head_ragged_decode:
+        from head_analysis.hermes_kv_head_ragged import apply_kv_head_ragged_decode
+
+        videoqa_model = apply_kv_head_ragged_decode(videoqa_model)
 
     # Load ground truth file
     anno = json.load(open(args.anno_path))

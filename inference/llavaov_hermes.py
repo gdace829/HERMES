@@ -19,9 +19,10 @@ from inference.reindex_1d import (
 
 
 class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Hermes):
-    def __init__(self, config, processor, init_prompt_ids, kv_size, streaming=True):
+    def __init__(self, config, processor, init_prompt_ids, kv_size, streaming=True, compress_mode="hermes"):
         super().__init__(processor, init_prompt_ids, kv_size)
         self.streaming = streaming
+        self.compress_mode = compress_mode
         
         num_layers = config.num_hidden_layers if hasattr(config, 'num_hidden_layers') else 32
         self.num_layers = num_layers
@@ -721,7 +722,29 @@ class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Her
             self.apply_kv_cache_pruning_strict(keep_indices_all_layers)
     
     @torch.inference_mode()
+    def _sliding_window_compress(self):
+        current_len = self.kv_cache[0][0].shape[2]
+        if current_len <= self.kv_size:
+            return
+
+        text_keep = self.visual_start_idx
+        visual_keep = self.kv_size - text_keep
+        if visual_keep <= 0:
+            return
+
+        keep_indices_all_layers = []
+        for layer_idx in range(self.num_layers):
+            keep_indices = list(range(text_keep)) + list(range(current_len - visual_keep, current_len))
+            keep_indices_all_layers.append(keep_indices)
+
+        print(f"StreamingVLM mode: sliding window pruning ({current_len} -> {text_keep + visual_keep})")
+        self.apply_kv_cache_pruning_strict(keep_indices_all_layers)
+
+    @torch.inference_mode()
     def predict_and_compress(self):
+        if self.compress_mode == "streamingvlm":
+            self._sliding_window_compress()
+            return
         local_question, global_question = self.predict_next_question()
         self.pseudo_forward(local_question, global_question)
 
@@ -885,7 +908,7 @@ class LlavaOneVision_Hermes(LlavaOnevisionForConditionalGeneration, Abstract_Her
 
 
 def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
-               n_init=None, kv_size=None, streaming=True, device="cuda", sample_fps=0.5):
+               n_init=None, kv_size=None, streaming=True, device="cuda", sample_fps=0.5, compress_mode="hermes"):
     processor = AutoProcessor.from_pretrained(model_path, trust_remote_code=True)
     processor.tokenizer.padding_side = 'left'
     
@@ -909,7 +932,8 @@ def load_model(model_path='llava-onevision-qwen2-7b-ov-hf',
         kv_size,
     )
     model.streaming = streaming
-    
+    model.compress_mode = compress_mode
+
     num_layers = base_model.language_model.config.num_hidden_layers
     model.num_layers = num_layers
     model._position_ids_cache = [None for _ in range(num_layers)]

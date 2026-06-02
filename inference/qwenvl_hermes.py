@@ -78,10 +78,11 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
     Uses 3D M-RoPE (Multimodal RoPE) and inter-layer consistency optimization.
     """
 
-    def __init__(self, config, processor, init_prompt_ids, kv_size, streaming=True, sample_fps=1):
+    def __init__(self, config, processor, init_prompt_ids, kv_size, streaming=True, sample_fps=1, compress_mode="hermes"):
         Abstract_Hermes.__init__(self, processor, init_prompt_ids, kv_size)
         self.streaming = streaming
         self.sample_fps = sample_fps
+        self.compress_mode = compress_mode
 
         num_layers = config.num_hidden_layers if hasattr(config, 'num_hidden_layers') else 28
         self.num_layers = num_layers
@@ -735,7 +736,44 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
             self.apply_kv_cache_pruning_strict(keep_indices_all_layers)
 
     @torch.inference_mode()
+    def _sliding_window_compress(self):
+        current_len = self.kv_cache[0][0].shape[2]
+        if current_len <= self.kv_size:
+            return
+
+        text_keep = self.visual_start_idx
+        visual_keep = self.kv_size - text_keep
+        if visual_keep <= 0:
+            return
+
+        # Direct KV truncation — keep first text_keep + last visual_keep tokens.
+        # No position compaction needed; positions stay monotonically increasing
+        # and Qwen2.5-VL's max_position_embeddings is 128K, plenty of headroom.
+        new_cache = []
+        for k, v in self.kv_cache:
+            k_new = torch.cat([k[:, :, :text_keep], k[:, :, current_len - visual_keep:]], dim=2)
+            v_new = torch.cat([v[:, :, :text_keep], v[:, :, current_len - visual_keep:]], dim=2)
+            new_cache.append((k_new.contiguous(), v_new.contiguous()))
+
+        self.kv_cache = new_cache
+        if isinstance(self.kv_cache[0][0], torch.Tensor):
+            contiguous_kv(self.kv_cache)
+
+        # Mirror the truncation on position_ids_cache
+        for layer_idx in range(self.num_layers):
+            pos = self._position_ids_cache[layer_idx]
+            if pos is not None and pos.shape[1] >= current_len:
+                pos_new = torch.cat([pos[:, :text_keep], pos[:, current_len - visual_keep:]], dim=1)
+                self._position_ids_cache[layer_idx] = pos_new.contiguous()
+
+        new_len = self.kv_cache[0][0].shape[2]
+        print(f"StreamingVLM mode: sliding window pruning ({current_len} -> {new_len})")
+
+    @torch.inference_mode()
     def predict_and_compress(self):
+        if self.compress_mode == "streamingvlm":
+            self._sliding_window_compress()
+            return
         local_question, global_question = self.predict_next_question()
         self.pseudo_forward(local_question, global_question)
 
@@ -894,7 +932,7 @@ class QwenVL_Hermes(Qwen2_5_VLForConditionalGeneration, Abstract_Hermes):
 
 
 def load_model(model_path='Qwen/Qwen2.5-VL-7B-Instruct',
-               n_init=None, kv_size=None, streaming=True, device="cuda", sample_fps=1):
+               n_init=None, kv_size=None, streaming=True, device="cuda", sample_fps=1, compress_mode="hermes"):
     processor = Qwen2_5_VLProcessor.from_pretrained(model_path)
 
     system_prompt = '<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\n'
@@ -917,6 +955,7 @@ def load_model(model_path='Qwen/Qwen2.5-VL-7B-Instruct',
     )
     model.streaming = streaming
     model.sample_fps = sample_fps
+    model.compress_mode = compress_mode
 
     num_layers = base_model.model.config.num_hidden_layers
     model.num_layers = num_layers

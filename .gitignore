@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+
+# Local environments and credentials
+.env
+.venv/
+venv/
+.git-askpass-modelscope.sh
+
+# Models, datasets, run outputs, and upload caches
+models/
+logs/
+results/
+.modelscope_upload_lfs/
+nohup.out
+streamingbench_run.log
+
+# Local paper/material artifacts
+*.pdf
+paper_materials_memo/
+paper_rewriting_output/
+refine-logs/
+sjs.md
