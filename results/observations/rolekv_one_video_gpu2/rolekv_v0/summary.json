@@ -1,0 +1,14 @@
+{
+  "n": 5,
+  "overall": 0.8,
+  "tasks": {
+    "Attribute Recognition": {
+      "n": 3,
+      "acc": 0.6666666666666666
+    },
+    "Object Recognition": {
+      "n": 2,
+      "acc": 1.0
+    }
+  }
+}

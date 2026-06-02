@@ -1,0 +1,13 @@
+{
+  "mean_current_token_fraction": 0.718465934130704,
+  "median_current_token_fraction": 0.7820401046207498,
+  "mean_local_current_share_minus_token_fraction": -0.2415121680751272,
+  "mean_global_current_share_minus_token_fraction": -0.237349602644579,
+  "median_local_current_share_minus_token_fraction": -0.2538406269206507,
+  "median_global_current_share_minus_token_fraction": -0.24844689702301725,
+  "heads_local_current_above_token_fraction": 87,
+  "heads_local_current_below_token_fraction": 697,
+  "heads_global_current_above_token_fraction": 92,
+  "heads_global_current_below_token_fraction": 692,
+  "per_layer_token_baseline_csv": "results/observations/obs_prev_current_chunk_attention_n4/per_layer_token_baseline.csv"
+}

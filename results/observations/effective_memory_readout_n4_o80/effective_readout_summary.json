@@ -1,0 +1,33 @@
+{
+  "attention_source": "eager_output_attentions_for_true_question_prompt",
+  "usage": "offline_answer_facing_readout_profile_not_online_eviction_signal",
+  "num_chunk_observations": 80,
+  "num_layer_kv_observations": 8960,
+  "num_layers": 28,
+  "num_kv_heads": 4,
+  "num_query_heads": 28,
+  "top_k": 32,
+  "boundary_window": 64,
+  "class_metric": "readout_shape_score",
+  "raw_csv": "results/observations/effective_memory_readout_n4_o80/raw_effective_readout.csv",
+  "score_csv": "results/observations/effective_memory_readout_n4_o80/effective_readout_scores.csv",
+  "head_classes_json": "results/observations/effective_memory_readout_n4_o80/head_classes_effective_readout.json",
+  "figures": {
+    "readout_shape_score": "results/observations/effective_memory_readout_n4_o80/effective_readout_score_heatmap.png",
+    "internal_readout_share": "results/observations/effective_memory_readout_n4_o80/internal_readout_share_heatmap.png",
+    "internal_topk_concentration": "results/observations/effective_memory_readout_n4_o80/internal_topk_concentration_heatmap.png",
+    "boundary_ratio": "results/observations/effective_memory_readout_n4_o80/boundary_ratio_heatmap.png",
+    "readout_mass_vs_concentration_scatter": "results/observations/effective_memory_readout_n4_o80/readout_mass_vs_concentration_scatter.png"
+  },
+  "mean_readout_shape_score": 0.16438964904595013,
+  "median_readout_shape_score": 0.15501739499544054,
+  "mean_internal_readout_share": 0.6262936961271051,
+  "mean_internal_topk_concentration": 0.3598455018506958,
+  "mean_boundary_ratio": 0.2578234596059866,
+  "class_counts": {
+    "effective_readout_heads": 23,
+    "weak_readout_heads": 23,
+    "mixed_heads": 66,
+    "total": 112
+  }
+}

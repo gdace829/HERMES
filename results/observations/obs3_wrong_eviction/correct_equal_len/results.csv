@@ -1,0 +1,6 @@
+video_id,question,task,answer,pred_choice,correct_choice,acc
+1,What can be seen in the cockpit's center screen right now?,Object Recognition,A map.,B,B,1.0
+1,What colors are the pilot's handheld controls right now?,Attribute Recognition,Black.,D,A,0.0
+1,What are the visible weather conditions right now?,Attribute Recognition,Clear sky with scattered clouds.,A,A,1.0
+1,What are colors of the curved flight path right now?,Attribute Recognition,Red and blue.,D,D,1.0
+1,What is located to the bottom-left of the cockpit's central control panel right now?,Object Recognition,A blue handle.,A,A,1.0

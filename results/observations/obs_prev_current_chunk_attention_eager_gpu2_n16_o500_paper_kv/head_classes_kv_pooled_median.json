@@ -1,0 +1,1256 @@
+{
+  "source": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/raw_prev_current_attention_kv.csv",
+  "profile_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/kv_head_profile_scores.csv",
+  "raw_kv_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/raw_prev_current_attention_kv.csv",
+  "pooling": "pooled_median",
+  "metric": "median_b_obs",
+  "quantile": 0.2,
+  "num_layers": 28,
+  "num_kv_heads": 4,
+  "memory_oriented_kv": [
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      10,
+      3
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      6,
+      1
+    ]
+  ],
+  "current_sensitive_kv": [
+    [
+      27,
+      0
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      25,
+      0
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      23,
+      3
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      27,
+      3
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      23,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      15,
+      0
+    ],
+    [
+      26,
+      3
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      24,
+      2
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      14,
+      1
+    ]
+  ],
+  "mixed_kv": [
+    [
+      9,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      19,
+      0
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      14,
+      0
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      22,
+      3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      23,
+      2
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      21,
+      2
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      25,
+      3
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      22,
+      2
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      16,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      21,
+      3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      17,
+      0
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      21,
+      0
+    ],
+    [
+      25,
+      2
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      19,
+      3
+    ],
+    [
+      20,
+      3
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      27,
+      2
+    ],
+    [
+      21,
+      1
+    ]
+  ],
+  "scores": [
+    {
+      "layer": 0,
+      "kv_head": 0,
+      "score": -3.3233692147235248,
+      "s_current_share": 0.11143009845356139,
+      "r_per_token_ratio": 0.03603123006713175
+    },
+    {
+      "layer": 0,
+      "kv_head": 1,
+      "score": -3.0667008916442806,
+      "s_current_share": 0.1386839170062128,
+      "r_per_token_ratio": 0.04657455618196287
+    },
+    {
+      "layer": 0,
+      "kv_head": 2,
+      "score": -1.9895810307810857,
+      "s_current_share": 0.30385400646967486,
+      "r_per_token_ratio": 0.13675270862025748
+    },
+    {
+      "layer": 0,
+      "kv_head": 3,
+      "score": -2.566132346758474,
+      "s_current_share": 0.20813006303613066,
+      "r_per_token_ratio": 0.07683213155069674
+    },
+    {
+      "layer": 1,
+      "kv_head": 0,
+      "score": -1.9098299286477194,
+      "s_current_share": 0.3122380611602059,
+      "r_per_token_ratio": 0.14810557296873655
+    },
+    {
+      "layer": 1,
+      "kv_head": 1,
+      "score": -3.1917408021215534,
+      "s_current_share": 0.11935691333706709,
+      "r_per_token_ratio": 0.04110026120606005
+    },
+    {
+      "layer": 1,
+      "kv_head": 2,
+      "score": -2.861574463795072,
+      "s_current_share": 0.164581044832385,
+      "r_per_token_ratio": 0.05717866362140476
+    },
+    {
+      "layer": 1,
+      "kv_head": 3,
+      "score": -2.640503984165408,
+      "s_current_share": 0.19446811141330606,
+      "r_per_token_ratio": 0.07132531366786653
+    },
+    {
+      "layer": 2,
+      "kv_head": 0,
+      "score": -3.692170864249893,
+      "s_current_share": 0.06582631315099025,
+      "r_per_token_ratio": 0.02491785001541055
+    },
+    {
+      "layer": 2,
+      "kv_head": 1,
+      "score": -4.7908088285169175,
+      "s_current_share": 0.02340182112031845,
+      "r_per_token_ratio": 0.00830573674763368
+    },
+    {
+      "layer": 2,
+      "kv_head": 2,
+      "score": -4.206847729450276,
+      "s_current_share": 0.04215227289072155,
+      "r_per_token_ratio": 0.014893241948105042
+    },
+    {
+      "layer": 2,
+      "kv_head": 3,
+      "score": -3.9042065068915814,
+      "s_current_share": 0.05419381460015385,
+      "r_per_token_ratio": 0.020156942542239608
+    },
+    {
+      "layer": 3,
+      "kv_head": 0,
+      "score": -5.485379861863979,
+      "s_current_share": 0.01260704559836635,
+      "r_per_token_ratio": 0.004146959508283863
+    },
+    {
+      "layer": 3,
+      "kv_head": 1,
+      "score": -2.7406158940099834,
+      "s_current_share": 0.16129641745125833,
+      "r_per_token_ratio": 0.06453059064736798
+    },
+    {
+      "layer": 3,
+      "kv_head": 2,
+      "score": -4.620148349224362,
+      "s_current_share": 0.0275216816793247,
+      "r_per_token_ratio": 0.00985133451494609
+    },
+    {
+      "layer": 3,
+      "kv_head": 3,
+      "score": -4.775963706216466,
+      "s_current_share": 0.023131268080603347,
+      "r_per_token_ratio": 0.008429956170452519
+    },
+    {
+      "layer": 4,
+      "kv_head": 0,
+      "score": -3.001230066629949,
+      "s_current_share": 0.12450392463690044,
+      "r_per_token_ratio": 0.04972586460653096
+    },
+    {
+      "layer": 4,
+      "kv_head": 1,
+      "score": -2.0314883435517492,
+      "s_current_share": 0.2872314247205825,
+      "r_per_token_ratio": 0.13114019416536082
+    },
+    {
+      "layer": 4,
+      "kv_head": 2,
+      "score": -3.7970911942408176,
+      "s_current_share": 0.06432721486536486,
+      "r_per_token_ratio": 0.022435938819247974
+    },
+    {
+      "layer": 4,
+      "kv_head": 3,
+      "score": -3.366380434479776,
+      "s_current_share": 0.0977081352292993,
+      "r_per_token_ratio": 0.03451433843479436
+    },
+    {
+      "layer": 5,
+      "kv_head": 0,
+      "score": -2.219297152507239,
+      "s_current_share": 0.24639165265077975,
+      "r_per_token_ratio": 0.10868547129722915
+    },
+    {
+      "layer": 5,
+      "kv_head": 1,
+      "score": -3.8845799265104954,
+      "s_current_share": 0.06166222098045515,
+      "r_per_token_ratio": 0.020556462172766705
+    },
+    {
+      "layer": 5,
+      "kv_head": 2,
+      "score": -3.718023302917627,
+      "s_current_share": 0.07167230393537215,
+      "r_per_token_ratio": 0.024281918435508275
+    },
+    {
+      "layer": 5,
+      "kv_head": 3,
+      "score": -3.704439392940043,
+      "s_current_share": 0.0762880703801539,
+      "r_per_token_ratio": 0.024614012289575105
+    },
+    {
+      "layer": 6,
+      "kv_head": 0,
+      "score": -5.108898924443764,
+      "s_current_share": 0.017274699681429702,
+      "r_per_token_ratio": 0.006042732767280482
+    },
+    {
+      "layer": 6,
+      "kv_head": 1,
+      "score": -3.8186312343684756,
+      "s_current_share": 0.0528145695909759,
+      "r_per_token_ratio": 0.021957835464955458
+    },
+    {
+      "layer": 6,
+      "kv_head": 2,
+      "score": -3.106289695340439,
+      "s_current_share": 0.11339022400303544,
+      "r_per_token_ratio": 0.044766745849148935
+    },
+    {
+      "layer": 6,
+      "kv_head": 3,
+      "score": -3.9056709928071394,
+      "s_current_share": 0.0629665064634396,
+      "r_per_token_ratio": 0.020127444588726586
+    },
+    {
+      "layer": 7,
+      "kv_head": 0,
+      "score": -5.586042201171875,
+      "s_current_share": 0.01188139111211995,
+      "r_per_token_ratio": 0.0037498396452833684
+    },
+    {
+      "layer": 7,
+      "kv_head": 1,
+      "score": -5.575419283486143,
+      "s_current_share": 0.0115130305907642,
+      "r_per_token_ratio": 0.0037898862122704544
+    },
+    {
+      "layer": 7,
+      "kv_head": 2,
+      "score": -4.311252178735231,
+      "s_current_share": 0.0335102302433779,
+      "r_per_token_ratio": 0.013416738916287986
+    },
+    {
+      "layer": 7,
+      "kv_head": 3,
+      "score": -4.236157129154996,
+      "s_current_share": 0.03713286212193905,
+      "r_per_token_ratio": 0.014463064877338708
+    },
+    {
+      "layer": 8,
+      "kv_head": 0,
+      "score": -3.0861775238662803,
+      "s_current_share": 0.11501364743351114,
+      "r_per_token_ratio": 0.04567621738522866
+    },
+    {
+      "layer": 8,
+      "kv_head": 1,
+      "score": -4.496937265089803,
+      "s_current_share": 0.031701818909100246,
+      "r_per_token_ratio": 0.011143072606101449
+    },
+    {
+      "layer": 8,
+      "kv_head": 2,
+      "score": -5.092723616241794,
+      "s_current_share": 0.018116275230601497,
+      "r_per_token_ratio": 0.00614127062382371
+    },
+    {
+      "layer": 8,
+      "kv_head": 3,
+      "score": -2.6518604128191683,
+      "s_current_share": 0.18154528156849295,
+      "r_per_token_ratio": 0.07051989482889869
+    },
+    {
+      "layer": 9,
+      "kv_head": 0,
+      "score": -3.022383830220307,
+      "s_current_share": 0.11993013587857965,
+      "r_per_token_ratio": 0.04868502309281558
+    },
+    {
+      "layer": 9,
+      "kv_head": 1,
+      "score": -3.617573282980885,
+      "s_current_share": 0.0702105772053854,
+      "r_per_token_ratio": 0.02684774939432503
+    },
+    {
+      "layer": 9,
+      "kv_head": 2,
+      "score": -3.637370145744235,
+      "s_current_share": 0.06850631668307056,
+      "r_per_token_ratio": 0.026321474666180286
+    },
+    {
+      "layer": 9,
+      "kv_head": 3,
+      "score": -3.81515634329752,
+      "s_current_share": 0.05933891551890985,
+      "r_per_token_ratio": 0.022034269274019795
+    },
+    {
+      "layer": 10,
+      "kv_head": 0,
+      "score": -2.7122909250209255,
+      "s_current_share": 0.15838484556285448,
+      "r_per_token_ratio": 0.06638455035024982
+    },
+    {
+      "layer": 10,
+      "kv_head": 1,
+      "score": -4.627335110514403,
+      "s_current_share": 0.0281187963056518,
+      "r_per_token_ratio": 0.009780789125472093
+    },
+    {
+      "layer": 10,
+      "kv_head": 2,
+      "score": -3.8588660888055113,
+      "s_current_share": 0.0549083119737197,
+      "r_per_token_ratio": 0.021091902312805444
+    },
+    {
+      "layer": 10,
+      "kv_head": 3,
+      "score": -5.089168723897636,
+      "s_current_share": 0.0187024019582141,
+      "r_per_token_ratio": 0.006163141030185984
+    },
+    {
+      "layer": 11,
+      "kv_head": 0,
+      "score": -2.2593552206877794,
+      "s_current_share": 0.22441325746588095,
+      "r_per_token_ratio": 0.104417789484572
+    },
+    {
+      "layer": 11,
+      "kv_head": 1,
+      "score": -2.9084745268545724,
+      "s_current_share": 0.12929049717606916,
+      "r_per_token_ratio": 0.05455889454879809
+    },
+    {
+      "layer": 11,
+      "kv_head": 2,
+      "score": -4.449102676755478,
+      "s_current_share": 0.0326532660929047,
+      "r_per_token_ratio": 0.011689051123134184
+    },
+    {
+      "layer": 11,
+      "kv_head": 3,
+      "score": -2.86851342157935,
+      "s_current_share": 0.13970983641865792,
+      "r_per_token_ratio": 0.05678327666154626
+    },
+    {
+      "layer": 12,
+      "kv_head": 0,
+      "score": -4.021576853418347,
+      "s_current_share": 0.045463500608666996,
+      "r_per_token_ratio": 0.017924678053366287
+    },
+    {
+      "layer": 12,
+      "kv_head": 1,
+      "score": -2.396360466175295,
+      "s_current_share": 0.1908149993408478,
+      "r_per_token_ratio": 0.09104872591286957
+    },
+    {
+      "layer": 12,
+      "kv_head": 2,
+      "score": -3.189416475737878,
+      "s_current_share": 0.09999440246607044,
+      "r_per_token_ratio": 0.041195902735563894
+    },
+    {
+      "layer": 12,
+      "kv_head": 3,
+      "score": -2.663778602465378,
+      "s_current_share": 0.15164538693730495,
+      "r_per_token_ratio": 0.06968441394780164
+    },
+    {
+      "layer": 13,
+      "kv_head": 0,
+      "score": -3.3150093739071766,
+      "s_current_share": 0.09236915050707245,
+      "r_per_token_ratio": 0.036333707986937615
+    },
+    {
+      "layer": 13,
+      "kv_head": 1,
+      "score": -3.1771697902104603,
+      "s_current_share": 0.10947595678523081,
+      "r_per_token_ratio": 0.041703517959005974
+    },
+    {
+      "layer": 13,
+      "kv_head": 2,
+      "score": -2.888162665745053,
+      "s_current_share": 0.14174030367803694,
+      "r_per_token_ratio": 0.05567841855516283
+    },
+    {
+      "layer": 13,
+      "kv_head": 3,
+      "score": -2.9152517230495327,
+      "s_current_share": 0.11976473741470885,
+      "r_per_token_ratio": 0.054190388346146284
+    },
+    {
+      "layer": 14,
+      "kv_head": 0,
+      "score": -3.275434530393848,
+      "s_current_share": 0.1088873329959754,
+      "r_per_token_ratio": 0.03780044021995522
+    },
+    {
+      "layer": 14,
+      "kv_head": 1,
+      "score": -1.2425576555112667,
+      "s_current_share": 0.4647453522882975,
+      "r_per_token_ratio": 0.2886450185108732
+    },
+    {
+      "layer": 14,
+      "kv_head": 2,
+      "score": -2.870320560830115,
+      "s_current_share": 0.1369200076604501,
+      "r_per_token_ratio": 0.056680754037734045
+    },
+    {
+      "layer": 14,
+      "kv_head": 3,
+      "score": -2.535973749114148,
+      "s_current_share": 0.1848667135532373,
+      "r_per_token_ratio": 0.07918457580109692
+    },
+    {
+      "layer": 15,
+      "kv_head": 0,
+      "score": -1.8106494297393119,
+      "s_current_share": 0.33887288933076143,
+      "r_per_token_ratio": 0.16354788944313473
+    },
+    {
+      "layer": 15,
+      "kv_head": 1,
+      "score": -2.4992681823880947,
+      "s_current_share": 0.21216808793079678,
+      "r_per_token_ratio": 0.0821450918575264
+    },
+    {
+      "layer": 15,
+      "kv_head": 2,
+      "score": -1.5662890153825662,
+      "s_current_share": 0.3926533832083737,
+      "r_per_token_ratio": 0.20881866913958796
+    },
+    {
+      "layer": 15,
+      "kv_head": 3,
+      "score": -2.7655630449221094,
+      "s_current_share": 0.16329544375022959,
+      "r_per_token_ratio": 0.06294065095551811
+    },
+    {
+      "layer": 16,
+      "kv_head": 0,
+      "score": -2.322407995846468,
+      "s_current_share": 0.22957871605023017,
+      "r_per_token_ratio": 0.09803722790679462
+    },
+    {
+      "layer": 16,
+      "kv_head": 1,
+      "score": -3.270757135117056,
+      "s_current_share": 0.10818477038857946,
+      "r_per_token_ratio": 0.03797766196547337
+    },
+    {
+      "layer": 16,
+      "kv_head": 2,
+      "score": -2.3062105234574792,
+      "s_current_share": 0.23451584885777804,
+      "r_per_token_ratio": 0.09963811334748258
+    },
+    {
+      "layer": 16,
+      "kv_head": 3,
+      "score": -2.6459694337791433,
+      "s_current_share": 0.18196827581586839,
+      "r_per_token_ratio": 0.07093655210592398
+    },
+    {
+      "layer": 17,
+      "kv_head": 0,
+      "score": -2.5220541527843725,
+      "s_current_share": 0.20279397191162246,
+      "r_per_token_ratio": 0.08029450005953809
+    },
+    {
+      "layer": 17,
+      "kv_head": 1,
+      "score": -3.3338209372026655,
+      "s_current_share": 0.0929755407976452,
+      "r_per_token_ratio": 0.035656602810252874
+    },
+    {
+      "layer": 17,
+      "kv_head": 2,
+      "score": -2.8263351307353,
+      "s_current_share": 0.15165801326827189,
+      "r_per_token_ratio": 0.059229524856355964
+    },
+    {
+      "layer": 17,
+      "kv_head": 3,
+      "score": -1.721972762286105,
+      "s_current_share": 0.34837139399566786,
+      "r_per_token_ratio": 0.17871324118317067
+    },
+    {
+      "layer": 18,
+      "kv_head": 0,
+      "score": -3.128734449053555,
+      "s_current_share": 0.11372830121350186,
+      "r_per_token_ratio": 0.04377315937684584
+    },
+    {
+      "layer": 18,
+      "kv_head": 1,
+      "score": -2.672803300608082,
+      "s_current_share": 0.1708334769234084,
+      "r_per_token_ratio": 0.06905836235904439
+    },
+    {
+      "layer": 18,
+      "kv_head": 2,
+      "score": -2.293456420745378,
+      "s_current_share": 0.22861920896361254,
+      "r_per_token_ratio": 0.10091704656531413
+    },
+    {
+      "layer": 18,
+      "kv_head": 3,
+      "score": -2.6526835936760182,
+      "s_current_share": 0.17606619219003505,
+      "r_per_token_ratio": 0.07046186808797633
+    },
+    {
+      "layer": 19,
+      "kv_head": 0,
+      "score": -3.471629642191732,
+      "s_current_share": 0.0777487050823004,
+      "r_per_token_ratio": 0.031066362331851186
+    },
+    {
+      "layer": 19,
+      "kv_head": 1,
+      "score": -3.659714727263035,
+      "s_current_share": 0.07269420684263905,
+      "r_per_token_ratio": 0.025739854557856778
+    },
+    {
+      "layer": 19,
+      "kv_head": 2,
+      "score": -2.5448201988612986,
+      "s_current_share": 0.1853697337779012,
+      "r_per_token_ratio": 0.0784871627933563
+    },
+    {
+      "layer": 19,
+      "kv_head": 3,
+      "score": -2.4304976976479713,
+      "s_current_share": 0.1961037476591164,
+      "r_per_token_ratio": 0.08799302775954433
+    },
+    {
+      "layer": 20,
+      "kv_head": 0,
+      "score": -2.862898917163556,
+      "s_current_share": 0.14299251186185324,
+      "r_per_token_ratio": 0.05710298327637298
+    },
+    {
+      "layer": 20,
+      "kv_head": 1,
+      "score": -3.3282450206509617,
+      "s_current_share": 0.0876107569997969,
+      "r_per_token_ratio": 0.03585597638067827
+    },
+    {
+      "layer": 20,
+      "kv_head": 2,
+      "score": -2.466844218339819,
+      "s_current_share": 0.18509538536987513,
+      "r_per_token_ratio": 0.08485221198026459
+    },
+    {
+      "layer": 20,
+      "kv_head": 3,
+      "score": -2.4032423054419167,
+      "s_current_share": 0.1966961400165388,
+      "r_per_token_ratio": 0.0904242942991124
+    },
+    {
+      "layer": 21,
+      "kv_head": 0,
+      "score": -2.4853477913574773,
+      "s_current_share": 0.19613668740468765,
+      "r_per_token_ratio": 0.08329657964326322
+    },
+    {
+      "layer": 21,
+      "kv_head": 1,
+      "score": -2.3447051412593787,
+      "s_current_share": 0.21665511330590836,
+      "r_per_token_ratio": 0.09587546768277873
+    },
+    {
+      "layer": 21,
+      "kv_head": 2,
+      "score": -3.0372573556588214,
+      "s_current_share": 0.11456965119306764,
+      "r_per_token_ratio": 0.047966263657132045
+    },
+    {
+      "layer": 21,
+      "kv_head": 3,
+      "score": -2.588295532780003,
+      "s_current_share": 0.1698900877223785,
+      "r_per_token_ratio": 0.07514801832086533
+    },
+    {
+      "layer": 22,
+      "kv_head": 0,
+      "score": -3.647517745717371,
+      "s_current_share": 0.06702345875773905,
+      "r_per_token_ratio": 0.026055725509063803
+    },
+    {
+      "layer": 22,
+      "kv_head": 1,
+      "score": -2.5884251250722663,
+      "s_current_share": 0.1836938480500987,
+      "r_per_token_ratio": 0.07513828034790881
+    },
+    {
+      "layer": 22,
+      "kv_head": 2,
+      "score": -2.783306440177551,
+      "s_current_share": 0.1332447399315868,
+      "r_per_token_ratio": 0.061833719509997824
+    },
+    {
+      "layer": 22,
+      "kv_head": 3,
+      "score": -3.2215365414882866,
+      "s_current_share": 0.1082474649261929,
+      "r_per_token_ratio": 0.03989371279796329
+    },
+    {
+      "layer": 23,
+      "kv_head": 0,
+      "score": -1.9162327634499032,
+      "s_current_share": 0.29787585994084287,
+      "r_per_token_ratio": 0.14716030687242931
+    },
+    {
+      "layer": 23,
+      "kv_head": 1,
+      "score": -3.1800072487594644,
+      "s_current_share": 0.1111539208044099,
+      "r_per_token_ratio": 0.04158535367785458
+    },
+    {
+      "layer": 23,
+      "kv_head": 2,
+      "score": -3.131782759610489,
+      "s_current_share": 0.11589099096989655,
+      "r_per_token_ratio": 0.04363992836093059
+    },
+    {
+      "layer": 23,
+      "kv_head": 3,
+      "score": -2.274057138517745,
+      "s_current_share": 0.2457720647424234,
+      "r_per_token_ratio": 0.10289387738770635
+    },
+    {
+      "layer": 24,
+      "kv_head": 0,
+      "score": -3.3459300421114944,
+      "s_current_share": 0.09349966199989604,
+      "r_per_token_ratio": 0.03522743691759168
+    },
+    {
+      "layer": 24,
+      "kv_head": 1,
+      "score": -4.2157136858701865,
+      "s_current_share": 0.0431086227199403,
+      "r_per_token_ratio": 0.014761782731000409
+    },
+    {
+      "layer": 24,
+      "kv_head": 2,
+      "score": -1.6981227951059608,
+      "s_current_share": 0.32795897569336885,
+      "r_per_token_ratio": 0.18302678053872443
+    },
+    {
+      "layer": 24,
+      "kv_head": 3,
+      "score": -2.817639997484,
+      "s_current_share": 0.1537312250612948,
+      "r_per_token_ratio": 0.05974677900534097
+    },
+    {
+      "layer": 25,
+      "kv_head": 0,
+      "score": -2.301774581763309,
+      "s_current_share": 0.21474598273828205,
+      "r_per_token_ratio": 0.10008108397837234
+    },
+    {
+      "layer": 25,
+      "kv_head": 1,
+      "score": -2.224817389669676,
+      "s_current_share": 0.2534135467675221,
+      "r_per_token_ratio": 0.10808715466378999
+    },
+    {
+      "layer": 25,
+      "kv_head": 2,
+      "score": -2.4713364627108456,
+      "s_current_share": 0.2134775453719707,
+      "r_per_token_ratio": 0.08447188999785225
+    },
+    {
+      "layer": 25,
+      "kv_head": 3,
+      "score": -2.873268269182999,
+      "s_current_share": 0.1376155408400376,
+      "r_per_token_ratio": 0.05651392171292822
+    },
+    {
+      "layer": 26,
+      "kv_head": 0,
+      "score": -2.068725149751282,
+      "s_current_share": 0.28460315225308735,
+      "r_per_token_ratio": 0.12634675226510797
+    },
+    {
+      "layer": 26,
+      "kv_head": 1,
+      "score": -2.1039579072690078,
+      "s_current_share": 0.2561674978484501,
+      "r_per_token_ratio": 0.12197271494312377
+    },
+    {
+      "layer": 26,
+      "kv_head": 2,
+      "score": -2.305021528755959,
+      "s_current_share": 0.2360525337338148,
+      "r_per_token_ratio": 0.09975665299386291
+    },
+    {
+      "layer": 26,
+      "kv_head": 3,
+      "score": -1.769149148102371,
+      "s_current_share": 0.32511647906381985,
+      "r_per_token_ratio": 0.1704779786458652
+    },
+    {
+      "layer": 27,
+      "kv_head": 0,
+      "score": -2.3302016419038867,
+      "s_current_share": 0.22313405846901116,
+      "r_per_token_ratio": 0.09727613016771276
+    },
+    {
+      "layer": 27,
+      "kv_head": 1,
+      "score": -4.873102678920711,
+      "s_current_share": 0.0218094026097378,
+      "r_per_token_ratio": 0.007649594195269423
+    },
+    {
+      "layer": 27,
+      "kv_head": 2,
+      "score": -2.3614422490648286,
+      "s_current_share": 0.21608318282331615,
+      "r_per_token_ratio": 0.0942841438714241
+    },
+    {
+      "layer": 27,
+      "kv_head": 3,
+      "score": -2.2519112795632577,
+      "s_current_share": 0.2386311478619196,
+      "r_per_token_ratio": 0.10519796956652104
+    }
+  ],
+  "counts": {
+    "memory_oriented_kv": 23,
+    "current_sensitive_kv": 23,
+    "mixed_kv": 66,
+    "total": 112
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "raw_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/raw_prev_current_attention.csv",
+  "num_rows": 159152,
+  "num_heads": 784,
+  "num_layers": 28,
+  "heads_per_layer": 28,
+  "local_global_current_share_corr": 0.988027771328656,
+  "mean_global_minus_local_current_share": 0.005982221750623085,
+  "mean_abs_global_minus_local_current_share": 0.014342298063382697,
+  "median_abs_global_minus_local_current_share": 0.01079913180339575,
+  "s_current_share_mean": 0.23928990626826283,
+  "s_current_share_std": 0.12027312487476827,
+  "s_current_share_iqr": 0.1449282673971643,
+  "s_current_share_quantiles": {
+    "0": 0.016468487728416886,
+    "0.05": 0.07730951252779943,
+    "0.1": 0.10184934656838192,
+    "0.25": 0.15812701470580687,
+    "0.5": 0.21768876503315165,
+    "0.75": 0.30305528210297117,
+    "0.9": 0.3923197315514932,
+    "0.95": 0.45760459051217445,
+    "1": 0.737710026391034
+  },
+  "b_log_per_token_ratio_mean": -2.9624178549096665,
+  "b_log_per_token_ratio_std": 1.7184628358959182,
+  "b_log_per_token_ratio_quantiles": {
+    "0": -25.10610305103168,
+    "0.05": -5.208587895238228,
+    "0.1": -4.660428985287382,
+    "0.25": -3.7256765450378455,
+    "0.5": -2.8129963651110534,
+    "0.75": -2.088877458483613,
+    "0.9": -1.3993905930008539,
+    "0.95": -0.861186923091125,
+    "1": 4.294326934883368
+  },
+  "r_per_token_ratio_median": 0.2112327559963874,
+  "r_per_token_ratio_quantiles": {
+    "0": 0.0058243601824335784,
+    "0.05": 0.03468408844872181,
+    "0.1": 0.05005209544404248,
+    "0.25": 0.10290432807653685,
+    "0.5": 0.2112327559963874,
+    "0.75": 0.8319893082176066,
+    "0.9": 5.344524720563631,
+    "0.95": 40.046012885958746,
+    "1": 9899387.44807693
+  },
+  "class_counts": {
+    "s_lt_0p25": 466,
+    "s_gt_0p75": 0,
+    "global_lt_0p25": 454,
+    "global_gt_0p75": 0,
+    "b_bottom20_memory": 157,
+    "b_top20_current": 157,
+    "b_mixed": 470,
+    "r_gt_1": 171,
+    "r_lt_1": 611,
+    "r_lt_0p5": 531
+  },
+  "stability": {
+    "video_split_s_obs_corr": 0.9886284274220706,
+    "video_split_s_obs_left_videos": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "video_split_s_obs_right_videos": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "video_split_b_obs_corr": 0.9932586213613479,
+    "video_split_b_obs_left_videos": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "video_split_b_obs_right_videos": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "chunk_split_s_obs_corr": 0.7374552398847559,
+    "chunk_split_b_obs_corr": 0.8459877581870798
+  },
+  "outputs": {
+    "head_scores_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/head_profile_scores.csv",
+    "s_heatmap": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/s_h_query_robust_current_share_heatmap.png",
+    "b_heatmap": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/b_h_log_per_token_ratio_heatmap.png",
+    "r_heatmap": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/r_h_per_token_ratio_heatmap.png",
+    "local_global_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/local_global_current_share_scatter.png",
+    "s_histogram": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/s_h_current_share_histogram.png",
+    "b_histogram": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/b_h_log_per_token_ratio_histogram.png",
+    "video_split_s_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/video_split_s_h_stability_scatter.png",
+    "video_split_b_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/video_split_b_h_stability_scatter.png",
+    "chunk_split_s_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/chunk_split_s_h_stability_scatter.png",
+    "chunk_split_b_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/chunk_split_b_h_stability_scatter.png",
+    "summary_json": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/head_profile_summary.json",
+    "stability_json": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/head_profile_stability.json"
+  }
+}

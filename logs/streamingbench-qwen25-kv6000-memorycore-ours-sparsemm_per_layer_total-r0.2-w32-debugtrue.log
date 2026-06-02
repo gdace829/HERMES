@@ -1,0 +1,215 @@
+Execute streamingbench evaluation
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[I 260528 11:12:40 base:351] seed: 2024
+[I 260528 11:12:40 base:356] Loading VideoQA model: models/Qwen2.5-VL-7B-Instruct
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.09it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.24it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.29it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.30it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.77it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.49it/s]
+[I 260528 11:12:45 qwenvl_hermes:977] n_init: 14
+[I 260528 11:12:45 qwenvl_hermes:978] kv_size: 6000
+[kv_head_budget] Loaded scores. Range: [0.0002, 0.0044]
+[kv_head_budget] Installed logical per-KV-head eviction. q_heads=28, kv_heads=4, group=7, budget_scheme=sparsemm_per_layer_total, sparsemm_ratio=0.2, sparsemm_window=32, union_cap_ratio=1.0, max_mask_q_len=128.
+[kv_head_ragged_prefill] Installed physical per-KV-head ragged prefill/chunk/decode path.
+  0%|          | 0/1 [00:00<?, ?it/s][D 260528 11:12:45 base:232] video_id: 1
+[h264 @ 0x578e8dc21e80] mmco: unref short failure
+[h264 @ 0x578e8dc21e80] mmco: unref short failure
+[h264 @ 0x578e8dc21e80] mmco: unref short failure
+[h264 @ 0x578e8dc21e80] mmco: unref short failure
+[h264 @ 0x578e8dc21e80] mmco: unref short failure
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[D 260528 11:14:26 hermes_vqa:44] sample: {'question': "What can be seen in the cockpit's center screen right now?", 'answer': 'A map.', 'choices': ['A compass.', 'A map.', 'An altitude meter.', 'A weather radar.'], 'end_time': 6.0, 'task': 'Object Recognition', 'time_stamp': '00:00:06', 'required_ability': 'working memory'}
+[I 260528 11:14:27 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:14:28 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:02<00:10,  2.52s/it][A[D 260528 11:14:28 hermes_vqa:44] sample: {'question': "What colors are the pilot's handheld controls right now?", 'answer': 'Black.', 'choices': ['Black.', 'Red and green.', 'Yellow and blue.', 'Black and orange.'], 'end_time': 157.0, 'task': 'Attribute Recognition', 'time_stamp': '00:02:37', 'required_ability': 'working memory'}
+[I 260528 11:14:34 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:14:40 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:14:46 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:14:52 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:14:57 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:14:57 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:31<00:54, 18.10s/it][A[D 260528 11:14:57 hermes_vqa:44] sample: {'question': 'What are the visible weather conditions right now?', 'answer': 'Clear sky with scattered clouds.', 'choices': ['Clear sky with scattered clouds.', 'Overcast sky with rain.', 'Foggy with low visibility.', 'Thunderstorms with lightning.'], 'end_time': 301.0, 'task': 'Attribute Recognition', 'time_stamp': '00:05:01', 'required_ability': 'working memory'}
+[I 260528 11:15:03 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:09 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:15 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:21 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:24 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:24 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+Encoding frames 0 to 2
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 16.58577013015747 GB
+TTFT: 0.10056123975664377 seconds
+Answering Cache lengths: min=5396, max=5396
+Pred Answer:  B) A map.
+Encoding frames 3 to 18
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 19 to 34
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 35 to 50
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 51 to 66
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 67 to 78
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.03613984677940607 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  D) Black and orange.
+Encoding frames 79 to 94
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 95 to 110
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 111 to 126
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 127 to 142
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 143 to 150
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.04166632145643234 seconds
+Answering Cache lengths: min=1593, max=2017
+ 60%|██████    | 3/5 [00:58<00:44, 22.23s/it][A[D 260528 11:15:24 hermes_vqa:44] sample: {'question': 'What are colors of the curved flight path right now?', 'answer': 'Red and blue.', 'choices': ['Yellow and blue.', 'Blue and white.', 'Green and ograne.', 'Red and blue.'], 'end_time': 435.0, 'task': 'Attribute Recognition', 'time_stamp': '00:07:15', 'required_ability': 'working memory'}
+[I 260528 11:15:30 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:36 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:42 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:49 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:51 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:15:51 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [01:25<00:24, 24.19s/it][A[D 260528 11:15:51 hermes_vqa:44] sample: {'question': "What is located to the bottom-left of the cockpit's central control panel right now?", 'answer': 'A blue handle.', 'choices': ['A blue handle.', 'A red button.', 'An altitude meter.', 'A compass.'], 'end_time': 573.0, 'task': 'Object Recognition', 'time_stamp': '00:09:33', 'required_ability': 'working memory'}
+[I 260528 11:15:57 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:16:03 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:16:09 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:16:15 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:16:18 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:16:18 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [01:52<00:00, 25.00s/it][A100%|██████████| 5/5 [01:52<00:00, 22.46s/it]
+100%|██████████| 1/1 [03:33<00:00, 213.23s/it]100%|██████████| 1/1 [03:33<00:00, 213.23s/it]
+
+Pred Answer:  A) Clear sky with scattered clouds.
+Encoding frames 151 to 166
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 167 to 182
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 183 to 198
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 199 to 214
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 215 to 217
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.06849447544664145 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  D) Red and blue.
+Encoding frames 218 to 233
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 234 to 249
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 250 to 265
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 266 to 281
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 282 to 286
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.03249021898955107 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  A) A blue handle.
+exec: ['/home/sjs/.conda/envs/hermes-qwen/bin/python', 'video_qa/hermes_vqa.py', '--model', 'qwen2.5_vl_7b', '--sample_fps', '0.5', '--save_dir', 'results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill', '--anno_path', 'data/streamingbench/streamingbench_realtime.json', '--debug', 'true', '--num_chunks', '1', '--chunk_idx', '0', '--kv_size', '6000', '--streaming', 'True', '--compress_mode', 'hermes', '--kv_head_budget_scores', 'results/observations/memory_core_budget_scores/ours_top100.csv', '--kv_head_budget_union_cap_ratio', '1.0', '--kv_head_budget_max_mask_q_len', '128', '--kv_head_budget_scheme', 'sparsemm_per_layer_total', '--kv_head_budget_sparsemm_ratio', '0.2', '--kv_head_budget_sparsemm_window_size', '32', '--kv_head_ragged_prefill', 'True']
+#Samples: 5
+Average qa_acc: 80.00
+save_dir: results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill
+
+============================================================
+TASK-SPECIFIC ACCURACY (StreamingBench)
+============================================================
+Attribute Recognition: 66.67% (n=3)
+Object Recognition: 100.00% (n=2)
+============================================================
+
+%Errors: 0.00
+Evaluation report saved to: results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/eval_results.txt
+exec: > results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/results.csv
+exec: head -n 1 results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/1_0.csv > results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/results.csv
+exec: tail -n +2 results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/1_0.csv >> results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/results.csv
+exec: rm results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/1_0.csv
+exec: /home/sjs/.conda/envs/hermes-qwen/bin/python eval/eval_multiple_choice.py general --results_path results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-ours_top100-sparsemm_per_layer_total-union1-r0.2-w32-raggedprefill/results.csv

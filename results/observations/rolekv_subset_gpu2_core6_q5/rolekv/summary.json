@@ -1,0 +1,31 @@
+{
+  "csv": "results/observations/rolekv_subset_gpu2_core6_q5/rolekv/1_0.csv",
+  "n": 30,
+  "overall": 0.8,
+  "tasks": {
+    "Attribute Recognition": {
+      "n": 5,
+      "acc": 0.6
+    },
+    "Causal Reasoning": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "Clips Summarize": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "Counting": {
+      "n": 5,
+      "acc": 0.4
+    },
+    "Object Recognition": {
+      "n": 5,
+      "acc": 1.0
+    },
+    "Prospective Reasoning": {
+      "n": 5,
+      "acc": 0.8
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "raw_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/raw_prev_current_attention.csv",
+  "num_rows": 29792,
+  "num_heads": 784,
+  "num_layers": 28,
+  "heads_per_layer": 28,
+  "local_global_current_share_corr": 0.9885251564152621,
+  "mean_global_minus_local_current_share": 0.00510262713300979,
+  "mean_abs_global_minus_local_current_share": 0.01298622141927951,
+  "median_abs_global_minus_local_current_share": 0.009947040786133399,
+  "s_current_share_mean": 0.2000599489562593,
+  "s_current_share_std": 0.11616796638380987,
+  "s_current_share_iqr": 0.13725879369992888,
+  "s_current_share_quantiles": {
+    "0": 0.00917757218657669,
+    "0.05": 0.06201459453339719,
+    "0.1": 0.07826212724643192,
+    "0.25": 0.11947171650229532,
+    "0.5": 0.1763649880748217,
+    "0.75": 0.2567305102022242,
+    "0.9": 0.35124996798603153,
+    "0.95": 0.41852112778364414,
+    "1": 0.7383585740861139
+  },
+  "b_log_per_token_ratio_mean": -3.3559393987977897,
+  "b_log_per_token_ratio_std": 1.8241538199598177,
+  "b_log_per_token_ratio_quantiles": {
+    "0": -24.87198472875418,
+    "0.05": -5.672117477865521,
+    "0.1": -5.115846188582222,
+    "0.25": -4.138161072211036,
+    "0.5": -3.1556085574437476,
+    "0.75": -2.445937542582653,
+    "0.9": -1.7006841146151277,
+    "0.95": -1.1452040270353039,
+    "1": 3.8102047958486143
+  },
+  "r_per_token_ratio_median": 0.15580594320897984,
+  "r_per_token_ratio_quantiles": {
+    "0": 1.0134546072550212e-06,
+    "0.05": 0.022209228505573168,
+    "0.1": 0.03287821784987585,
+    "0.25": 0.07599115672048286,
+    "0.5": 0.15580594320897984,
+    "0.75": 0.6465827474020245,
+    "0.9": 4.931656588879795,
+    "0.95": 32.70814309574596,
+    "1": 7263457.672954043
+  },
+  "class_counts": {
+    "s_lt_0p25": 570,
+    "s_gt_0p75": 0,
+    "global_lt_0p25": 564,
+    "global_gt_0p75": 0,
+    "b_bottom20_memory": 157,
+    "b_top20_current": 157,
+    "b_mixed": 470,
+    "r_gt_1": 152,
+    "r_lt_1": 630,
+    "r_lt_0p5": 560
+  },
+  "stability": {
+    "video_split_s_obs_corr": 0.9471383738933274,
+    "video_split_s_obs_left_videos": [
+      0
+    ],
+    "video_split_s_obs_right_videos": [
+      1
+    ],
+    "video_split_b_obs_corr": 0.978551483903117,
+    "video_split_b_obs_left_videos": [
+      0
+    ],
+    "video_split_b_obs_right_videos": [
+      1
+    ],
+    "chunk_split_s_obs_corr": 0.7637796733732373,
+    "chunk_split_b_obs_corr": 0.8943583889396973
+  },
+  "outputs": {
+    "head_scores_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/head_profile_scores.csv",
+    "s_heatmap": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/s_h_query_robust_current_share_heatmap.png",
+    "b_heatmap": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/b_h_log_per_token_ratio_heatmap.png",
+    "r_heatmap": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/r_h_per_token_ratio_heatmap.png",
+    "local_global_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/local_global_current_share_scatter.png",
+    "s_histogram": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/s_h_current_share_histogram.png",
+    "b_histogram": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/b_h_log_per_token_ratio_histogram.png",
+    "video_split_s_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/video_split_s_h_stability_scatter.png",
+    "video_split_b_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/video_split_b_h_stability_scatter.png",
+    "chunk_split_s_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/chunk_split_s_h_stability_scatter.png",
+    "chunk_split_b_scatter": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/chunk_split_b_h_stability_scatter.png",
+    "summary_json": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/head_profile_summary.json",
+    "stability_json": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/head_profile_stability.json"
+  }
+}

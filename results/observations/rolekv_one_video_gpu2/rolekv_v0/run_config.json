@@ -1,0 +1,29 @@
+{
+  "args": {
+    "model": "qwen2.5_vl_7b",
+    "anno_path": "data/streamingbench/streamingbench_realtime.json",
+    "video_index": 0,
+    "sample_fps": 0.5,
+    "kv_size": 6000,
+    "compress_mode": "hermes",
+    "device": "cuda:0",
+    "head_classes": "results/observations/head_classes_prev_current/head_classes.json",
+    "rolekv_mode": "rolekv",
+    "lambda_memory": 0.2,
+    "lambda_current": 0.2,
+    "seed": 0,
+    "save_dir": "results/observations/rolekv_one_video_gpu2/rolekv_v0"
+  },
+  "anno": "results/observations/rolekv_one_video_gpu2/rolekv_v0/one_video_anno.json",
+  "rolekv_config": {
+    "mode": "rolekv",
+    "head_classes_path": "results/observations/head_classes_prev_current/head_classes.json",
+    "lambda_memory": 0.2,
+    "lambda_current": 0.2,
+    "seed": 0,
+    "num_layers": 28,
+    "num_heads": 28,
+    "num_memory_heads": 157,
+    "num_current_heads": 157
+  }
+}

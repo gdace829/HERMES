@@ -1,0 +1,44 @@
+[
+  {
+    "path": "README.md",
+    "extension": ".md",
+    "file_type": "word_text",
+    "role_hint": "material",
+    "size_bytes": 1189
+  },
+  {
+    "path": "figures/figure_manifest.md",
+    "extension": ".md",
+    "file_type": "word_text",
+    "role_hint": "result",
+    "size_bytes": 1412
+  },
+  {
+    "path": "notes/confirmed_motivation_source.md",
+    "extension": ".md",
+    "file_type": "word_text",
+    "role_hint": "material",
+    "size_bytes": 1864
+  },
+  {
+    "path": "references/reference_manifest.md",
+    "extension": ".md",
+    "file_type": "word_text",
+    "role_hint": "research",
+    "size_bytes": 1003
+  },
+  {
+    "path": "results/attention_observations_summary.md",
+    "extension": ".md",
+    "file_type": "word_text",
+    "role_hint": "material",
+    "size_bytes": 1652
+  },
+  {
+    "path": "results/baseline_results_summary.md",
+    "extension": ".md",
+    "file_type": "word_text",
+    "role_hint": "result",
+    "size_bytes": 1547
+  }
+]

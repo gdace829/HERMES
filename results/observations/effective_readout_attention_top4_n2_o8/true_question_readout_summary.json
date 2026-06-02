@@ -1,0 +1,38 @@
+{
+  "linear": "results/observations/effective_readout_attention_top4_n2_o8/true_question_readout_selected_kv_heads.png",
+  "log": "results/observations/effective_readout_attention_top4_n2_o8/true_question_readout_selected_kv_heads_log.png",
+  "csv": "results/observations/effective_readout_attention_top4_n2_o8/true_question_readout_selected_kv_heads.csv",
+  "mass_csv": "results/observations/effective_readout_attention_top4_n2_o8/selected_kv_region_mass.csv",
+  "mean_previous_token_fraction": 0.22258691858683574,
+  "selected": [
+    {
+      "layer": 24,
+      "kv_head": 1,
+      "score": 0.2970684837645945,
+      "metric": "readout_shape_score",
+      "group": "top"
+    },
+    {
+      "layer": 26,
+      "kv_head": 1,
+      "score": 0.2562592109153915,
+      "metric": "readout_shape_score",
+      "group": "top"
+    },
+    {
+      "layer": 8,
+      "kv_head": 0,
+      "score": 0.2496268870146857,
+      "metric": "readout_shape_score",
+      "group": "top"
+    },
+    {
+      "layer": 14,
+      "kv_head": 2,
+      "score": 0.2450500928469637,
+      "metric": "readout_shape_score",
+      "group": "top"
+    }
+  ],
+  "num_observations": 8
+}

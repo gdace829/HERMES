@@ -1,0 +1,35 @@
+{
+  "num_observations": 8,
+  "num_bins_per_region": 200,
+  "num_videos_requested": 2,
+  "max_questions": 4,
+  "head_classes": null,
+  "plot_kv_heads": true,
+  "kv_profile_csv": "results/observations/internal_memory_selector_n4_o80/internal_memory_selector_scores.csv",
+  "csv": "results/observations/readout_compare_uint_top4_n2_o8/region_aligned_token_attention_bins.csv",
+  "whole_cache_csv": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_token_attention_bins.csv",
+  "mean_previous_token_fraction": 0.22249561943820012,
+  "figures": {
+    "density": "results/observations/readout_compare_uint_top4_n2_o8/region_aligned_token_attention_density.png",
+    "density_log": "results/observations/readout_compare_uint_top4_n2_o8/region_aligned_token_attention_density_log.png",
+    "whole_cache_density": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_token_attention_density.png",
+    "whole_cache_density_log": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_token_attention_density_log.png",
+    "mass_share": "results/observations/readout_compare_uint_top4_n2_o8/region_attention_mass_share.png",
+    "whole_cache_attention_by_kv_id_csv": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_attention_by_kv_id.csv",
+    "whole_cache_attention_by_kv_id_linear": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_attention_by_kv_id.png",
+    "whole_cache_attention_by_kv_id_log": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_attention_by_kv_id_log.png",
+    "whole_cache_attention_by_kv_id_mean_previous_token_fraction": 0.22249561943820012,
+    "whole_cache_attention_by_selected_kv_heads_csv": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_attention_by_selected_kv_heads.csv",
+    "whole_cache_attention_by_selected_kv_heads_linear": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_attention_by_selected_kv_heads.png",
+    "whole_cache_attention_by_selected_kv_heads_log": "results/observations/readout_compare_uint_top4_n2_o8/whole_cache_attention_by_selected_kv_heads_log.png",
+    "whole_cache_attention_by_selected_kv_heads_mean_previous_token_fraction": 0.22249561943820007
+  },
+  "local_region_share": {
+    "previous": 0.7222007804636443,
+    "current": 0.27779921953635534
+  },
+  "global_region_share": {
+    "previous": 0.7224992173241909,
+    "current": 0.27750078267580874
+  }
+}

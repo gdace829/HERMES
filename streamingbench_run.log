@@ -1,0 +1,13 @@
+Execute streamingbench evaluation
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[I 260511 03:51:48 base:273] seed: 2024
+[I 260511 03:51:48 base:278] Loading VideoQA model: models/Qwen2.5-VL-7B-Instruct
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.17it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.27it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.31it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.34it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.81it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.53it/s]
+[I 260511 03:51:52 qwenvl_hermes:938] n_init: 14
+[I 260511 03:51:52 qwenvl_hermes:939] kv_size: 6000
+  0%|          | 0/498 [00:00<?, ?it/s][h264 @ 0x5c6f2f3ffb80] mmco: unref short failure
+[h264 @ 0x5c6f2f3ffb80] mmco: unref short failure
+[h264 @ 0x5c6f2f3ffb80] mmco: unref short failure
+[h264 @ 0x5c6f2f3ffb80] mmco: unref short failure
+[h264 @ 0x5c6f2f3ffb80] mmco: unref short failure

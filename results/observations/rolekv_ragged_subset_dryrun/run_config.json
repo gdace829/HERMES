@@ -1,0 +1,87 @@
+{
+  "args": {
+    "model": "qwen2.5_vl_7b",
+    "anno_path": "data/streamingbench/streamingbench_realtime.json",
+    "filtered_anno": null,
+    "sample_fps": 0.5,
+    "kv_size": 6000,
+    "compress_mode": "hermes",
+    "streaming": true,
+    "device": "cuda",
+    "mode": "rolekv",
+    "head_classes": "results/observations/head_classes_prev_current/head_classes.json",
+    "quota_ratio": 0.7,
+    "lambda_memory": 0.2,
+    "lambda_current": 0.2,
+    "role_min_votes": 1,
+    "seed": 0,
+    "tasks": "Object Recognition,Attribute Recognition,Clips Summarize,Prospective Reasoning,Counting,Causal Reasoning",
+    "max_questions_per_task": 1,
+    "max_videos": null,
+    "kv_head_budget_scores": "sparsemm_qwen25",
+    "kv_head_budget_scheme": "sparsemm",
+    "kv_head_budget_sparsemm_ratio": 0.1,
+    "kv_head_budget_sparsemm_window_size": 32,
+    "save_dir": "results/observations/rolekv_ragged_subset_dryrun",
+    "dry_run": true
+  },
+  "filtered_anno": "results/observations/rolekv_ragged_subset_dryrun/filtered_anno.json",
+  "filter_counts": {
+    "Object Recognition": 1,
+    "Attribute Recognition": 1,
+    "Clips Summarize": 1,
+    "Prospective Reasoning": 1,
+    "Counting": 1,
+    "Causal Reasoning": 1
+  },
+  "annotation_summary": {
+    "num_videos": 5,
+    "num_questions": 6,
+    "task_counts": {
+      "Attribute Recognition": 1,
+      "Causal Reasoning": 1,
+      "Clips Summarize": 1,
+      "Counting": 1,
+      "Object Recognition": 1,
+      "Prospective Reasoning": 1
+    },
+    "videos": [
+      {
+        "video_id": 1,
+        "num_questions": 2,
+        "tasks": {
+          "Attribute Recognition": 1,
+          "Object Recognition": 1
+        }
+      },
+      {
+        "video_id": 2,
+        "num_questions": 1,
+        "tasks": {
+          "Clips Summarize": 1
+        }
+      },
+      {
+        "video_id": 3,
+        "num_questions": 1,
+        "tasks": {
+          "Prospective Reasoning": 1
+        }
+      },
+      {
+        "video_id": 11,
+        "num_questions": 1,
+        "tasks": {
+          "Counting": 1
+        }
+      },
+      {
+        "video_id": 23,
+        "num_questions": 1,
+        "tasks": {
+          "Causal Reasoning": 1
+        }
+      }
+    ]
+  }
+}

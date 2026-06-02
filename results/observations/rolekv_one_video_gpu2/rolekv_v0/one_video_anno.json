@@ -1,0 +1,78 @@
+[
+  {
+    "video_id": 1,
+    "video_path": "/data/streamingbench/videos/sample_416_real.mp4",
+    "conversations": [
+      {
+        "question": "What can be seen in the cockpit's center screen right now?",
+        "answer": "A map.",
+        "choices": [
+          "A compass.",
+          "A map.",
+          "An altitude meter.",
+          "A weather radar."
+        ],
+        "end_time": 6.0,
+        "task": "Object Recognition",
+        "time_stamp": "00:00:06",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What colors are the pilot's handheld controls right now?",
+        "answer": "Black.",
+        "choices": [
+          "Black.",
+          "Red and green.",
+          "Yellow and blue.",
+          "Black and orange."
+        ],
+        "end_time": 157.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:02:37",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What are the visible weather conditions right now?",
+        "answer": "Clear sky with scattered clouds.",
+        "choices": [
+          "Clear sky with scattered clouds.",
+          "Overcast sky with rain.",
+          "Foggy with low visibility.",
+          "Thunderstorms with lightning."
+        ],
+        "end_time": 301.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:05:01",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What are colors of the curved flight path right now?",
+        "answer": "Red and blue.",
+        "choices": [
+          "Yellow and blue.",
+          "Blue and white.",
+          "Green and ograne.",
+          "Red and blue."
+        ],
+        "end_time": 435.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:07:15",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What is located to the bottom-left of the cockpit's central control panel right now?",
+        "answer": "A blue handle.",
+        "choices": [
+          "A blue handle.",
+          "A red button.",
+          "An altitude meter.",
+          "A compass."
+        ],
+        "end_time": 573.0,
+        "task": "Object Recognition",
+        "time_stamp": "00:09:33",
+        "required_ability": "working memory"
+      }
+    ]
+  }
+]

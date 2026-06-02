@@ -1,0 +1,464 @@
+[
+  {
+    "video_id": 1,
+    "video_path": "/data/streamingbench/videos/sample_416_real.mp4",
+    "conversations": [
+      {
+        "question": "What can be seen in the cockpit's center screen right now?",
+        "answer": "A map.",
+        "choices": [
+          "A compass.",
+          "A map.",
+          "An altitude meter.",
+          "A weather radar."
+        ],
+        "end_time": 6.0,
+        "task": "Object Recognition",
+        "time_stamp": "00:00:06",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What colors are the pilot's handheld controls right now?",
+        "answer": "Black.",
+        "choices": [
+          "Black.",
+          "Red and green.",
+          "Yellow and blue.",
+          "Black and orange."
+        ],
+        "end_time": 157.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:02:37",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What are the visible weather conditions right now?",
+        "answer": "Clear sky with scattered clouds.",
+        "choices": [
+          "Clear sky with scattered clouds.",
+          "Overcast sky with rain.",
+          "Foggy with low visibility.",
+          "Thunderstorms with lightning."
+        ],
+        "end_time": 301.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:05:01",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What are colors of the curved flight path right now?",
+        "answer": "Red and blue.",
+        "choices": [
+          "Yellow and blue.",
+          "Blue and white.",
+          "Green and ograne.",
+          "Red and blue."
+        ],
+        "end_time": 435.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:07:15",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What is located to the bottom-left of the cockpit's central control panel right now?",
+        "answer": "A blue handle.",
+        "choices": [
+          "A blue handle.",
+          "A red button.",
+          "An altitude meter.",
+          "A compass."
+        ],
+        "end_time": 573.0,
+        "task": "Object Recognition",
+        "time_stamp": "00:09:33",
+        "required_ability": "working memory"
+      }
+    ]
+  },
+  {
+    "video_id": 2,
+    "video_path": "/data/streamingbench/videos/sample_348_real.mp4",
+    "conversations": [
+      {
+        "question": "Which of the following options best summarizes the actions of the individual taken just now?",
+        "answer": "The individual replenished bread inventory by placing new buns onto the shelves.",
+        "choices": [
+          "The individual organized serving trays and sanitized the preparation area.",
+          "The individual retrieved produce from the refrigerator and began chopping vegetables.",
+          "The individual replenished bread inventory by placing new buns onto the shelves.",
+          "The individual checked inventory levels and noted items lacking in stock."
+        ],
+        "end_time": 31.0,
+        "task": "Clips Summarize",
+        "time_stamp": "00:00:31",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Which of the following options best summarizes the actions of the individual taken just now?",
+        "answer": "The individual prepared a burger by retrieving buns, and placing them on the package.",
+        "choices": [
+          "The individual prepared a burger by retrieving buns, and placing them on the package.",
+          "The individual organized utensils by sanitizing them and placing them back in their designated areas.",
+          "The individual cleaned the preparation area and refilled condiment dispensers.",
+          "The individual baked a batch of fresh buns and arranged them in an orderly manner."
+        ],
+        "end_time": 206.0,
+        "task": "Clips Summarize",
+        "time_stamp": "00:03:26",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Which of the following options best summarizes the actions of the individual taken just now?",
+        "answer": "The individual topped burger buns with ketchup, onions.",
+        "choices": [
+          "The individual arranged fresh vegetables on plates and prepared salads.",
+          "The individual topped burger buns with ketchup, onions.",
+          "The individual arranged freshly cut fruits into serving containers.",
+          "The individual prepared sandwiches by arranging cheese and lettuce on bread slices."
+        ],
+        "end_time": 403.0,
+        "task": "Clips Summarize",
+        "time_stamp": "00:06:43",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Which of the following options best summarizes the actions of the individual taken just now?",
+        "answer": "The individual placed two buns in boxes, added cheese slices, and added condiments.",
+        "choices": [
+          "The individual toasted the buns and added ketchup and mustard.",
+          "The individual placed two buns in boxes, added cheese slices, and added condiments.",
+          "The individual grilled burger patties and placed them on the buns with lettuce and pickles.",
+          "The individual wrapped sandwiches with paper and handed them to the customer."
+        ],
+        "end_time": 607.0,
+        "task": "Clips Summarize",
+        "time_stamp": "00:10:07",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Which of the following options best summarizes the actions of the individual taken just now?",
+        "answer": "The individual took burger buns, added lettuce and condiments, and arranged them on a preparation area.",
+        "choices": [
+          "The individual selected burger buns, added patties, and placed them on a griddle.",
+          "The individual retrieved burger buns, added lettuce and sauces, and placed them on a tray.",
+          "The individual took burger buns, added lettuce and condiments, and arranged them on a preparation area.",
+          "The individual cleaned the preparation area, organized serving trays, and put away ingredients."
+        ],
+        "end_time": 802.0,
+        "task": "Clips Summarize",
+        "time_stamp": "00:13:22",
+        "required_ability": "episodic memory"
+      }
+    ]
+  },
+  {
+    "video_id": 3,
+    "video_path": "/data/streamingbench/videos/sample_221_real.mp4",
+    "conversations": [
+      {
+        "question": "What might the speaker explain next?",
+        "answer": "How to calculate perimeter.",
+        "choices": [
+          "The area of different shapes.",
+          "How to measure the diameter.",
+          "The concept of length in 2-dimensional shapes.",
+          "How to calculate perimeter."
+        ],
+        "end_time": 11.0,
+        "task": "Prospective Reasoning",
+        "time_stamp": "00:00:11",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "What will the speaker most likely explain next?",
+        "answer": "How to calculate the perimeter of the shape.",
+        "choices": [
+          "How to calculate the perimeter of the shape.",
+          "How to convert meters into centimeters.",
+          "The differences between perimeter and area.",
+          "How to measure the perimeter accurately."
+        ],
+        "end_time": 133.0,
+        "task": "Prospective Reasoning",
+        "time_stamp": "00:02:13",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "What might the speaker explain next?",
+        "answer": "How to find the perimeter of a rectangle.",
+        "choices": [
+          "How to calculate the area of the rectangle.",
+          "How to find the perimeter of a rectangle.",
+          "How to label the units.",
+          "How to measure with a ruler."
+        ],
+        "end_time": 213.0,
+        "task": "Prospective Reasoning",
+        "time_stamp": "00:03:33",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "What might the speaker discuss next?",
+        "answer": "How to calculate the perimeter of any regular polygon.",
+        "choices": [
+          "How to calculate the perimeter of any regular polygon.",
+          "The significance of repeated addition.",
+          "The properties of regular polygons.",
+          "The importance of perimeter in geometry."
+        ],
+        "end_time": 306.0,
+        "task": "Prospective Reasoning",
+        "time_stamp": "00:05:06",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "What might the speaker ask the students to do next?",
+        "answer": "Determine the perimeter of the shape.",
+        "choices": [
+          "Calculate the area of the shape.",
+          "Determine the perimeter of the shape.",
+          "Measure each side length.",
+          "Convert the measurements to centimeters."
+        ],
+        "end_time": 392.0,
+        "task": "Prospective Reasoning",
+        "time_stamp": "00:06:32",
+        "required_ability": "episodic memory"
+      }
+    ]
+  },
+  {
+    "video_id": 4,
+    "video_path": "/data/streamingbench/videos/sample_417_real.mp4",
+    "conversations": [
+      {
+        "question": "What is the primary color of the control panel shown right now?",
+        "answer": "Black.",
+        "choices": [
+          "Black.",
+          "White.",
+          "Blue.",
+          "Grey."
+        ],
+        "end_time": 9.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:00:09",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What is the primary color of the mountains visible right now?",
+        "answer": "White.",
+        "choices": [
+          "White.",
+          "Green.",
+          "Brown.",
+          "Red."
+        ],
+        "end_time": 173.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:02:53",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What is the main object visible outside the aircraft right now?",
+        "answer": "A mountain.",
+        "choices": [
+          "A mountain.",
+          "An ocean.",
+          "A forest.",
+          "A desert."
+        ],
+        "end_time": 327.0,
+        "task": "Object Recognition",
+        "time_stamp": "00:05:27",
+        "required_ability": "working memory"
+      }
+    ]
+  },
+  {
+    "video_id": 6,
+    "video_path": "/data/streamingbench/videos/sample_17_real.mp4",
+    "conversations": [
+      {
+        "question": "What type of fruit is being squeezed right now?",
+        "answer": "Yellow Plum.",
+        "choices": [
+          "Blueberry.",
+          "Orange.",
+          "Yellow Plum.",
+          "Apple."
+        ],
+        "end_time": 243.0,
+        "task": "Object Recognition",
+        "time_stamp": "00:04:03",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What is the man using to cook food in the pan?",
+        "answer": "Red kitchen tongs.",
+        "choices": [
+          "A wooden spoon.",
+          "A metal spatula.",
+          "Red kitchen tongs.",
+          "A fork."
+        ],
+        "end_time": 363.0,
+        "task": "Object Recognition",
+        "time_stamp": "0:06:03",
+        "required_ability": "working memory"
+      }
+    ]
+  },
+  {
+    "video_id": 11,
+    "video_path": "/data/streamingbench/videos/sample_91_real.mp4",
+    "conversations": [
+      {
+        "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+        "answer": "0.",
+        "choices": [
+          "2.",
+          "3.",
+          "4.",
+          "0."
+        ],
+        "end_time": 16.0,
+        "task": "Counting",
+        "time_stamp": "00:00:16",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+        "answer": "0.",
+        "choices": [
+          "2.",
+          "3.",
+          "4.",
+          "0."
+        ],
+        "end_time": 37.0,
+        "task": "Counting",
+        "time_stamp": "00:00:37",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+        "answer": "5.",
+        "choices": [
+          "3.",
+          "5.",
+          "6.",
+          "0."
+        ],
+        "end_time": 196.0,
+        "task": "Counting",
+        "time_stamp": "00:03:16",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+        "answer": "6.",
+        "choices": [
+          "2.",
+          "4.",
+          "3.",
+          "6."
+        ],
+        "end_time": 254.0,
+        "task": "Counting",
+        "time_stamp": "00:04:14",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+        "answer": "9.",
+        "choices": [
+          "2.",
+          "9.",
+          "8.",
+          "6."
+        ],
+        "end_time": 313.0,
+        "task": "Counting",
+        "time_stamp": "00:05:13",
+        "required_ability": "episodic memory"
+      }
+    ]
+  },
+  {
+    "video_id": 23,
+    "video_path": "/data/streamingbench/videos/sample_240_real.mp4",
+    "conversations": [
+      {
+        "question": "Where does this letter on the ground come from?",
+        "answer": "Mr. Bean just stuffed it in.",
+        "choices": [
+          "It was delivered by the postman earlier.",
+          "It fell out of someone's pocket as they walked by.",
+          "It was dropped by a courier who was in a hurry.",
+          "Mr. Bean just stuffed it in."
+        ],
+        "end_time": 39.0,
+        "task": "Causal Reasoning",
+        "time_stamp": "00:00:39",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Why does Mr. Bean's sitting figure react with confusion or surprise?",
+        "answer": "Because Mr. Bean interacts with the TV remote.",
+        "choices": [
+          "Because Mr. Bean interacts with the TV remote.",
+          "Because Mr. Bean gets distracted by a phone call.",
+          "Because the TV suddenly turns off.",
+          "Because Mr. Bean falls asleep while watching TV."
+        ],
+        "end_time": 149.0,
+        "task": "Causal Reasoning",
+        "time_stamp": "00:02:29",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Why does the wall have green patterns painted on it?",
+        "answer": "Because the man applied green paint using a teddy bear attached to a stick.",
+        "choices": [
+          "Because the wall was decorated with a stencil and green spray paint.",
+          "Because the man accidentally spilled green paint while working on a project.",
+          "Because the man applied green paint using a teddy bear attached to a stick.",
+          "Because the wall was originally green, and someone tried to cover it up but failed."
+        ],
+        "end_time": 277.0,
+        "task": "Causal Reasoning",
+        "time_stamp": "00:04:37",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Why does the person with multiple cameras leave the room?",
+        "answer": "Because he has finished taking the photos.",
+        "choices": [
+          "Because the person with cameras needed to recharge their equipment.",
+          "Because the person with cameras had an urgent phone call.",
+          "Because he has finished taking the photos.",
+          "Because the person with cameras spotted something interesting in the other room."
+        ],
+        "end_time": 394.0,
+        "task": "Causal Reasoning",
+        "time_stamp": "00:06:34",
+        "required_ability": "episodic memory"
+      },
+      {
+        "question": "Why is the queenly figure angry right now?",
+        "answer": "Because the Mr.bean pushing the broom past her face.",
+        "choices": [
+          "Because someone accidentally spilled tea on her dress.",
+          "Because her crown was knocked off by a gust of wind.",
+          "Because the Mr.bean pushing the broom past her face.",
+          "Because Mr. Bean interrupted her speech with loud noises."
+        ],
+        "end_time": 515.0,
+        "task": "Causal Reasoning",
+        "time_stamp": "00:08:35",
+        "required_ability": "episodic memory"
+      }
+    ]
+  }
+]

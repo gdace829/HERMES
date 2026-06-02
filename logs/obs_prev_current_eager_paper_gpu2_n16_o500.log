@@ -1,0 +1,1452 @@
+[paper obs] GPU=2
+[paper obs] SAVE_DIR=results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper
+[paper obs] KV_DIR=results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv
+[paper obs] NUM_VIDEOS=16 MAX_QUESTIONS=4 MAX_OBSERVATIONS=500
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading model on cuda:0: models/Qwen2.5-VL-7B-Instruct
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.43it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.54it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.53it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.55it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.11it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.80it/s]
+Model loaded. default_attn_impl=sdpa
+Videos:   0%|          | 0/16 [00:00<?, ?it/s][h264 @ 0x60378bd1e680] mmco: unref short failure
+[h264 @ 0x60378bd1e680] mmco: unref short failure
+[h264 @ 0x60378bd1e680] mmco: unref short failure
+[h264 @ 0x60378bd1e680] mmco: unref short failure
+[h264 @ 0x60378bd1e680] mmco: unref short failure
+[I 260522 04:31:28 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:31:28 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:31:37 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:31:37 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:31:45 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:31:45 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:31:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:31:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:31:59 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:31:59 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:06 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:06 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:14 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:14 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:22 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:22 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:30 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:30 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:33 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:33 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:41 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:41 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:49 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:49 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:32:57 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:32:57 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:33:04 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:33:04 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:33:06 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:33:06 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:   6%|▋         | 1/16 [03:31<52:53, 211.56s/it][h264 @ 0x6037cc0fd9c0] mmco: unref short failure
+[h264 @ 0x6037cc0fd9c0] mmco: unref short failure
+[h264 @ 0x6037cc0fd9c0] mmco: unref short failure
+[h264 @ 0x6037cc0fd9c0] mmco: unref short failure
+[I 260522 04:37:36 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:37:36 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:37:43 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:37:43 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:37:52 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:37:52 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:37:59 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:37:59 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:38:07 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:07 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:38:15 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:15 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:38:19 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:19 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 16.977754592895508 GB
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.816376209259033 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.[I 260522 04:38:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:38:34 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:34 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:38:42 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:42 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:38:50 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:50 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:38:58 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:38:58 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:05 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:05 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:07 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:07 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:15 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:15 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:23 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:23 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:31 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:31 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:38 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:38 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:46 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:46 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:54 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:54 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:39:57 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:39:57 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  12%|█▎        | 2/16 [10:21<1:16:38, 328.49s/it][I 260522 04:40:12 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:12 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:15 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:15 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:18 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:18 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:21 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:21 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:24 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:24 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:28 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:28 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:29 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:29 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:32 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:32 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.[I 260522 04:40:36 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:36 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:40:39 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:40:39 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  19%|█▉        | 3/16 [11:03<42:49, 197.62s/it]  [I 260522 04:42:17 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:42:17 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:42:24 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:42:24 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:42:32 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:42:32 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:42:40 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:42:40 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:42:48 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:42:48 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:42:55 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:42:55 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:42:56 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:42:56 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:04 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:04 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:12 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:12 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:20 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:20 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:34 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:34 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:42 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:42 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:49 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:49 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:43:57 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:43:57 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:44:03 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:44:03 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  25%|██▌       | 4/16 [14:27<40:01, 200.11s/it][h264 @ 0x6037f237e300] mmco: unref short failure
+[I 260522 04:44:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:44:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:09 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:09 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:17 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:17 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:25 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:25 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.969937324523926 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB[I 260522 04:45:32 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:32 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:40 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:40 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:45 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:45 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:47 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:47 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:45:55 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:45:55 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:46:03 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:46:03 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:46:11 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:46:11 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:46:18 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:46:18 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:46:26 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:46:26 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:46:34 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:46:34 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:46:40 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:46:40 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  31%|███▏      | 5/16 [17:05<33:53, 184.87s/it][h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[h264 @ 0x6037f2111f80] mmco: unref short failure
+[I 260522 04:47:54 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:47:54 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:02 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:02 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:10 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:10 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:17 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:17 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:24 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:24 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:32 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:32 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:40 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:40 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:45 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:45 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:48:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:48:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:49:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:49:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:49:09 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:49:09 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:49:14 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:49:14 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.970327377319336 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000[I 260522 04:49:22 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:49:22 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:49:30 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:49:30 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:49:38 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:49:38 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:49:43 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:49:43 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  38%|███▊      | 6/16 [20:08<30:41, 184.11s/it][I 260522 04:52:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:52:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:52:36 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:52:36 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:52:44 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:52:44 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:52:52 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:52:52 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:09 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:09 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:10 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:10 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:18 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:18 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:35 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:35 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:43 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:43 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:48 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:48 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:53:57 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:53:57 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:54:05 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:54:05 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:54:13 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:54:13 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:54:21 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:54:21 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:54:29 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:54:29 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  44%|████▍     | 7/16 [24:53<32:35, 217.27s/it][I 260522 04:56:36 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:56:36 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:56:44 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:56:44 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:56:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:56:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.[I 260522 04:57:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:04 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:04 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:12 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:12 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:20 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:20 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:28 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:28 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:31 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:31 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:39 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:39 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:47 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:47 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:55 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:55 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:57:58 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:57:58 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  50%|█████     | 8/16 [28:23<28:38, 214.80s/it][I 260522 04:59:19 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:59:19 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:59:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:59:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:59:35 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:59:35 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:59:43 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:59:43 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:59:51 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:59:51 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 04:59:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 04:59:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:00:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:00:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:00:08 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:00:08 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:00:16 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:00:16 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:00:24 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:00:24 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:00:31 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:00:31 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  56%|█████▋    | 9/16 [30:55<22:47, 195.31s/it][I 260522 05:02:49 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:02:49 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.[I 260522 05:02:57 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:02:57 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:05 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:05 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:12 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:12 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:21 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:21 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:28 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:28 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:36 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:36 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:44 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:44 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:45 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:45 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:03:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:03:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:04:00 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:04:00 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:04:08 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:04:08 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:04:15 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:04:15 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  62%|██████▎   | 10/16 [34:39<20:25, 204.22s/it][I 260522 05:05:39 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:05:39 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:05:45 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:05:45 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:05:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:05:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:06:00 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:06:00 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:06:09 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:06:09 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:06:16 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:06:16 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:06:24 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:06:24 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:06:32 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:06:32 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:06:39 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:06:39 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  69%|██████▉   | 11/16 [37:04<15:29, 185.86s/it][h264 @ 0x6037f183ec40] mmco: unref short failure
+[h264 @ 0x6037f183ec40] mmco: unref short failure
+[h264 @ 0x6037f183ec40] mmco: unref short failure
+[I 260522 05:06:54 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:06:54 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:07:02 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:07:02 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB[I 260522 05:07:09 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:07:09 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:07:11 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:07:11 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:07:13 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:07:13 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:07:14 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:07:14 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  75%|███████▌  | 12/16 [37:39<09:20, 140.12s/it][I 260522 05:08:02 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:02 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:10 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:10 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:18 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:18 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:20 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:20 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:35 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:35 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:43 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:43 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:47 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:47 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:08:55 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:08:55 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:09:02 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:09:02 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:09:07 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:09:07 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  81%|████████▏ | 13/16 [39:32<06:35, 131.79s/it][I 260522 05:09:54 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:09:54 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:08 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:08 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:17 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:17 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:24 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:24 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:32 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:32 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:33 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:33 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:41 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:41 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.972286224365234 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000[I 260522 05:10:47 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:47 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:10:54 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:10:54 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:11:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:11:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  88%|████████▊ | 14/16 [41:25<04:12, 126.35s/it][I 260522 05:13:24 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:13:24 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:13:32 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:13:32 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:13:40 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:13:40 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:13:46 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:13:46 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:13:54 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:13:54 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:14:02 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:14:02 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:14:09 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:14:09 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:14:15 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:14:15 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:14:23 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:14:23 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:14:31 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:14:31 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:14:39 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:14:39 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:14:45 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:14:45 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos:  94%|█████████▍| 15/16 [45:09<02:35, 155.68s/it][I 260522 05:16:51 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:16:51 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:16:59 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:16:59 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:17:07 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:17:07 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:17:15 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:17:15 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:17:22 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:17:22 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:17:30 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:17:30 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:17:38 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:17:38 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:17:46 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:17:46 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.[I 260522 05:17:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:17:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:02 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:02 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:09 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:09 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:17 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:17 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:25 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:25 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:33 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:33 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:41 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:41 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:49 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:49 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:18:55 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:18:55 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260522 05:19:00 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260522 05:19:00 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+Videos: 100%|██████████| 16/16 [49:24<00:00, 185.66s/it]Videos: 100%|██████████| 16/16 [49:24<00:00, 185.31s/it]
+
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 22.974151611328125 GB
+Applying KV-Cache compression due to k_states > 6000
+{
+  "attention_source": "eager_output_attentions_for_pseudo_query_only",
+  "num_rows": 159152,
+  "num_unique_observations": 203,
+  "num_layers": 28,
+  "num_heads": 28,
+  "raw_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/raw_prev_current_attention.csv",
+  "per_layer_summary_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/per_layer_summary.csv",
+  "mean_local_current_share": 0.2362987953929513,
+  "mean_global_current_share": 0.24228101714357436,
+  "mean_current_token_fraction": 0.7408419067708049,
+  "mean_global_minus_local_current_share": 0.005982221751147313,
+  "median_local_current_to_prev_per_token_ratio": 0.0506268385797739,
+  "median_global_current_to_prev_per_token_ratio": 0.05328902043402195,
+  "mean_prev_visual_tokens": 5953.320197044335,
+  "mean_current_chunk_tokens": 18887.704433497536
+}
+{
+  "summary_json": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/head_profile_summary.json",
+  "stability_json": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/head_profile_stability.json",
+  "head_scores_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper/head_profile_scores.csv",
+  "local_global_current_share_corr": 0.988027771328656,
+  "video_split_s_corr": 0.9886284274220706,
+  "chunk_split_s_corr": 0.7374552398847559
+}
+{
+  "summary_json": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/kv_head_profile_summary.json",
+  "kv_profile_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/kv_head_profile_scores.csv",
+  "raw_kv_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/raw_prev_current_attention_kv.csv",
+  "num_layer_kv_heads": 112,
+  "s_current_share_mean": 0.23702003150239617,
+  "r_per_token_ratio_median": 0.16473405405331304,
+  "class_counts": {
+    "s_lt_0p25": 63,
+    "s_gt_0p75": 0,
+    "global_lt_0p25": 61,
+    "global_gt_0p75": 0,
+    "b_bottom20_memory": 23,
+    "b_top20_current": 23,
+    "b_mixed": 66,
+    "r_gt_1": 12,
+    "r_lt_1": 100,
+    "r_lt_0p5": 92
+  },
+  "stability": {
+    "video_split_s_obs_corr": 0.9876847035270937,
+    "video_split_s_obs_left_videos": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "video_split_s_obs_right_videos": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "video_split_b_obs_corr": 0.9898763203773574,
+    "video_split_b_obs_left_videos": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "video_split_b_obs_right_videos": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "chunk_split_s_obs_corr": 0.686743738572068,
+    "chunk_split_b_obs_corr": 0.744601215727587
+  }
+}
+{
+  "output": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/head_classes_kv_pooled_median.json",
+  "counts": {
+    "memory_oriented_kv": 23,
+    "current_sensitive_kv": 23,
+    "mixed_kv": 66,
+    "total": 112
+  },
+  "pooling": "pooled_median",
+  "metric": "median_b_obs"
+}
+[paper obs] done
+[paper obs] query artifacts: results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper
+[paper obs] kv artifacts: results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv

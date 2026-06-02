@@ -1,0 +1,28 @@
+{
+  "num_rows": 7840,
+  "num_chunk_observations": 5,
+  "raw_csv": "results/observations/eager_attention_sanity_gpu1_n1_o6/manual_vs_eager_raw.csv",
+  "head_scores_csv": "results/observations/eager_attention_sanity_gpu1_n1_o6/manual_vs_eager_head_scores.csv",
+  "head_scores_wide_csv": "results/observations/eager_attention_sanity_gpu1_n1_o6/manual_vs_eager_head_scores_wide.csv",
+  "raw_current_share_corr": 0.7020795288022674,
+  "raw_current_share_mae": 0.24464709320357844,
+  "head_current_share_corr_all_queries": 0.4637477175685923,
+  "head_current_share_mae_all_queries": 0.22624585587706744,
+  "per_query": {
+    "global": {
+      "head_current_share_corr": 0.4676431035207667,
+      "head_current_share_mae": 0.22520716079403505,
+      "manual_mean_current_share": 0.6480420954623638,
+      "eager_mean_current_share": 0.4357481313964285
+    },
+    "local": {
+      "head_current_share_corr": 0.4589258435611083,
+      "head_current_share_mae": 0.22728455096009983,
+      "manual_mean_current_share": 0.6401995901073051,
+      "eager_mean_current_share": 0.4249904047204042
+    }
+  },
+  "s_current_share_corr": 0.47113935828389564,
+  "s_current_share_mae": 0.22579598911604645,
+  "s_current_share_scatter": "results/observations/eager_attention_sanity_gpu1_n1_o6/manual_vs_eager_s_current_share_scatter.png"
+}

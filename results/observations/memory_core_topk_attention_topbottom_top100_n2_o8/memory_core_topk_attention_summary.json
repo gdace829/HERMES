@@ -1,0 +1,84 @@
+{
+  "num_observations": 8,
+  "ks": [
+    1,
+    4,
+    8,
+    16,
+    32,
+    64,
+    100
+  ],
+  "selected": [
+    {
+      "layer": 22,
+      "kv_head": 0,
+      "score": 0.0044122114861011,
+      "metric": "internal_top100_mean_attention",
+      "group": "top",
+      "name": "L22-KV0"
+    },
+    {
+      "layer": 19,
+      "kv_head": 1,
+      "score": 0.0037934525695106,
+      "metric": "internal_top100_mean_attention",
+      "group": "top",
+      "name": "L19-KV1"
+    },
+    {
+      "layer": 27,
+      "kv_head": 1,
+      "score": 0.003793348184509,
+      "metric": "internal_top100_mean_attention",
+      "group": "top",
+      "name": "L27-KV1"
+    },
+    {
+      "layer": 19,
+      "kv_head": 2,
+      "score": 0.0036253678577509,
+      "metric": "internal_top100_mean_attention",
+      "group": "top",
+      "name": "L19-KV2"
+    },
+    {
+      "layer": 0,
+      "kv_head": 3,
+      "score": 0.0002224276583804,
+      "metric": "internal_top100_mean_attention",
+      "group": "bottom",
+      "name": "L0-KV3"
+    },
+    {
+      "layer": 0,
+      "kv_head": 1,
+      "score": 0.0002905843314131,
+      "metric": "internal_top100_mean_attention",
+      "group": "bottom",
+      "name": "L0-KV1"
+    },
+    {
+      "layer": 1,
+      "kv_head": 2,
+      "score": 0.0003555037575623,
+      "metric": "internal_top100_mean_attention",
+      "group": "bottom",
+      "name": "L1-KV2"
+    },
+    {
+      "layer": 0,
+      "kv_head": 0,
+      "score": 0.0003627691167139,
+      "metric": "internal_top100_mean_attention",
+      "group": "bottom",
+      "name": "L0-KV0"
+    }
+  ],
+  "csv": "results/observations/memory_core_topk_attention_topbottom_top100_n2_o8/memory_core_topk_attention.csv",
+  "group_csv": "results/observations/memory_core_topk_attention_topbottom_top100_n2_o8/memory_core_topk_attention_group_mean.csv",
+  "top_vs_bottom_png": "results/observations/memory_core_topk_attention_topbottom_top100_n2_o8/memory_core_topk_attention_top_vs_bottom.png",
+  "top_vs_bottom_pdf": "results/observations/memory_core_topk_attention_topbottom_top100_n2_o8/memory_core_topk_attention_top_vs_bottom.pdf",
+  "selected_heads_png": "results/observations/memory_core_topk_attention_topbottom_top100_n2_o8/memory_core_topk_attention_selected_heads.png",
+  "selected_heads_pdf": "results/observations/memory_core_topk_attention_topbottom_top100_n2_o8/memory_core_topk_attention_selected_heads.pdf"
+}

@@ -1,0 +1,4 @@
+nohup: ignoring input
+bash: line 2: /home/sjs/HERMES: Is a directory
+bash: line 3: experiments/dynamic_kv/run.py: No such file or directory
+bash: line 4: --num_videos: command not found

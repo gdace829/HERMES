@@ -1,0 +1,23 @@
+============================================================
+EVALUATION RESULTS (StreamingBench)
+============================================================
+#Samples: 2495
+Average qa_acc: 77.07
+save_dir: results/qwen2.5_vl_7b/streamingbench/fps0.5-kv4000-hermes
+
+============================================================
+TASK-SPECIFIC ACCURACY (StreamingBench)
+============================================================
+Action Recognition: 70.54% (n=353)
+Attribute Recognition: 84.82% (n=303)
+Object Recognition: 80.93% (n=367)
+Spatial Understanding: 71.95% (n=246)
+Event Understanding: 74.21% (n=159)
+Text-Rich Understanding: 84.11% (n=321)
+Counting: 50.78% (n=193)
+Causal Reasoning: 75.00% (n=128)
+Clips Summarize: 86.75% (n=317)
+Prospective Reasoning: 79.63% (n=108)
+============================================================
+
+%Errors: 0.00

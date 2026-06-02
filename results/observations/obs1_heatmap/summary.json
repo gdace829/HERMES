@@ -1,0 +1,143 @@
+{
+  "scores": "results/head_analysis/pseudo-qwen2.5_vl_7b-kv6000-hermes/head_pseudo.npz",
+  "score_type": "pseudo_shift",
+  "num_layers": 28,
+  "num_heads": 28,
+  "score_min": -0.07854547593209125,
+  "score_max": 0.11530430324360832,
+  "score_mean": -0.0015970283645495096,
+  "score_std": 0.01603911867709706,
+  "specialization_threshold_abs": 0.011530430324360833,
+  "num_positive_specialized": 104,
+  "num_negative_specialized": 137,
+  "mean_within_layer_std": 0.013648014253395046,
+  "max_within_layer_std": 0.03978515676223342,
+  "top_positive_heads": [
+    {
+      "layer": 27,
+      "head": 12,
+      "score": 0.11530430324360832
+    },
+    {
+      "layer": 27,
+      "head": 7,
+      "score": 0.08015543367176446
+    },
+    {
+      "layer": 27,
+      "head": 11,
+      "score": 0.07007986231814134
+    },
+    {
+      "layer": 14,
+      "head": 6,
+      "score": 0.06675930656557853
+    },
+    {
+      "layer": 26,
+      "head": 23,
+      "score": 0.05115595230126293
+    },
+    {
+      "layer": 27,
+      "head": 15,
+      "score": 0.0472435108949124
+    },
+    {
+      "layer": 24,
+      "head": 8,
+      "score": 0.04333794170590976
+    },
+    {
+      "layer": 8,
+      "head": 27,
+      "score": 0.0433063808958283
+    },
+    {
+      "layer": 23,
+      "head": 13,
+      "score": 0.040301395263895826
+    },
+    {
+      "layer": 14,
+      "head": 1,
+      "score": 0.038133166723849664
+    },
+    {
+      "layer": 26,
+      "head": 20,
+      "score": 0.03719368975518661
+    },
+    {
+      "layer": 22,
+      "head": 6,
+      "score": 0.03554838297142802
+    }
+  ],
+  "top_negative_heads": [
+    {
+      "layer": 14,
+      "head": 2,
+      "score": -0.07854547593209125
+    },
+    {
+      "layer": 18,
+      "head": 7,
+      "score": -0.07825620939292162
+    },
+    {
+      "layer": 16,
+      "head": 0,
+      "score": -0.07454608520535888
+    },
+    {
+      "layer": 27,
+      "head": 20,
+      "score": -0.07101411040887862
+    },
+    {
+      "layer": 11,
+      "head": 24,
+      "score": -0.06151919206552447
+    },
+    {
+      "layer": 27,
+      "head": 21,
+      "score": -0.05750260537886962
+    },
+    {
+      "layer": 14,
+      "head": 8,
+      "score": -0.05667405294559981
+    },
+    {
+      "layer": 27,
+      "head": 4,
+      "score": -0.05658382649117718
+    },
+    {
+      "layer": 10,
+      "head": 23,
+      "score": -0.05315830026309192
+    },
+    {
+      "layer": 22,
+      "head": 22,
+      "score": -0.05197451736292276
+    },
+    {
+      "layer": 22,
+      "head": 24,
+      "score": -0.048671641631257215
+    },
+    {
+      "layer": 7,
+      "head": 0,
+      "score": -0.045543588446781656
+    }
+  ],
+  "outputs": {
+    "heatmap": "results/observations/obs1_heatmap/temporal_head_heatmap.png",
+    "within_layer_diversity": "results/observations/obs1_heatmap/within_layer_diversity.png"
+  }
+}

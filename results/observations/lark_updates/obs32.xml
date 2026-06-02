@@ -1,0 +1,15 @@
+<callout emoji="⚠️" background-color="light-yellow" border-color="yellow">
+  <p><b>当前状态更新：</b>上面的 mask-out 功能消融仍是计划实验，尚未完成。我们先做了一个更轻量的 wrong-policy smoke test：把 pseudo temporal score 正向使用、反向使用，并与 uniform HERMES 比较。当前小样本没有拉开差距，因此 3.2 暂时不能作为已验证 observation 写入主文。</p>
+</callout>
+<table>
+  <colgroup><col width="220"/><col width="180"/><col width="180"/><col width="220"/></colgroup>
+  <thead>
+    <tr><th background-color="light-gray">测试子集</th><th background-color="light-gray">Uniform</th><th background-color="light-gray">Correct / Inverted</th><th background-color="light-gray">结论</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>默认第 1 个视频（Attribute/Object，5 题）</td><td>80.0%</td><td>80.0% / 80.0%</td><td>无差异，样本不含长记忆任务。</td></tr>
+    <tr><td>Counting-only 视频 video_id=11（5 题）</td><td>40.0%</td><td>40.0% / 40.0%</td><td>无差异，当前 score inversion 干预强度不足。</td></tr>
+  </tbody>
+</table>
+<p><b>解释：</b>当前 correct/inverted 只改变 head voting 的打分权重，最终保留 token set 可能高度重合；这不足以证明“错误时间策略会伤害特定任务”。下一步应改成更强的 controlled intervention：例如强制 Anchor heads 只保留 recent window、强制 Veil heads 使用 global-only retention，或在 QA decode 阶段直接 mask 指定头。</p>
+<p><b>本地结果文件：</b><code>results/observations/obs3_wrong_eviction/summary.csv</code>；safe runner 为 <code>head_analysis/obs_wrong_eviction_equal_len.py</code>。</p>

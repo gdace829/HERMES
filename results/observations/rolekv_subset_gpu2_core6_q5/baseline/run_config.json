@@ -1,0 +1,97 @@
+{
+  "args": {
+    "model": "qwen2.5_vl_7b",
+    "anno_path": "data/streamingbench/streamingbench_realtime.json",
+    "filtered_anno": null,
+    "sample_fps": 0.5,
+    "kv_size": 6000,
+    "compress_mode": "hermes",
+    "streaming": true,
+    "device": "cuda:0",
+    "rolekv_mode": "baseline",
+    "lambda_memory": 0.2,
+    "lambda_current": 0.2,
+    "seed": 0,
+    "tasks": "Object Recognition,Attribute Recognition,Clips Summarize,Prospective Reasoning,Counting,Causal Reasoning",
+    "max_questions_per_task": 5,
+    "max_videos": null,
+    "head_classes": "results/observations/head_classes_prev_current/head_classes.json",
+    "save_dir": "results/observations/rolekv_subset_gpu2_core6_q5/baseline",
+    "dry_run": false
+  },
+  "filtered_anno": "results/observations/rolekv_subset_gpu2_core6_q5/baseline/filtered_anno.json",
+  "filter_counts": {
+    "Object Recognition": 5,
+    "Attribute Recognition": 5,
+    "Clips Summarize": 5,
+    "Prospective Reasoning": 5,
+    "Counting": 5,
+    "Causal Reasoning": 5
+  },
+  "annotation_summary": {
+    "num_videos": 7,
+    "num_questions": 30,
+    "task_counts": {
+      "Attribute Recognition": 5,
+      "Causal Reasoning": 5,
+      "Clips Summarize": 5,
+      "Counting": 5,
+      "Object Recognition": 5,
+      "Prospective Reasoning": 5
+    },
+    "videos": [
+      {
+        "video_id": 1,
+        "num_questions": 5,
+        "tasks": {
+          "Attribute Recognition": 3,
+          "Object Recognition": 2
+        }
+      },
+      {
+        "video_id": 2,
+        "num_questions": 5,
+        "tasks": {
+          "Clips Summarize": 5
+        }
+      },
+      {
+        "video_id": 3,
+        "num_questions": 5,
+        "tasks": {
+          "Prospective Reasoning": 5
+        }
+      },
+      {
+        "video_id": 4,
+        "num_questions": 3,
+        "tasks": {
+          "Attribute Recognition": 2,
+          "Object Recognition": 1
+        }
+      },
+      {
+        "video_id": 6,
+        "num_questions": 2,
+        "tasks": {
+          "Object Recognition": 2
+        }
+      },
+      {
+        "video_id": 11,
+        "num_questions": 5,
+        "tasks": {
+          "Counting": 5
+        }
+      },
+      {
+        "video_id": 23,
+        "num_questions": 5,
+        "tasks": {
+          "Causal Reasoning": 5
+        }
+      }
+    ]
+  },
+  "rolekv_config": null
+}

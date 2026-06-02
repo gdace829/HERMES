@@ -1,0 +1,26 @@
+Project:        /home/sjs/HERMES
+Python:         /home/sjs/.conda/envs/hermes-qwen/bin/python
+Model:          qwen2.5_vl_7b
+Dataset:        streamingbench
+FPS:            0.5
+KV size:        6000
+Compress:       hermes
+KV-head score:  /home/sjs/SparseMM/visual_head/head_score/qwen2.5-vl.json
+Budget scheme:  sparsemm
+SparseMM ratio: 0.1
+SparseMM win:   32
+Union cap:      1.0
+Max mask q:     128
+Ragged prefill: true
+Num chunks:     1
+Devices:        0
+Debug:          false
+Only eval:      false
+Output dir:     /home/sjs/HERMES/results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-kvheadbudget-qwen2.5-vl-sparsemm-union1-r0.1-w32-raggedprefill
+Log file:       /home/sjs/HERMES/logs/streamingbench-qwen25-kv6000-sparsemm-qwen2.5-vl-meanloader-protectedw32-r0.1-raggedprefill.log
+
+Command: /home/sjs/.conda/envs/hermes-qwen/bin/python /home/sjs/HERMES/video_qa/run_infer.py --num_chunks 1 --devices 0 --model qwen2.5_vl_7b --dataset streamingbench --sample_fps 0.5 --kv_size 6000 --compress_mode hermes --kv_head_budget_scores /home/sjs/SparseMM/visual_head/head_score/qwen2.5-vl.json --kv_head_budget_scheme sparsemm --kv_head_budget_sparsemm_ratio 0.1 --kv_head_budget_sparsemm_window_size 32 --kv_head_budget_union_cap_ratio 1.0 --kv_head_budget_max_mask_q_len 128 --kv_head_ragged_prefill true --debug false
+
+Execute streamingbench evaluation
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(

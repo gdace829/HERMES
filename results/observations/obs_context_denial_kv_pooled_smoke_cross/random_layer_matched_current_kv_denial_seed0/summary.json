@@ -1,0 +1,35 @@
+{
+  "csv": "results/observations/obs_context_denial_kv_pooled_smoke_cross/random_layer_matched_current_kv_denial_seed0/1_0.csv",
+  "n": 140,
+  "overall": 0.7571428571428571,
+  "tasks": {
+    "Action Recognition": {
+      "n": 20,
+      "acc": 0.7
+    },
+    "Attribute Recognition": {
+      "n": 20,
+      "acc": 0.85
+    },
+    "Causal Reasoning": {
+      "n": 20,
+      "acc": 0.9
+    },
+    "Clips Summarize": {
+      "n": 20,
+      "acc": 0.85
+    },
+    "Counting": {
+      "n": 20,
+      "acc": 0.4
+    },
+    "Object Recognition": {
+      "n": 20,
+      "acc": 0.8
+    },
+    "Prospective Reasoning": {
+      "n": 20,
+      "acc": 0.8
+    }
+  }
+}

@@ -1,0 +1,7 @@
+run,n,overall,tasks
+first_uniform,5,0.8,Attribute Recognition:0.67/3;Object Recognition:1.00/2
+first_correct,5,0.8,Attribute Recognition:0.67/3;Object Recognition:1.00/2
+first_inverted,5,0.8,Attribute Recognition:0.67/3;Object Recognition:1.00/2
+counting_uniform,5,0.4,Counting:0.40/5
+counting_correct,5,0.4,Counting:0.40/5
+counting_inverted,5,0.4,Counting:0.40/5

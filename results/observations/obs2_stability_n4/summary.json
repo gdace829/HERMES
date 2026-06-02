@@ -1,0 +1,17 @@
+{
+  "raw_csv": "results/observations/obs2_pseudo_raw_n4/raw_obs.csv",
+  "split_mode": "row_preliminary",
+  "rows_total": 67120,
+  "rows_split_a": 33611,
+  "rows_split_b": 33509,
+  "num_valid_heads": 781,
+  "pearson": 0.9278963737443909,
+  "spearman": 0.9052599574338706,
+  "top_k": 50,
+  "top_positive_overlap": 0.76,
+  "top_negative_overlap": 0.72,
+  "outputs": {
+    "plot": "results/observations/obs2_stability_n4/split_correlation.png",
+    "scores": "results/observations/obs2_stability_n4/split_scores.npz"
+  }
+}

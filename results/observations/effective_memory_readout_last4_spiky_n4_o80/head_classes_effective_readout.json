@@ -1,0 +1,1928 @@
+{
+  "granularity": "kv",
+  "score": "true_query_internal_memory_readout_shape",
+  "score_column": "spiky_readout_score",
+  "quantile": 0.2,
+  "boundary_window": 64,
+  "top_k": 32,
+  "num_query_heads": 28,
+  "num_kv_heads": 4,
+  "effective_readout_heads": [
+    [
+      16,
+      3
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      10,
+      3
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      14,
+      0
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      6,
+      0
+    ]
+  ],
+  "weak_readout_heads": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      20,
+      3
+    ],
+    [
+      27,
+      3
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      27,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      19,
+      3
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      24,
+      2
+    ],
+    [
+      25,
+      0
+    ],
+    [
+      19,
+      0
+    ],
+    [
+      21,
+      3
+    ]
+  ],
+  "mixed_heads": [
+    [
+      26,
+      0
+    ],
+    [
+      22,
+      2
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      26,
+      3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      21,
+      0
+    ],
+    [
+      23,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      21,
+      2
+    ],
+    [
+      23,
+      2
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      25,
+      2
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      25,
+      3
+    ],
+    [
+      23,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      15,
+      0
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      22,
+      3
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      17,
+      0
+    ],
+    [
+      11,
+      2
+    ]
+  ],
+  "counts": {
+    "effective_readout_heads": 23,
+    "weak_readout_heads": 23,
+    "mixed_heads": 66,
+    "total": 112
+  },
+  "scores": [
+    {
+      "layer": 0,
+      "kv_head": 0,
+      "readout_shape_score": 0.030275488639121106,
+      "peak_readout_shape_score": 0.009496412017093052,
+      "spiky_readout_score": 0.043539875866361134,
+      "internal_readout_share": 0.16184911853882464,
+      "internal_topk_concentration": 0.4530606530016653,
+      "internal_top4_concentration": 0.21963587268802395,
+      "internal_log_peak_to_median": 7.132420956772286,
+      "boundary_ratio": 0.7648570669339557,
+      "num_observations": 80
+    },
+    {
+      "layer": 0,
+      "kv_head": 1,
+      "readout_shape_score": 0.020235499179976236,
+      "peak_readout_shape_score": 0.005940249524715081,
+      "spiky_readout_score": 0.02671202693624177,
+      "internal_readout_share": 0.1572414554066228,
+      "internal_topk_concentration": 0.3706013158115308,
+      "internal_top4_concentration": 0.1641614686267387,
+      "internal_log_peak_to_median": 6.251478298014446,
+      "boundary_ratio": 0.6703614646127114,
+      "num_observations": 80
+    },
+    {
+      "layer": 0,
+      "kv_head": 2,
+      "readout_shape_score": 0.02391496940671599,
+      "peak_readout_shape_score": 0.0060612644710401915,
+      "spiky_readout_score": 0.017059048488166573,
+      "internal_readout_share": 0.1963730687727751,
+      "internal_topk_concentration": 0.3537804611079376,
+      "internal_top4_concentration": 0.12830562388756894,
+      "internal_log_peak_to_median": 6.670109039780073,
+      "boundary_ratio": 0.5556602649712787,
+      "num_observations": 80
+    },
+    {
+      "layer": 0,
+      "kv_head": 3,
+      "readout_shape_score": 0.014482223961538625,
+      "peak_readout_shape_score": 0.003311671599219611,
+      "spiky_readout_score": 0.010802590189832834,
+      "internal_readout_share": 0.13225067045853617,
+      "internal_topk_concentration": 0.28692325841477645,
+      "internal_top4_concentration": 0.10435957927273135,
+      "internal_log_peak_to_median": 5.418750482697343,
+      "boundary_ratio": 0.6681798521205897,
+      "num_observations": 80
+    },
+    {
+      "layer": 1,
+      "kv_head": 0,
+      "readout_shape_score": 0.0576856692870214,
+      "peak_readout_shape_score": 0.026258536577273044,
+      "spiky_readout_score": 0.09635394413230734,
+      "internal_readout_share": 0.2272955268091097,
+      "internal_topk_concentration": 0.5527233663964182,
+      "internal_top4_concentration": 0.254559156074408,
+      "internal_log_peak_to_median": 7.642028242938737,
+      "boundary_ratio": 0.624314356173685,
+      "num_observations": 80
+    },
+    {
+      "layer": 1,
+      "kv_head": 1,
+      "readout_shape_score": 0.06719725542339891,
+      "peak_readout_shape_score": 0.027988262450369665,
+      "spiky_readout_score": 0.09154589367388481,
+      "internal_readout_share": 0.2669062613490045,
+      "internal_topk_concentration": 0.5630292827013379,
+      "internal_top4_concentration": 0.2700155951740352,
+      "internal_log_peak_to_median": 7.752128673066625,
+      "boundary_ratio": 0.6145971592526672,
+      "num_observations": 80
+    },
+    {
+      "layer": 1,
+      "kv_head": 2,
+      "readout_shape_score": 0.04636162625397306,
+      "peak_readout_shape_score": 0.01914191151577147,
+      "spiky_readout_score": 0.08692829521633519,
+      "internal_readout_share": 0.1835916284614145,
+      "internal_topk_concentration": 0.4896681691333799,
+      "internal_top4_concentration": 0.22167604043592953,
+      "internal_log_peak_to_median": 7.31831766953542,
+      "boundary_ratio": 0.6595986309609893,
+      "num_observations": 80
+    },
+    {
+      "layer": 1,
+      "kv_head": 3,
+      "readout_shape_score": 0.07063749904334926,
+      "peak_readout_shape_score": 0.032493053619746935,
+      "spiky_readout_score": 0.12674571873608326,
+      "internal_readout_share": 0.22301575627863643,
+      "internal_topk_concentration": 0.602619558741855,
+      "internal_top4_concentration": 0.2835075884054573,
+      "internal_log_peak_to_median": 8.689556581147336,
+      "boundary_ratio": 0.6471521582830851,
+      "num_observations": 80
+    },
+    {
+      "layer": 2,
+      "kv_head": 0,
+      "readout_shape_score": 0.26337146693934727,
+      "peak_readout_shape_score": 0.10451032910745697,
+      "spiky_readout_score": 0.28789066564204796,
+      "internal_readout_share": 0.7373229914535577,
+      "internal_topk_concentration": 0.4570430516172787,
+      "internal_top4_concentration": 0.13302035766970238,
+      "internal_log_peak_to_median": 10.33164434246086,
+      "boundary_ratio": 0.20583293472613592,
+      "num_observations": 80
+    },
+    {
+      "layer": 2,
+      "kv_head": 1,
+      "readout_shape_score": 0.2441185640513212,
+      "peak_readout_shape_score": 0.0923306282846664,
+      "spiky_readout_score": 0.27156336852196133,
+      "internal_readout_share": 0.7198207578788965,
+      "internal_topk_concentration": 0.43149918580469127,
+      "internal_top4_concentration": 0.13279522217682566,
+      "internal_log_peak_to_median": 10.027856805180482,
+      "boundary_ratio": 0.2102921237039337,
+      "num_observations": 80
+    },
+    {
+      "layer": 2,
+      "kv_head": 2,
+      "readout_shape_score": 0.15309504171414115,
+      "peak_readout_shape_score": 0.05381100251780513,
+      "spiky_readout_score": 0.10856908856428145,
+      "internal_readout_share": 0.7386035378677381,
+      "internal_topk_concentration": 0.2929583166937043,
+      "internal_top4_concentration": 0.07040274992311939,
+      "internal_log_peak_to_median": 9.868034198944653,
+      "boundary_ratio": 0.1936600082522109,
+      "num_observations": 80
+    },
+    {
+      "layer": 2,
+      "kv_head": 3,
+      "readout_shape_score": 0.20443238105800207,
+      "peak_readout_shape_score": 0.07431519408554946,
+      "spiky_readout_score": 0.1933106496854919,
+      "internal_readout_share": 0.7052675099384682,
+      "internal_topk_concentration": 0.37657587536831205,
+      "internal_top4_concentration": 0.10420780685582487,
+      "internal_log_peak_to_median": 9.819746609413539,
+      "boundary_ratio": 0.22300548726770453,
+      "num_observations": 80
+    },
+    {
+      "layer": 3,
+      "kv_head": 0,
+      "readout_shape_score": 0.3043383758272879,
+      "peak_readout_shape_score": 0.15081025109357724,
+      "spiky_readout_score": 0.5939807213340139,
+      "internal_readout_share": 0.6387645445489617,
+      "internal_topk_concentration": 0.595039601219304,
+      "internal_top4_concentration": 0.1962793133407636,
+      "internal_log_peak_to_median": 11.127200657226679,
+      "boundary_ratio": 0.2805853077401654,
+      "num_observations": 80
+    },
+    {
+      "layer": 3,
+      "kv_head": 1,
+      "readout_shape_score": 0.2605523280789565,
+      "peak_readout_shape_score": 0.12355904408766605,
+      "spiky_readout_score": 0.40765174635639934,
+      "internal_readout_share": 0.6076137562849466,
+      "internal_topk_concentration": 0.5497808602031349,
+      "internal_top4_concentration": 0.17068986109337034,
+      "internal_log_peak_to_median": 10.343234552995991,
+      "boundary_ratio": 0.28490397364164005,
+      "num_observations": 80
+    },
+    {
+      "layer": 3,
+      "kv_head": 2,
+      "readout_shape_score": 0.24958125883931795,
+      "peak_readout_shape_score": 0.11468225119257276,
+      "spiky_readout_score": 0.40967592289843885,
+      "internal_readout_share": 0.6516472889334181,
+      "internal_topk_concentration": 0.5078247544998237,
+      "internal_top4_concentration": 0.17041646966604712,
+      "internal_log_peak_to_median": 10.721099025962651,
+      "boundary_ratio": 0.2713037318062199,
+      "num_observations": 80
+    },
+    {
+      "layer": 3,
+      "kv_head": 3,
+      "readout_shape_score": 0.2923560170487013,
+      "peak_readout_shape_score": 0.1526195343016727,
+      "spiky_readout_score": 0.7261563615321898,
+      "internal_readout_share": 0.5926492776239576,
+      "internal_topk_concentration": 0.5975899477724256,
+      "internal_top4_concentration": 0.2405955135855926,
+      "internal_log_peak_to_median": 9.882630186348463,
+      "boundary_ratio": 0.3183240601544365,
+      "num_observations": 80
+    },
+    {
+      "layer": 4,
+      "kv_head": 0,
+      "readout_shape_score": 0.24022425949921003,
+      "peak_readout_shape_score": 0.11368966087585677,
+      "spiky_readout_score": 0.35147369312662274,
+      "internal_readout_share": 0.5730491883695297,
+      "internal_topk_concentration": 0.599680743667248,
+      "internal_top4_concentration": 0.18285727714644262,
+      "internal_log_peak_to_median": 10.014232110183404,
+      "boundary_ratio": 0.3205156163554962,
+      "num_observations": 80
+    },
+    {
+      "layer": 4,
+      "kv_head": 1,
+      "readout_shape_score": 0.3236087927404857,
+      "peak_readout_shape_score": 0.18071460199830697,
+      "spiky_readout_score": 1.0112313946097573,
+      "internal_readout_share": 0.5513658537811905,
+      "internal_topk_concentration": 0.764813537522173,
+      "internal_top4_concentration": 0.39772078216149287,
+      "internal_log_peak_to_median": 10.354435056546247,
+      "boundary_ratio": 0.35576694933575054,
+      "num_observations": 80
+    },
+    {
+      "layer": 4,
+      "kv_head": 2,
+      "readout_shape_score": 0.24447818853807984,
+      "peak_readout_shape_score": 0.12967842700688964,
+      "spiky_readout_score": 0.6613084903453716,
+      "internal_readout_share": 0.5096004401946665,
+      "internal_topk_concentration": 0.6628943621736959,
+      "internal_top4_concentration": 0.2822021876155702,
+      "internal_log_peak_to_median": 10.932097272124949,
+      "boundary_ratio": 0.38843345184821154,
+      "num_observations": 80
+    },
+    {
+      "layer": 4,
+      "kv_head": 3,
+      "readout_shape_score": 0.20778293349599625,
+      "peak_readout_shape_score": 0.10261347875110334,
+      "spiky_readout_score": 0.5310066892218323,
+      "internal_readout_share": 0.4882667540962675,
+      "internal_topk_concentration": 0.6125553462387157,
+      "internal_top4_concentration": 0.28392896191684186,
+      "internal_log_peak_to_median": 9.457606042057531,
+      "boundary_ratio": 0.4082181410701879,
+      "num_observations": 80
+    },
+    {
+      "layer": 5,
+      "kv_head": 0,
+      "readout_shape_score": 0.2691665418671908,
+      "peak_readout_shape_score": 0.12097318232674055,
+      "spiky_readout_score": 0.37726069005864576,
+      "internal_readout_share": 0.6074651394453976,
+      "internal_topk_concentration": 0.5494491416535188,
+      "internal_top4_concentration": 0.16681721475338154,
+      "internal_log_peak_to_median": 9.9511206036305,
+      "boundary_ratio": 0.27363587527995836,
+      "num_observations": 80
+    },
+    {
+      "layer": 5,
+      "kv_head": 1,
+      "readout_shape_score": 0.31322537956358065,
+      "peak_readout_shape_score": 0.14445162415391466,
+      "spiky_readout_score": 0.4608384776740563,
+      "internal_readout_share": 0.6990030111085056,
+      "internal_topk_concentration": 0.5786730380090699,
+      "internal_top4_concentration": 0.18369864532067443,
+      "internal_log_peak_to_median": 10.732648130001731,
+      "boundary_ratio": 0.25874056723003025,
+      "num_observations": 80
+    },
+    {
+      "layer": 5,
+      "kv_head": 2,
+      "readout_shape_score": 0.31653622442183393,
+      "peak_readout_shape_score": 0.1525351508543897,
+      "spiky_readout_score": 0.602919109838441,
+      "internal_readout_share": 0.6581761773835668,
+      "internal_topk_concentration": 0.6425337817448569,
+      "internal_top4_concentration": 0.25143927103030694,
+      "internal_log_peak_to_median": 10.96930322849115,
+      "boundary_ratio": 0.31323107487800667,
+      "num_observations": 80
+    },
+    {
+      "layer": 5,
+      "kv_head": 3,
+      "readout_shape_score": 0.358211821031582,
+      "peak_readout_shape_score": 0.19423424917147997,
+      "spiky_readout_score": 1.0785454213536665,
+      "internal_readout_share": 0.6220713548239891,
+      "internal_topk_concentration": 0.7211446503251271,
+      "internal_top4_concentration": 0.3123511967390843,
+      "internal_log_peak_to_median": 12.135685159935408,
+      "boundary_ratio": 0.3250136279415184,
+      "num_observations": 80
+    },
+    {
+      "layer": 6,
+      "kv_head": 0,
+      "readout_shape_score": 0.318277126338796,
+      "peak_readout_shape_score": 0.20658940935941228,
+      "spiky_readout_score": 1.8504110663609588,
+      "internal_readout_share": 0.5164898881798627,
+      "internal_topk_concentration": 0.8086631252972463,
+      "internal_top4_concentration": 0.47976722542704087,
+      "internal_log_peak_to_median": 12.81131926749419,
+      "boundary_ratio": 0.38093934024211346,
+      "num_observations": 80
+    },
+    {
+      "layer": 6,
+      "kv_head": 1,
+      "readout_shape_score": 0.2985039405980915,
+      "peak_readout_shape_score": 0.13976721863178856,
+      "spiky_readout_score": 0.47925355834670763,
+      "internal_readout_share": 0.6686223036023885,
+      "internal_topk_concentration": 0.5963121022282096,
+      "internal_top4_concentration": 0.20476440212346786,
+      "internal_log_peak_to_median": 10.670592911289813,
+      "boundary_ratio": 0.28750760872030934,
+      "num_observations": 80
+    },
+    {
+      "layer": 6,
+      "kv_head": 2,
+      "readout_shape_score": 0.26664305189362236,
+      "peak_readout_shape_score": 0.1275063691491575,
+      "spiky_readout_score": 0.5905846123797976,
+      "internal_readout_share": 0.5942577247888504,
+      "internal_topk_concentration": 0.5983442301028716,
+      "internal_top4_concentration": 0.24334680167538894,
+      "internal_log_peak_to_median": 10.527974440549341,
+      "boundary_ratio": 0.29101972719921787,
+      "num_observations": 80
+    },
+    {
+      "layer": 6,
+      "kv_head": 3,
+      "readout_shape_score": 0.312264813780735,
+      "peak_readout_shape_score": 0.17238227489258523,
+      "spiky_readout_score": 1.0666471235183363,
+      "internal_readout_share": 0.6062514697790361,
+      "internal_topk_concentration": 0.7058464041810028,
+      "internal_top4_concentration": 0.34301669414671593,
+      "internal_log_peak_to_median": 10.832056435848532,
+      "boundary_ratio": 0.3387126579943339,
+      "num_observations": 80
+    },
+    {
+      "layer": 7,
+      "kv_head": 0,
+      "readout_shape_score": 0.32849654244761395,
+      "peak_readout_shape_score": 0.1663872993704955,
+      "spiky_readout_score": 0.8750273886832083,
+      "internal_readout_share": 0.6335553008151303,
+      "internal_topk_concentration": 0.6901578200823051,
+      "internal_top4_concentration": 0.2791774353157946,
+      "internal_log_peak_to_median": 12.708721392100893,
+      "boundary_ratio": 0.3412974320610329,
+      "num_observations": 80
+    },
+    {
+      "layer": 7,
+      "kv_head": 1,
+      "readout_shape_score": 0.3036738298896468,
+      "peak_readout_shape_score": 0.15607492838237572,
+      "spiky_readout_score": 0.9686030210629507,
+      "internal_readout_share": 0.6104509359269784,
+      "internal_topk_concentration": 0.6829603682312331,
+      "internal_top4_concentration": 0.3134699675381346,
+      "internal_log_peak_to_median": 12.876626765560749,
+      "boundary_ratio": 0.35077438245256637,
+      "num_observations": 80
+    },
+    {
+      "layer": 7,
+      "kv_head": 2,
+      "readout_shape_score": 0.24537952701787186,
+      "peak_readout_shape_score": 0.10570239073405956,
+      "spiky_readout_score": 0.37784045928892196,
+      "internal_readout_share": 0.6462004543256024,
+      "internal_topk_concentration": 0.5245044131606504,
+      "internal_top4_concentration": 0.179430964346316,
+      "internal_log_peak_to_median": 10.202450262406753,
+      "boundary_ratio": 0.30349545978804643,
+      "num_observations": 80
+    },
+    {
+      "layer": 7,
+      "kv_head": 3,
+      "readout_shape_score": 0.30237570885195697,
+      "peak_readout_shape_score": 0.1373853566572662,
+      "spiky_readout_score": 0.5880296095503577,
+      "internal_readout_share": 0.6617313133627165,
+      "internal_topk_concentration": 0.6179707053647794,
+      "internal_top4_concentration": 0.24744647870749858,
+      "internal_log_peak_to_median": 11.297007597107475,
+      "boundary_ratio": 0.28073681551314067,
+      "num_observations": 80
+    },
+    {
+      "layer": 8,
+      "kv_head": 0,
+      "readout_shape_score": 0.3095313315696567,
+      "peak_readout_shape_score": 0.14178955974094098,
+      "spiky_readout_score": 0.4822339359498112,
+      "internal_readout_share": 0.638358536190104,
+      "internal_topk_concentration": 0.615447487292632,
+      "internal_top4_concentration": 0.2143113329262185,
+      "internal_log_peak_to_median": 10.768231310520004,
+      "boundary_ratio": 0.2631882663025018,
+      "num_observations": 80
+    },
+    {
+      "layer": 8,
+      "kv_head": 1,
+      "readout_shape_score": 0.32721094359335434,
+      "peak_readout_shape_score": 0.15683488856937822,
+      "spiky_readout_score": 0.7302262483902118,
+      "internal_readout_share": 0.663816885409327,
+      "internal_topk_concentration": 0.6289332546401278,
+      "internal_top4_concentration": 0.2289924508330869,
+      "internal_log_peak_to_median": 12.757998335136898,
+      "boundary_ratio": 0.26647539643442286,
+      "num_observations": 80
+    },
+    {
+      "layer": 8,
+      "kv_head": 2,
+      "readout_shape_score": 0.30029993514837017,
+      "peak_readout_shape_score": 0.1577819292137152,
+      "spiky_readout_score": 0.9690650437191358,
+      "internal_readout_share": 0.5586801392572922,
+      "internal_topk_concentration": 0.7063798926656154,
+      "internal_top4_concentration": 0.3290229404393271,
+      "internal_log_peak_to_median": 12.60412049756128,
+      "boundary_ratio": 0.3368325677064773,
+      "num_observations": 80
+    },
+    {
+      "layer": 8,
+      "kv_head": 3,
+      "readout_shape_score": 0.36364323531467907,
+      "peak_readout_shape_score": 0.18680494375205164,
+      "spiky_readout_score": 0.8189300018744021,
+      "internal_readout_share": 0.6383312860051016,
+      "internal_topk_concentration": 0.7319111764773316,
+      "internal_top4_concentration": 0.2930523377733024,
+      "internal_log_peak_to_median": 12.224928354181843,
+      "boundary_ratio": 0.3069428645714964,
+      "num_observations": 80
+    },
+    {
+      "layer": 9,
+      "kv_head": 0,
+      "readout_shape_score": 0.3124606067393799,
+      "peak_readout_shape_score": 0.1527133520175678,
+      "spiky_readout_score": 0.544630581195511,
+      "internal_readout_share": 0.6205813420843189,
+      "internal_topk_concentration": 0.6705253142021006,
+      "internal_top4_concentration": 0.23620551818228006,
+      "internal_log_peak_to_median": 10.895623476982566,
+      "boundary_ratio": 0.3034986942780108,
+      "num_observations": 80
+    },
+    {
+      "layer": 9,
+      "kv_head": 1,
+      "readout_shape_score": 0.29907567722466005,
+      "peak_readout_shape_score": 0.1435837362955437,
+      "spiky_readout_score": 0.5755652188184665,
+      "internal_readout_share": 0.6282666988949992,
+      "internal_topk_concentration": 0.6303007439830728,
+      "internal_top4_concentration": 0.23105166740198252,
+      "internal_log_peak_to_median": 10.99813225020816,
+      "boundary_ratio": 0.32147958596201526,
+      "num_observations": 80
+    },
+    {
+      "layer": 9,
+      "kv_head": 2,
+      "readout_shape_score": 0.24083289529338298,
+      "peak_readout_shape_score": 0.1058264148607777,
+      "spiky_readout_score": 0.3378609357234554,
+      "internal_readout_share": 0.6017530072845171,
+      "internal_topk_concentration": 0.5581334238169802,
+      "internal_top4_concentration": 0.19469296506874278,
+      "internal_log_peak_to_median": 9.963617957770598,
+      "boundary_ratio": 0.32125541659159074,
+      "num_observations": 80
+    },
+    {
+      "layer": 9,
+      "kv_head": 3,
+      "readout_shape_score": 0.32322063029101905,
+      "peak_readout_shape_score": 0.15616835789190556,
+      "spiky_readout_score": 0.6237691528830446,
+      "internal_readout_share": 0.6470897804949426,
+      "internal_topk_concentration": 0.6574464698999302,
+      "internal_top4_concentration": 0.23538846658277385,
+      "internal_log_peak_to_median": 11.830084882248247,
+      "boundary_ratio": 0.2851679516971539,
+      "num_observations": 80
+    },
+    {
+      "layer": 10,
+      "kv_head": 0,
+      "readout_shape_score": 0.2684626905351059,
+      "peak_readout_shape_score": 0.12029898082541388,
+      "spiky_readout_score": 0.48957513054591323,
+      "internal_readout_share": 0.5929206767563893,
+      "internal_topk_concentration": 0.5694996881260035,
+      "internal_top4_concentration": 0.2199328931261501,
+      "internal_log_peak_to_median": 10.129886440683563,
+      "boundary_ratio": 0.2921076964245305,
+      "num_observations": 80
+    },
+    {
+      "layer": 10,
+      "kv_head": 1,
+      "readout_shape_score": 0.32635022656230583,
+      "peak_readout_shape_score": 0.16181196286274446,
+      "spiky_readout_score": 0.8211931576412743,
+      "internal_readout_share": 0.6444540596602314,
+      "internal_topk_concentration": 0.6572718378641973,
+      "internal_top4_concentration": 0.2676816991567993,
+      "internal_log_peak_to_median": 12.361973945326133,
+      "boundary_ratio": 0.32033569863616135,
+      "num_observations": 80
+    },
+    {
+      "layer": 10,
+      "kv_head": 2,
+      "readout_shape_score": 0.31839753955715067,
+      "peak_readout_shape_score": 0.1526829459192382,
+      "spiky_readout_score": 0.7707245473527331,
+      "internal_readout_share": 0.645760545150339,
+      "internal_topk_concentration": 0.6242254406177843,
+      "internal_top4_concentration": 0.2465269433289329,
+      "internal_log_peak_to_median": 11.853390709668727,
+      "boundary_ratio": 0.2933181217134852,
+      "num_observations": 80
+    },
+    {
+      "layer": 10,
+      "kv_head": 3,
+      "readout_shape_score": 0.31131378297013834,
+      "peak_readout_shape_score": 0.1697955501030378,
+      "spiky_readout_score": 1.172867781121179,
+      "internal_readout_share": 0.6037606805021026,
+      "internal_topk_concentration": 0.6913750353039795,
+      "internal_top4_concentration": 0.353334405132036,
+      "internal_log_peak_to_median": 12.038142024862001,
+      "boundary_ratio": 0.33933043290301135,
+      "num_observations": 80
+    },
+    {
+      "layer": 11,
+      "kv_head": 0,
+      "readout_shape_score": 0.202294868358501,
+      "peak_readout_shape_score": 0.08396405975813613,
+      "spiky_readout_score": 0.29967280006269936,
+      "internal_readout_share": 0.5244739039609299,
+      "internal_topk_concentration": 0.4972230121874756,
+      "internal_top4_concentration": 0.18175755256133275,
+      "internal_log_peak_to_median": 9.440568079644635,
+      "boundary_ratio": 0.29564569410297215,
+      "num_observations": 80
+    },
+    {
+      "layer": 11,
+      "kv_head": 1,
+      "readout_shape_score": 0.2998700654383203,
+      "peak_readout_shape_score": 0.1411751785283926,
+      "spiky_readout_score": 0.5798695835680483,
+      "internal_readout_share": 0.6169227241401335,
+      "internal_topk_concentration": 0.6302086832305636,
+      "internal_top4_concentration": 0.24814053330708408,
+      "internal_log_peak_to_median": 10.641743913274386,
+      "boundary_ratio": 0.32840211891940846,
+      "num_observations": 80
+    },
+    {
+      "layer": 11,
+      "kv_head": 2,
+      "readout_shape_score": 0.24491931254105076,
+      "peak_readout_shape_score": 0.1232970470896237,
+      "spiky_readout_score": 0.7152485709604963,
+      "internal_readout_share": 0.5253232477041697,
+      "internal_topk_concentration": 0.6166357127425142,
+      "internal_top4_concentration": 0.29884548989978704,
+      "internal_log_peak_to_median": 10.675443965955868,
+      "boundary_ratio": 0.38324267948374874,
+      "num_observations": 80
+    },
+    {
+      "layer": 11,
+      "kv_head": 3,
+      "readout_shape_score": 0.2840742086258288,
+      "peak_readout_shape_score": 0.13283820430698182,
+      "spiky_readout_score": 0.5514224013626086,
+      "internal_readout_share": 0.6145814022562239,
+      "internal_topk_concentration": 0.6184243323913108,
+      "internal_top4_concentration": 0.2370797529343957,
+      "internal_log_peak_to_median": 11.261109704482969,
+      "boundary_ratio": 0.32423787653307107,
+      "num_observations": 80
+    },
+    {
+      "layer": 12,
+      "kv_head": 0,
+      "readout_shape_score": 0.2950300917652545,
+      "peak_readout_shape_score": 0.13747425799018081,
+      "spiky_readout_score": 0.696224571402116,
+      "internal_readout_share": 0.6319534926549087,
+      "internal_topk_concentration": 0.5978844324872583,
+      "internal_top4_concentration": 0.22802520611241256,
+      "internal_log_peak_to_median": 12.291817877258813,
+      "boundary_ratio": 0.3250071341099222,
+      "num_observations": 80
+    },
+    {
+      "layer": 12,
+      "kv_head": 1,
+      "readout_shape_score": 0.24801234308837916,
+      "peak_readout_shape_score": 0.10175034953594948,
+      "spiky_readout_score": 0.3008933865676623,
+      "internal_readout_share": 0.6274691718696425,
+      "internal_topk_concentration": 0.48638641211283334,
+      "internal_top4_concentration": 0.1494594726382374,
+      "internal_log_peak_to_median": 9.974350911321121,
+      "boundary_ratio": 0.2576101374587406,
+      "num_observations": 80
+    },
+    {
+      "layer": 12,
+      "kv_head": 2,
+      "readout_shape_score": 0.3049310706546009,
+      "peak_readout_shape_score": 0.13580308661883578,
+      "spiky_readout_score": 0.43234269685086496,
+      "internal_readout_share": 0.6811254765548413,
+      "internal_topk_concentration": 0.5690093365042675,
+      "internal_top4_concentration": 0.18355079418648204,
+      "internal_log_peak_to_median": 10.853192666586061,
+      "boundary_ratio": 0.2787446241308459,
+      "num_observations": 80
+    },
+    {
+      "layer": 12,
+      "kv_head": 3,
+      "readout_shape_score": 0.3215915410785357,
+      "peak_readout_shape_score": 0.15207865560102224,
+      "spiky_readout_score": 0.5458083621863372,
+      "internal_readout_share": 0.6338381087703939,
+      "internal_topk_concentration": 0.6256452938036887,
+      "internal_top4_concentration": 0.21489619320333211,
+      "internal_log_peak_to_median": 10.820240448984848,
+      "boundary_ratio": 0.3022084486152858,
+      "num_observations": 80
+    },
+    {
+      "layer": 13,
+      "kv_head": 0,
+      "readout_shape_score": 0.29914514966904526,
+      "peak_readout_shape_score": 0.14104611926996205,
+      "spiky_readout_score": 0.6129311081875682,
+      "internal_readout_share": 0.6371591048968119,
+      "internal_topk_concentration": 0.6215086246694265,
+      "internal_top4_concentration": 0.21338544825917327,
+      "internal_log_peak_to_median": 12.765126875717652,
+      "boundary_ratio": 0.33323860038267206,
+      "num_observations": 80
+    },
+    {
+      "layer": 13,
+      "kv_head": 1,
+      "readout_shape_score": 0.2999423270196708,
+      "peak_readout_shape_score": 0.15053617171086342,
+      "spiky_readout_score": 0.7943441626807267,
+      "internal_readout_share": 0.5797435611743113,
+      "internal_topk_concentration": 0.6490440712321943,
+      "internal_top4_concentration": 0.2720890946968333,
+      "internal_log_peak_to_median": 11.465513929578504,
+      "boundary_ratio": 0.36107641384646516,
+      "num_observations": 80
+    },
+    {
+      "layer": 13,
+      "kv_head": 2,
+      "readout_shape_score": 0.2784117480292495,
+      "peak_readout_shape_score": 0.12500735300015228,
+      "spiky_readout_score": 0.45800780461235613,
+      "internal_readout_share": 0.6460756333968964,
+      "internal_topk_concentration": 0.5615426909325636,
+      "internal_top4_concentration": 0.17347209453990114,
+      "internal_log_peak_to_median": 12.975498550138067,
+      "boundary_ratio": 0.2970526461644257,
+      "num_observations": 80
+    },
+    {
+      "layer": 13,
+      "kv_head": 3,
+      "readout_shape_score": 0.2929964544389568,
+      "peak_readout_shape_score": 0.13172479033243917,
+      "spiky_readout_score": 0.5321109255445526,
+      "internal_readout_share": 0.6498678825722727,
+      "internal_topk_concentration": 0.5591468434794864,
+      "internal_top4_concentration": 0.17855044342810378,
+      "internal_log_peak_to_median": 12.364259713883737,
+      "boundary_ratio": 0.27015030060296397,
+      "num_observations": 80
+    },
+    {
+      "layer": 14,
+      "kv_head": 0,
+      "readout_shape_score": 0.3534247625860904,
+      "peak_readout_shape_score": 0.193305943336864,
+      "spiky_readout_score": 1.2311029463644623,
+      "internal_readout_share": 0.6084027407345792,
+      "internal_topk_concentration": 0.748050494815362,
+      "internal_top4_concentration": 0.3702930313766096,
+      "internal_log_peak_to_median": 12.294140640920658,
+      "boundary_ratio": 0.35208721540136584,
+      "num_observations": 80
+    },
+    {
+      "layer": 14,
+      "kv_head": 1,
+      "readout_shape_score": 0.28142243521880583,
+      "peak_readout_shape_score": 0.1288917285988262,
+      "spiky_readout_score": 0.46293354565291517,
+      "internal_readout_share": 0.6123318883547498,
+      "internal_topk_concentration": 0.5891234270439117,
+      "internal_top4_concentration": 0.18586125281806332,
+      "internal_log_peak_to_median": 12.076968644229542,
+      "boundary_ratio": 0.2805690452064238,
+      "num_observations": 80
+    },
+    {
+      "layer": 14,
+      "kv_head": 2,
+      "readout_shape_score": 0.35319206871758835,
+      "peak_readout_shape_score": 0.1824319631830731,
+      "spiky_readout_score": 1.2875721314388806,
+      "internal_readout_share": 0.6771448021207422,
+      "internal_topk_concentration": 0.6454229817112487,
+      "internal_top4_concentration": 0.26997197878922397,
+      "internal_log_peak_to_median": 13.820666195611661,
+      "boundary_ratio": 0.2799475248240625,
+      "num_observations": 80
+    },
+    {
+      "layer": 14,
+      "kv_head": 3,
+      "readout_shape_score": 0.27030534789206967,
+      "peak_readout_shape_score": 0.12385105245436145,
+      "spiky_readout_score": 0.46596163076921604,
+      "internal_readout_share": 0.5900907449145213,
+      "internal_topk_concentration": 0.6069131815199442,
+      "internal_top4_concentration": 0.19476294385200588,
+      "internal_log_peak_to_median": 12.223911995785562,
+      "boundary_ratio": 0.32744680815733684,
+      "num_observations": 80
+    },
+    {
+      "layer": 15,
+      "kv_head": 0,
+      "readout_shape_score": 0.22061954946569914,
+      "peak_readout_shape_score": 0.09938730255516923,
+      "spiky_readout_score": 0.41038559804413194,
+      "internal_readout_share": 0.49997297869162327,
+      "internal_topk_concentration": 0.5555983146019827,
+      "internal_top4_concentration": 0.20285138225467048,
+      "internal_log_peak_to_median": 10.370903632273878,
+      "boundary_ratio": 0.33172436435500174,
+      "num_observations": 80
+    },
+    {
+      "layer": 15,
+      "kv_head": 1,
+      "readout_shape_score": 0.2599268607129558,
+      "peak_readout_shape_score": 0.1422035232703367,
+      "spiky_readout_score": 1.023111240553972,
+      "internal_readout_share": 0.47828444881318377,
+      "internal_topk_concentration": 0.6925519311884101,
+      "internal_top4_concentration": 0.3419968938860155,
+      "internal_log_peak_to_median": 12.029190893120715,
+      "boundary_ratio": 0.37553357084660693,
+      "num_observations": 80
+    },
+    {
+      "layer": 15,
+      "kv_head": 2,
+      "readout_shape_score": 0.3012676133620953,
+      "peak_readout_shape_score": 0.14839747108892276,
+      "spiky_readout_score": 0.6659190182207543,
+      "internal_readout_share": 0.5885568823775712,
+      "internal_topk_concentration": 0.6373511616353323,
+      "internal_top4_concentration": 0.24827339299890044,
+      "internal_log_peak_to_median": 11.178544106920544,
+      "boundary_ratio": 0.32824461315301806,
+      "num_observations": 80
+    },
+    {
+      "layer": 15,
+      "kv_head": 3,
+      "readout_shape_score": 0.2377730737169165,
+      "peak_readout_shape_score": 0.10942078804994246,
+      "spiky_readout_score": 0.4391849393818341,
+      "internal_readout_share": 0.5369059169599542,
+      "internal_topk_concentration": 0.5825265365622281,
+      "internal_top4_concentration": 0.21987098127454247,
+      "internal_log_peak_to_median": 10.256346941212533,
+      "boundary_ratio": 0.3782035760749292,
+      "num_observations": 80
+    },
+    {
+      "layer": 16,
+      "kv_head": 0,
+      "readout_shape_score": 0.3147714287379977,
+      "peak_readout_shape_score": 0.15419369164117128,
+      "spiky_readout_score": 0.678593831488441,
+      "internal_readout_share": 0.6154528436044864,
+      "internal_topk_concentration": 0.6638082126758127,
+      "internal_top4_concentration": 0.22680896883712687,
+      "internal_log_peak_to_median": 12.993640602020218,
+      "boundary_ratio": 0.3215120473660297,
+      "num_observations": 80
+    },
+    {
+      "layer": 16,
+      "kv_head": 1,
+      "readout_shape_score": 0.3374847423347843,
+      "peak_readout_shape_score": 0.18813984005988774,
+      "spiky_readout_score": 1.2161855268260153,
+      "internal_readout_share": 0.6086498054235828,
+      "internal_topk_concentration": 0.7658804061932465,
+      "internal_top4_concentration": 0.36790380150204477,
+      "internal_log_peak_to_median": 13.03680824578068,
+      "boundary_ratio": 0.37715702241280447,
+      "num_observations": 80
+    },
+    {
+      "layer": 16,
+      "kv_head": 2,
+      "readout_shape_score": 0.3542366343481843,
+      "peak_readout_shape_score": 0.19218347295549798,
+      "spiky_readout_score": 1.4615571055779981,
+      "internal_readout_share": 0.6141192752534785,
+      "internal_topk_concentration": 0.767976596926052,
+      "internal_top4_concentration": 0.3436471372753867,
+      "internal_log_peak_to_median": 17.124291820169592,
+      "boundary_ratio": 0.34732880131559074,
+      "num_observations": 80
+    },
+    {
+      "layer": 16,
+      "kv_head": 3,
+      "readout_shape_score": 0.2738729672690643,
+      "peak_readout_shape_score": 0.1415484879280442,
+      "spiky_readout_score": 0.7174711457347829,
+      "internal_readout_share": 0.5208498681377451,
+      "internal_topk_concentration": 0.7063588658775377,
+      "internal_top4_concentration": 0.29016567170581814,
+      "internal_log_peak_to_median": 11.652715320486086,
+      "boundary_ratio": 0.4158475167091293,
+      "num_observations": 80
+    },
+    {
+      "layer": 17,
+      "kv_head": 0,
+      "readout_shape_score": 0.26161766724503527,
+      "peak_readout_shape_score": 0.13471880216256613,
+      "spiky_readout_score": 0.7140517663304873,
+      "internal_readout_share": 0.5068775763216837,
+      "internal_topk_concentration": 0.7056233111551984,
+      "internal_top4_concentration": 0.3067387158027789,
+      "internal_log_peak_to_median": 12.91111609630606,
+      "boundary_ratio": 0.41499402199261104,
+      "num_observations": 80
+    },
+    {
+      "layer": 17,
+      "kv_head": 1,
+      "readout_shape_score": 0.294933767516097,
+      "peak_readout_shape_score": 0.15267727622877666,
+      "spiky_readout_score": 0.7725443533153621,
+      "internal_readout_share": 0.583222491576783,
+      "internal_topk_concentration": 0.7223359058877215,
+      "internal_top4_concentration": 0.32396574446301546,
+      "internal_log_peak_to_median": 11.763277790738663,
+      "boundary_ratio": 0.39497544637665627,
+      "num_observations": 80
+    },
+    {
+      "layer": 17,
+      "kv_head": 2,
+      "readout_shape_score": 0.31465034707161416,
+      "peak_readout_shape_score": 0.16347531027551884,
+      "spiky_readout_score": 0.8109435719368493,
+      "internal_readout_share": 0.5930333205139582,
+      "internal_topk_concentration": 0.711292965931607,
+      "internal_top4_concentration": 0.28099146593266905,
+      "internal_log_peak_to_median": 13.029066605064235,
+      "boundary_ratio": 0.36539986144601716,
+      "num_observations": 80
+    },
+    {
+      "layer": 17,
+      "kv_head": 3,
+      "readout_shape_score": 0.2603935081305857,
+      "peak_readout_shape_score": 0.12200819853372,
+      "spiky_readout_score": 0.5306343475495086,
+      "internal_readout_share": 0.5583568534682605,
+      "internal_topk_concentration": 0.5844601064039278,
+      "internal_top4_concentration": 0.19654333168224464,
+      "internal_log_peak_to_median": 12.169096124656878,
+      "boundary_ratio": 0.32936762916525636,
+      "num_observations": 80
+    },
+    {
+      "layer": 18,
+      "kv_head": 0,
+      "readout_shape_score": 0.33267574124033855,
+      "peak_readout_shape_score": 0.1588737965481277,
+      "spiky_readout_score": 0.6755688791240507,
+      "internal_readout_share": 0.6317028136354962,
+      "internal_topk_concentration": 0.6632948178583332,
+      "internal_top4_concentration": 0.2536735171551562,
+      "internal_log_peak_to_median": 12.107900956771179,
+      "boundary_ratio": 0.31417269199967046,
+      "num_observations": 80
+    },
+    {
+      "layer": 18,
+      "kv_head": 1,
+      "readout_shape_score": 0.25979549821016373,
+      "peak_readout_shape_score": 0.11576992919540152,
+      "spiky_readout_score": 0.5059880771919173,
+      "internal_readout_share": 0.5951393646457566,
+      "internal_topk_concentration": 0.5770651883984963,
+      "internal_top4_concentration": 0.19820808983357177,
+      "internal_log_peak_to_median": 12.874769443610186,
+      "boundary_ratio": 0.3264994313039499,
+      "num_observations": 80
+    },
+    {
+      "layer": 18,
+      "kv_head": 2,
+      "readout_shape_score": 0.269853834033429,
+      "peak_readout_shape_score": 0.11826653965538067,
+      "spiky_readout_score": 0.42990208481796144,
+      "internal_readout_share": 0.6374298699234429,
+      "internal_topk_concentration": 0.5325806775224501,
+      "internal_top4_concentration": 0.1630236935735407,
+      "internal_log_peak_to_median": 11.561203163852824,
+      "boundary_ratio": 0.29648416772603853,
+      "num_observations": 80
+    },
+    {
+      "layer": 18,
+      "kv_head": 3,
+      "readout_shape_score": 0.2587005250742121,
+      "peak_readout_shape_score": 0.10913376119604992,
+      "spiky_readout_score": 0.35366588898736706,
+      "internal_readout_share": 0.6207338988196345,
+      "internal_topk_concentration": 0.5400125736196991,
+      "internal_top4_concentration": 0.17386818432164966,
+      "internal_log_peak_to_median": 10.767711715811531,
+      "boundary_ratio": 0.30779706871960505,
+      "num_observations": 80
+    },
+    {
+      "layer": 19,
+      "kv_head": 0,
+      "readout_shape_score": 0.23338934509643022,
+      "peak_readout_shape_score": 0.08219676614511569,
+      "spiky_readout_score": 0.24796543621731865,
+      "internal_readout_share": 0.7238127253588098,
+      "internal_topk_concentration": 0.4241560008491726,
+      "internal_top4_concentration": 0.13478817257740855,
+      "internal_log_peak_to_median": 9.252687331335796,
+      "boundary_ratio": 0.23534387167900025,
+      "num_observations": 80
+    },
+    {
+      "layer": 19,
+      "kv_head": 1,
+      "readout_shape_score": 0.304102578993725,
+      "peak_readout_shape_score": 0.12056050917833458,
+      "spiky_readout_score": 0.3516374465479282,
+      "internal_readout_share": 0.7112355001495244,
+      "internal_topk_concentration": 0.5153233300511514,
+      "internal_top4_concentration": 0.16930287010024117,
+      "internal_log_peak_to_median": 8.782803484323676,
+      "boundary_ratio": 0.25007132143370936,
+      "num_observations": 80
+    },
+    {
+      "layer": 19,
+      "kv_head": 2,
+      "readout_shape_score": 0.25236637698377995,
+      "peak_readout_shape_score": 0.09581372832456317,
+      "spiky_readout_score": 0.30729532363594736,
+      "internal_readout_share": 0.7357508964338788,
+      "internal_topk_concentration": 0.44462049918060875,
+      "internal_top4_concentration": 0.14125512669524828,
+      "internal_log_peak_to_median": 10.430203530644748,
+      "boundary_ratio": 0.21816184110148482,
+      "num_observations": 80
+    },
+    {
+      "layer": 19,
+      "kv_head": 3,
+      "readout_shape_score": 0.2174167740294181,
+      "peak_readout_shape_score": 0.07356798572229625,
+      "spiky_readout_score": 0.22032987285607822,
+      "internal_readout_share": 0.7168565222277216,
+      "internal_topk_concentration": 0.3921203532234331,
+      "internal_top4_concentration": 0.11767259813247352,
+      "internal_log_peak_to_median": 9.959331783790237,
+      "boundary_ratio": 0.21159463037468354,
+      "num_observations": 80
+    },
+    {
+      "layer": 20,
+      "kv_head": 0,
+      "readout_shape_score": 0.23872130372225805,
+      "peak_readout_shape_score": 0.0830294133318493,
+      "spiky_readout_score": 0.22702161501423768,
+      "internal_readout_share": 0.6674212058773218,
+      "internal_topk_concentration": 0.4281971172682818,
+      "internal_top4_concentration": 0.14608879130542943,
+      "internal_log_peak_to_median": 8.51229080129573,
+      "boundary_ratio": 0.21913981870031254,
+      "num_observations": 80
+    },
+    {
+      "layer": 20,
+      "kv_head": 1,
+      "readout_shape_score": 0.2948458197971906,
+      "peak_readout_shape_score": 0.1176958071677838,
+      "spiky_readout_score": 0.3620313876236514,
+      "internal_readout_share": 0.7475579995290432,
+      "internal_topk_concentration": 0.5156737459119081,
+      "internal_top4_concentration": 0.17458912362324316,
+      "internal_log_peak_to_median": 9.618171361051282,
+      "boundary_ratio": 0.22420949405646762,
+      "num_observations": 80
+    },
+    {
+      "layer": 20,
+      "kv_head": 2,
+      "readout_shape_score": 0.20208206738710582,
+      "peak_readout_shape_score": 0.06645653702779535,
+      "spiky_readout_score": 0.1656172013511783,
+      "internal_readout_share": 0.7231406300738198,
+      "internal_topk_concentration": 0.35723541811567255,
+      "internal_top4_concentration": 0.09879348353994799,
+      "internal_log_peak_to_median": 9.096102092008266,
+      "boundary_ratio": 0.20750148983816258,
+      "num_observations": 80
+    },
+    {
+      "layer": 20,
+      "kv_head": 3,
+      "readout_shape_score": 0.18439179389161214,
+      "peak_readout_shape_score": 0.05668314275537932,
+      "spiky_readout_score": 0.15214744214314796,
+      "internal_readout_share": 0.681801055605651,
+      "internal_topk_concentration": 0.33144031391681134,
+      "internal_top4_concentration": 0.0995989469418772,
+      "internal_log_peak_to_median": 8.709091492278807,
+      "boundary_ratio": 0.2039499006805705,
+      "num_observations": 80
+    },
+    {
+      "layer": 21,
+      "kv_head": 0,
+      "readout_shape_score": 0.24409428141790399,
+      "peak_readout_shape_score": 0.09080729096338208,
+      "spiky_readout_score": 0.2763203743865695,
+      "internal_readout_share": 0.7293090159252144,
+      "internal_topk_concentration": 0.4393138750301716,
+      "internal_top4_concentration": 0.13524506885151236,
+      "internal_log_peak_to_median": 10.127477889181185,
+      "boundary_ratio": 0.22265237858008463,
+      "num_observations": 80
+    },
+    {
+      "layer": 21,
+      "kv_head": 1,
+      "readout_shape_score": 0.22925893497667849,
+      "peak_readout_shape_score": 0.07894535915018663,
+      "spiky_readout_score": 0.22397874733939296,
+      "internal_readout_share": 0.7119470400290875,
+      "internal_topk_concentration": 0.4162338832879245,
+      "internal_top4_concentration": 0.1331836624523011,
+      "internal_log_peak_to_median": 8.865423847454085,
+      "boundary_ratio": 0.2364966488611162,
+      "num_observations": 80
+    },
+    {
+      "layer": 21,
+      "kv_head": 2,
+      "readout_shape_score": 0.28062596239631754,
+      "peak_readout_shape_score": 0.1147484332214042,
+      "spiky_readout_score": 0.33930069456715045,
+      "internal_readout_share": 0.6843427456060581,
+      "internal_topk_concentration": 0.524190674791575,
+      "internal_top4_concentration": 0.16547220577252017,
+      "internal_log_peak_to_median": 9.834769700614109,
+      "boundary_ratio": 0.2840100941543685,
+      "num_observations": 80
+    },
+    {
+      "layer": 21,
+      "kv_head": 3,
+      "readout_shape_score": 0.22894104425288772,
+      "peak_readout_shape_score": 0.08347971514678511,
+      "spiky_readout_score": 0.24952435422139857,
+      "internal_readout_share": 0.7138775126447775,
+      "internal_topk_concentration": 0.4237380789846291,
+      "internal_top4_concentration": 0.12825049611244363,
+      "internal_log_peak_to_median": 9.99158305324209,
+      "boundary_ratio": 0.21758853291202912,
+      "num_observations": 80
+    },
+    {
+      "layer": 22,
+      "kv_head": 0,
+      "readout_shape_score": 0.3654149333580935,
+      "peak_readout_shape_score": 0.16987821509988532,
+      "spiky_readout_score": 0.642013836042602,
+      "internal_readout_share": 0.7501727079720888,
+      "internal_topk_concentration": 0.6133835040669423,
+      "internal_top4_concentration": 0.2223362131378459,
+      "internal_log_peak_to_median": 11.028632357203248,
+      "boundary_ratio": 0.2308471690498771,
+      "num_observations": 80
+    },
+    {
+      "layer": 22,
+      "kv_head": 1,
+      "readout_shape_score": 0.2409072386225517,
+      "peak_readout_shape_score": 0.0871887668599714,
+      "spiky_readout_score": 0.2664883490296625,
+      "internal_readout_share": 0.7221763187804895,
+      "internal_topk_concentration": 0.4216261547509729,
+      "internal_top4_concentration": 0.12910861594473202,
+      "internal_log_peak_to_median": 9.914409692829098,
+      "boundary_ratio": 0.22183723389024262,
+      "num_observations": 80
+    },
+    {
+      "layer": 22,
+      "kv_head": 2,
+      "readout_shape_score": 0.25295959230508414,
+      "peak_readout_shape_score": 0.08504805988909338,
+      "spiky_readout_score": 0.2633103907325389,
+      "internal_readout_share": 0.7291755427457439,
+      "internal_topk_concentration": 0.41780369307659876,
+      "internal_top4_concentration": 0.13861734993764144,
+      "internal_log_peak_to_median": 9.169649062290718,
+      "boundary_ratio": 0.19624436100754963,
+      "num_observations": 80
+    },
+    {
+      "layer": 22,
+      "kv_head": 3,
+      "readout_shape_score": 0.29519285782719923,
+      "peak_readout_shape_score": 0.12348980480338059,
+      "spiky_readout_score": 0.4585234897782044,
+      "internal_readout_share": 0.7492234357203159,
+      "internal_topk_concentration": 0.5091880314784023,
+      "internal_top4_concentration": 0.16099803487306638,
+      "internal_log_peak_to_median": 11.898259430076816,
+      "boundary_ratio": 0.22435410752274185,
+      "num_observations": 80
+    },
+    {
+      "layer": 23,
+      "kv_head": 0,
+      "readout_shape_score": 0.2624441543806812,
+      "peak_readout_shape_score": 0.09038287560188339,
+      "spiky_readout_score": 0.2878101442215987,
+      "internal_readout_share": 0.7062767126744773,
+      "internal_topk_concentration": 0.43396511188989767,
+      "internal_top4_concentration": 0.1410525568965852,
+      "internal_log_peak_to_median": 9.270382945889825,
+      "boundary_ratio": 0.17433763943755023,
+      "num_observations": 80
+    },
+    {
+      "layer": 23,
+      "kv_head": 1,
+      "readout_shape_score": 0.2885516013738961,
+      "peak_readout_shape_score": 0.12010021999918408,
+      "spiky_readout_score": 0.41827695907233303,
+      "internal_readout_share": 0.7140415786691177,
+      "internal_topk_concentration": 0.523249525937053,
+      "internal_top4_concentration": 0.17106058008596148,
+      "internal_log_peak_to_median": 11.228827053653763,
+      "boundary_ratio": 0.2573582567951972,
+      "num_observations": 80
+    },
+    {
+      "layer": 23,
+      "kv_head": 2,
+      "readout_shape_score": 0.2538943044285009,
+      "peak_readout_shape_score": 0.10082146463197694,
+      "spiky_readout_score": 0.34419620364286324,
+      "internal_readout_share": 0.7554479365588302,
+      "internal_topk_concentration": 0.45065481022981013,
+      "internal_top4_concentration": 0.14588718194604816,
+      "internal_log_peak_to_median": 10.979336464591956,
+      "boundary_ratio": 0.2195569890639267,
+      "num_observations": 80
+    },
+    {
+      "layer": 23,
+      "kv_head": 3,
+      "readout_shape_score": 0.29415989525894876,
+      "peak_readout_shape_score": 0.12485877187847069,
+      "spiky_readout_score": 0.40200828502169444,
+      "internal_readout_share": 0.6652244049552901,
+      "internal_topk_concentration": 0.5267137708837558,
+      "internal_top4_concentration": 0.17721631254592735,
+      "internal_log_peak_to_median": 9.441749032798104,
+      "boundary_ratio": 0.2631016022779283,
+      "num_observations": 80
+    },
+    {
+      "layer": 24,
+      "kv_head": 0,
+      "readout_shape_score": 0.33619830248663396,
+      "peak_readout_shape_score": 0.15678399240352497,
+      "spiky_readout_score": 0.6085623160110771,
+      "internal_readout_share": 0.670062705699398,
+      "internal_topk_concentration": 0.5599454987509095,
+      "internal_top4_concentration": 0.2137230531006716,
+      "internal_log_peak_to_median": 8.924717891037421,
+      "boundary_ratio": 0.2507025931271718,
+      "num_observations": 80
+    },
+    {
+      "layer": 24,
+      "kv_head": 1,
+      "readout_shape_score": 0.3324645763841371,
+      "peak_readout_shape_score": 0.13413761363236434,
+      "spiky_readout_score": 0.4173917820255843,
+      "internal_readout_share": 0.8171832466387656,
+      "internal_topk_concentration": 0.4882505294710987,
+      "internal_top4_concentration": 0.14326962323196263,
+      "internal_log_peak_to_median": 10.332590514471947,
+      "boundary_ratio": 0.17207243751273515,
+      "num_observations": 80
+    },
+    {
+      "layer": 24,
+      "kv_head": 2,
+      "readout_shape_score": 0.2493134413683043,
+      "peak_readout_shape_score": 0.0854472444316379,
+      "spiky_readout_score": 0.24450583602835207,
+      "internal_readout_share": 0.7135955474600184,
+      "internal_topk_concentration": 0.43247531423857427,
+      "internal_top4_concentration": 0.1385654990771446,
+      "internal_log_peak_to_median": 9.202004848898827,
+      "boundary_ratio": 0.22625730492099647,
+      "num_observations": 80
+    },
+    {
+      "layer": 24,
+      "kv_head": 3,
+      "readout_shape_score": 0.3430006988895249,
+      "peak_readout_shape_score": 0.14402181610493311,
+      "spiky_readout_score": 0.5483378995619673,
+      "internal_readout_share": 0.7508640377495704,
+      "internal_topk_concentration": 0.5411961493389881,
+      "internal_top4_concentration": 0.18659645270018024,
+      "internal_log_peak_to_median": 10.648953819202656,
+      "boundary_ratio": 0.21796901473122582,
+      "num_observations": 80
+    },
+    {
+      "layer": 25,
+      "kv_head": 0,
+      "readout_shape_score": 0.2530966996036984,
+      "peak_readout_shape_score": 0.09540060021051047,
+      "spiky_readout_score": 0.24625523094888516,
+      "internal_readout_share": 0.6486428555891752,
+      "internal_topk_concentration": 0.45540641006842303,
+      "internal_top4_concentration": 0.1376798895421634,
+      "internal_log_peak_to_median": 8.504024103615071,
+      "boundary_ratio": 0.24329951014504955,
+      "num_observations": 80
+    },
+    {
+      "layer": 25,
+      "kv_head": 1,
+      "readout_shape_score": 0.2610230259655565,
+      "peak_readout_shape_score": 0.09395961910156482,
+      "spiky_readout_score": 0.2921212592878782,
+      "internal_readout_share": 0.7460929959723829,
+      "internal_topk_concentration": 0.43351258552149796,
+      "internal_top4_concentration": 0.1364712733113388,
+      "internal_log_peak_to_median": 9.886240593276252,
+      "boundary_ratio": 0.20266436833985096,
+      "num_observations": 80
+    },
+    {
+      "layer": 25,
+      "kv_head": 2,
+      "readout_shape_score": 0.29842192903590603,
+      "peak_readout_shape_score": 0.12487410817609519,
+      "spiky_readout_score": 0.38430737930587777,
+      "internal_readout_share": 0.6854708361660238,
+      "internal_topk_concentration": 0.5404735723668911,
+      "internal_top4_concentration": 0.19091348520041157,
+      "internal_log_peak_to_median": 9.154742844198918,
+      "boundary_ratio": 0.2730505800435027,
+      "num_observations": 80
+    },
+    {
+      "layer": 25,
+      "kv_head": 3,
+      "readout_shape_score": 0.28136752097077883,
+      "peak_readout_shape_score": 0.1134551922075446,
+      "spiky_readout_score": 0.39452405893710196,
+      "internal_readout_share": 0.717253180835139,
+      "internal_topk_concentration": 0.5111382465814267,
+      "internal_top4_concentration": 0.17511263434005597,
+      "internal_log_peak_to_median": 10.421261085999614,
+      "boundary_ratio": 0.2546239028264271,
+      "num_observations": 80
+    },
+    {
+      "layer": 26,
+      "kv_head": 0,
+      "readout_shape_score": 0.2670045733398238,
+      "peak_readout_shape_score": 0.09918411382516115,
+      "spiky_readout_score": 0.25390094693508003,
+      "internal_readout_share": 0.733526441493908,
+      "internal_topk_concentration": 0.4489142971660076,
+      "internal_top4_concentration": 0.12503169979696493,
+      "internal_log_peak_to_median": 9.70724253396946,
+      "boundary_ratio": 0.20184362695874475,
+      "num_observations": 80
+    },
+    {
+      "layer": 26,
+      "kv_head": 1,
+      "readout_shape_score": 0.3138047582526072,
+      "peak_readout_shape_score": 0.12543504501147734,
+      "spiky_readout_score": 0.38537546759370905,
+      "internal_readout_share": 0.7313462273370279,
+      "internal_topk_concentration": 0.5222788933300266,
+      "internal_top4_concentration": 0.1701656297768966,
+      "internal_log_peak_to_median": 9.796033805265518,
+      "boundary_ratio": 0.21992670698402578,
+      "num_observations": 80
+    },
+    {
+      "layer": 26,
+      "kv_head": 2,
+      "readout_shape_score": 0.25332460199947643,
+      "peak_readout_shape_score": 0.09286525528794823,
+      "spiky_readout_score": 0.2218597377942658,
+      "internal_readout_share": 0.7418475290679374,
+      "internal_topk_concentration": 0.43306903982657696,
+      "internal_top4_concentration": 0.11327034614790124,
+      "internal_log_peak_to_median": 9.644065122211469,
+      "boundary_ratio": 0.2032841031395801,
+      "num_observations": 80
+    },
+    {
+      "layer": 26,
+      "kv_head": 3,
+      "readout_shape_score": 0.2596796860211079,
+      "peak_readout_shape_score": 0.09913477798780371,
+      "spiky_readout_score": 0.2685919131516472,
+      "internal_readout_share": 0.6652661201686355,
+      "internal_topk_concentration": 0.47683695708879076,
+      "internal_top4_concentration": 0.14144361717098264,
+      "internal_log_peak_to_median": 9.472222881078721,
+      "boundary_ratio": 0.24099785504087765,
+      "num_observations": 80
+    },
+    {
+      "layer": 27,
+      "kv_head": 0,
+      "readout_shape_score": 0.23447703095311426,
+      "peak_readout_shape_score": 0.08073314330695289,
+      "spiky_readout_score": 0.2046073308544924,
+      "internal_readout_share": 0.7354848021953918,
+      "internal_topk_concentration": 0.40442848311926616,
+      "internal_top4_concentration": 0.11684897282925069,
+      "internal_log_peak_to_median": 9.259009322497457,
+      "boundary_ratio": 0.20421860603261366,
+      "num_observations": 80
+    },
+    {
+      "layer": 27,
+      "kv_head": 1,
+      "readout_shape_score": 0.3832129230271716,
+      "peak_readout_shape_score": 0.1905812958156141,
+      "spiky_readout_score": 0.9965832067006213,
+      "internal_readout_share": 0.6741088788194878,
+      "internal_topk_concentration": 0.643698020024364,
+      "internal_top4_concentration": 0.31552055621231956,
+      "internal_log_peak_to_median": 10.61973576726915,
+      "boundary_ratio": 0.28118784032320676,
+      "num_observations": 80
+    },
+    {
+      "layer": 27,
+      "kv_head": 2,
+      "readout_shape_score": 0.23204927691107174,
+      "peak_readout_shape_score": 0.07770648336883598,
+      "spiky_readout_score": 0.17719754334079815,
+      "internal_readout_share": 0.7525600227975539,
+      "internal_topk_concentration": 0.3870589307088296,
+      "internal_top4_concentration": 0.10558521353234666,
+      "internal_log_peak_to_median": 8.994228232608808,
+      "boundary_ratio": 0.18076983441638195,
+      "num_observations": 80
+    },
+    {
+      "layer": 27,
+      "kv_head": 3,
+      "readout_shape_score": 0.21916128335770635,
+      "peak_readout_shape_score": 0.07228751948427672,
+      "spiky_readout_score": 0.15562689929104748,
+      "internal_readout_share": 0.7407865999904742,
+      "internal_topk_concentration": 0.3743644877500723,
+      "internal_top4_concentration": 0.09861642917524162,
+      "internal_log_peak_to_median": 8.698731522498656,
+      "boundary_ratio": 0.19074664148468978,
+      "num_observations": 80
+    }
+  ]
+}

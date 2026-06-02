@@ -1,0 +1,23 @@
+============================================================
+EVALUATION RESULTS (StreamingBench)
+============================================================
+#Samples: 2495
+Average qa_acc: 76.95
+save_dir: results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-streamingvlm
+
+============================================================
+TASK-SPECIFIC ACCURACY (StreamingBench)
+============================================================
+Action Recognition: 70.54% (n=353)
+Attribute Recognition: 88.12% (n=303)
+Object Recognition: 79.84% (n=367)
+Spatial Understanding: 72.76% (n=246)
+Event Understanding: 76.10% (n=159)
+Text-Rich Understanding: 83.49% (n=321)
+Counting: 41.97% (n=193)
+Causal Reasoning: 72.66% (n=128)
+Clips Summarize: 88.33% (n=317)
+Prospective Reasoning: 82.41% (n=108)
+============================================================
+
+%Errors: 0.00

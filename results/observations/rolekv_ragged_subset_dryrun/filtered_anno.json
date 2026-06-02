@@ -1,0 +1,116 @@
+[
+  {
+    "video_id": 1,
+    "video_path": "/data/streamingbench/videos/sample_416_real.mp4",
+    "conversations": [
+      {
+        "question": "What can be seen in the cockpit's center screen right now?",
+        "answer": "A map.",
+        "choices": [
+          "A compass.",
+          "A map.",
+          "An altitude meter.",
+          "A weather radar."
+        ],
+        "end_time": 6.0,
+        "task": "Object Recognition",
+        "time_stamp": "00:00:06",
+        "required_ability": "working memory"
+      },
+      {
+        "question": "What colors are the pilot's handheld controls right now?",
+        "answer": "Black.",
+        "choices": [
+          "Black.",
+          "Red and green.",
+          "Yellow and blue.",
+          "Black and orange."
+        ],
+        "end_time": 157.0,
+        "task": "Attribute Recognition",
+        "time_stamp": "00:02:37",
+        "required_ability": "working memory"
+      }
+    ]
+  },
+  {
+    "video_id": 2,
+    "video_path": "/data/streamingbench/videos/sample_348_real.mp4",
+    "conversations": [
+      {
+        "question": "Which of the following options best summarizes the actions of the individual taken just now?",
+        "answer": "The individual replenished bread inventory by placing new buns onto the shelves.",
+        "choices": [
+          "The individual organized serving trays and sanitized the preparation area.",
+          "The individual retrieved produce from the refrigerator and began chopping vegetables.",
+          "The individual replenished bread inventory by placing new buns onto the shelves.",
+          "The individual checked inventory levels and noted items lacking in stock."
+        ],
+        "end_time": 31.0,
+        "task": "Clips Summarize",
+        "time_stamp": "00:00:31",
+        "required_ability": "episodic memory"
+      }
+    ]
+  },
+  {
+    "video_id": 3,
+    "video_path": "/data/streamingbench/videos/sample_221_real.mp4",
+    "conversations": [
+      {
+        "question": "What might the speaker explain next?",
+        "answer": "How to calculate perimeter.",
+        "choices": [
+          "The area of different shapes.",
+          "How to measure the diameter.",
+          "The concept of length in 2-dimensional shapes.",
+          "How to calculate perimeter."
+        ],
+        "end_time": 11.0,
+        "task": "Prospective Reasoning",
+        "time_stamp": "00:00:11",
+        "required_ability": "episodic memory"
+      }
+    ]
+  },
+  {
+    "video_id": 11,
+    "video_path": "/data/streamingbench/videos/sample_91_real.mp4",
+    "conversations": [
+      {
+        "question": "How many times in total have movie clips been inserted during this person's explanation so far?",
+        "answer": "0.",
+        "choices": [
+          "2.",
+          "3.",
+          "4.",
+          "0."
+        ],
+        "end_time": 16.0,
+        "task": "Counting",
+        "time_stamp": "00:00:16",
+        "required_ability": "episodic memory"
+      }
+    ]
+  },
+  {
+    "video_id": 23,
+    "video_path": "/data/streamingbench/videos/sample_240_real.mp4",
+    "conversations": [
+      {
+        "question": "Where does this letter on the ground come from?",
+        "answer": "Mr. Bean just stuffed it in.",
+        "choices": [
+          "It was delivered by the postman earlier.",
+          "It fell out of someone's pocket as they walked by.",
+          "It was dropped by a courier who was in a hurry.",
+          "Mr. Bean just stuffed it in."
+        ],
+        "end_time": 39.0,
+        "task": "Causal Reasoning",
+        "time_stamp": "00:00:39",
+        "required_ability": "episodic memory"
+      }
+    ]
+  }
+]

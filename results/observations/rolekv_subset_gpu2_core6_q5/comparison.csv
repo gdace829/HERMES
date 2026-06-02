@@ -1,0 +1,5 @@
+mode,status,n,overall,delta_vs_baseline,Attribute Recognition:n,Attribute Recognition:acc,Causal Reasoning:n,Causal Reasoning:acc,Clips Summarize:n,Clips Summarize:acc,Counting:n,Counting:acc,Object Recognition:n,Object Recognition:acc,Prospective Reasoning:n,Prospective Reasoning:acc
+baseline,done,30,0.8,0.0,5,0.6,5,1.0,5,1.0,5,0.4,5,1.0,5,0.8
+rolekv,done,30,0.8,0.0,5,0.6,5,1.0,5,1.0,5,0.4,5,1.0,5,0.8
+random,done,30,0.8,0.0,5,0.6,5,1.0,5,1.0,5,0.4,5,1.0,5,0.8
+inverted,done,30,0.8,0.0,5,0.6,5,1.0,5,1.0,5,0.4,5,0.8,5,1.0

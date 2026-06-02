@@ -1,0 +1,897 @@
+{
+  "args": {
+    "model": "qwen2.5_vl_7b",
+    "anno_path": "data/streamingbench/streamingbench_realtime.json",
+    "filtered_anno": null,
+    "sample_fps": 0.5,
+    "kv_size": 6000,
+    "compress_mode": "hermes",
+    "streaming": true,
+    "device": "cuda:0",
+    "mode": "random",
+    "head_classes": "results/observations/head_classes_prev_current/head_classes.json",
+    "kv_profile_scores": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_full_kv/kv_head_profile_scores.csv",
+    "kv_profile_metric": "b_log_per_token_ratio",
+    "kv_profile_quantile": 0.2,
+    "quota_ratio": 0.7,
+    "lambda_memory": 0.2,
+    "lambda_current": 0.2,
+    "role_min_votes": 1,
+    "seed": 0,
+    "tasks": "Object Recognition,Attribute Recognition,Clips Summarize,Prospective Reasoning,Counting,Causal Reasoning",
+    "max_questions_per_task": 5,
+    "max_videos": null,
+    "kv_head_budget_scores": "sparsemm_qwen25",
+    "kv_head_budget_scheme": "sparsemm",
+    "kv_head_budget_sparsemm_ratio": 0.1,
+    "kv_head_budget_sparsemm_window_size": 32,
+    "save_dir": "results/observations/rolekv_ragged_kvprofile_subset_gpu2_core6_q5/random",
+    "dry_run": false
+  },
+  "filtered_anno": "results/observations/rolekv_ragged_kvprofile_subset_gpu2_core6_q5/random/filtered_anno.json",
+  "filter_counts": {
+    "Object Recognition": 5,
+    "Attribute Recognition": 5,
+    "Clips Summarize": 5,
+    "Prospective Reasoning": 5,
+    "Counting": 5,
+    "Causal Reasoning": 5
+  },
+  "annotation_summary": {
+    "num_videos": 7,
+    "num_questions": 30,
+    "task_counts": {
+      "Attribute Recognition": 5,
+      "Causal Reasoning": 5,
+      "Clips Summarize": 5,
+      "Counting": 5,
+      "Object Recognition": 5,
+      "Prospective Reasoning": 5
+    },
+    "videos": [
+      {
+        "video_id": 1,
+        "num_questions": 5,
+        "tasks": {
+          "Attribute Recognition": 3,
+          "Object Recognition": 2
+        }
+      },
+      {
+        "video_id": 2,
+        "num_questions": 5,
+        "tasks": {
+          "Clips Summarize": 5
+        }
+      },
+      {
+        "video_id": 3,
+        "num_questions": 5,
+        "tasks": {
+          "Prospective Reasoning": 5
+        }
+      },
+      {
+        "video_id": 4,
+        "num_questions": 3,
+        "tasks": {
+          "Attribute Recognition": 2,
+          "Object Recognition": 1
+        }
+      },
+      {
+        "video_id": 6,
+        "num_questions": 2,
+        "tasks": {
+          "Object Recognition": 2
+        }
+      },
+      {
+        "video_id": 11,
+        "num_questions": 5,
+        "tasks": {
+          "Counting": 5
+        }
+      },
+      {
+        "video_id": 23,
+        "num_questions": 5,
+        "tasks": {
+          "Causal Reasoning": 5
+        }
+      }
+    ]
+  },
+  "kv_head_budget_config": {
+    "num_query_heads": 28,
+    "num_kv_heads": 4,
+    "group_size": 7,
+    "strength": 0.75,
+    "min_ratio": 0.75,
+    "max_ratio": 1.25,
+    "budget_scheme": "sparsemm",
+    "sparsemm_ratio": 0.1,
+    "sparsemm_window_size": 32,
+    "union_cap_ratio": 1.0,
+    "max_mask_q_len": 128,
+    "mode": "logical_per_kv_head_dense_union"
+  },
+  "rolekv_ragged_config": {
+    "mode": "random",
+    "head_classes_path": "results/observations/head_classes_prev_current/head_classes.json",
+    "kv_profile_path": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_full_kv/kv_head_profile_scores.csv",
+    "kv_profile_metric": "b_log_per_token_ratio",
+    "kv_profile_quantile": 0.2,
+    "role_source": "kv_profile",
+    "quota_ratio": 0.7,
+    "lambda_memory": 0.2,
+    "lambda_current": 0.2,
+    "seed": 0,
+    "use_quota": true,
+    "num_layers": 28,
+    "num_query_heads": 28,
+    "num_kv_heads": 4,
+    "group_size": 7,
+    "role_min_votes": 1,
+    "role_table": [
+      [
+        "current",
+        "current",
+        "mixed",
+        "current"
+      ],
+      [
+        "current",
+        "current",
+        "current",
+        "current"
+      ],
+      [
+        "memory",
+        "memory",
+        "mixed",
+        "memory"
+      ],
+      [
+        "mixed",
+        "memory",
+        "memory",
+        "memory"
+      ],
+      [
+        "mixed",
+        "current",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "current",
+        "mixed",
+        "mixed",
+        "memory"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "memory",
+        "mixed"
+      ],
+      [
+        "memory",
+        "memory",
+        "memory",
+        "memory"
+      ],
+      [
+        "memory",
+        "mixed",
+        "memory",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "memory",
+        "mixed",
+        "memory",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "current",
+        "memory",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "memory",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "current",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "current",
+        "mixed",
+        "current",
+        "current"
+      ],
+      [
+        "current",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "current",
+        "mixed",
+        "mixed",
+        "current"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "memory",
+        "mixed"
+      ],
+      [
+        "memory",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "memory",
+        "mixed",
+        "mixed",
+        "mixed"
+      ],
+      [
+        "current",
+        "mixed",
+        "current",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "current",
+        "memory",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "mixed",
+        "current"
+      ],
+      [
+        "current",
+        "mixed",
+        "current",
+        "mixed"
+      ],
+      [
+        "mixed",
+        "mixed",
+        "mixed",
+        "memory"
+      ]
+    ],
+    "group_counts": [
+      [
+        {
+          "profile_score": -2.4862268188538046
+        },
+        {
+          "profile_score": -1.6264739225991802
+        },
+        {
+          "profile_score": -1.145265918106228
+        },
+        {
+          "profile_score": -0.31058906627488814
+        }
+      ],
+      [
+        {
+          "profile_score": -1.1551306109986181
+        },
+        {
+          "profile_score": -2.365533468931131
+        },
+        {
+          "profile_score": -1.5867248723364267
+        },
+        {
+          "profile_score": -1.6232413079019483
+        }
+      ],
+      [
+        {
+          "profile_score": -3.732243210092334
+        },
+        {
+          "profile_score": -4.448847069078467
+        },
+        {
+          "profile_score": -4.1589410259409725
+        },
+        {
+          "profile_score": -3.7590877049777838
+        }
+      ],
+      [
+        {
+          "profile_score": -4.723411066292757
+        },
+        {
+          "profile_score": -2.442117308661508
+        },
+        {
+          "profile_score": -4.336284364651313
+        },
+        {
+          "profile_score": -4.025505347607943
+        }
+      ],
+      [
+        {
+          "profile_score": -2.902328165551702
+        },
+        {
+          "profile_score": -2.1002790440277077
+        },
+        {
+          "profile_score": -3.0728214111232046
+        },
+        {
+          "profile_score": -2.856157455103595
+        }
+      ],
+      [
+        {
+          "profile_score": -2.001174669257152
+        },
+        {
+          "profile_score": -3.8421865559620882
+        },
+        {
+          "profile_score": -3.687840373012456
+        },
+        {
+          "profile_score": -3.1225989776891256
+        }
+      ],
+      [
+        {
+          "profile_score": -4.1215258144726
+        },
+        {
+          "profile_score": -3.6567883603526714
+        },
+        {
+          "profile_score": -2.5972883010284042
+        },
+        {
+          "profile_score": -3.4535071968588107
+        }
+      ],
+      [
+        {
+          "profile_score": -5.186237712661163
+        },
+        {
+          "profile_score": -5.001515591142864
+        },
+        {
+          "profile_score": -4.308112605104246
+        },
+        {
+          "profile_score": -4.2179270052667155
+        }
+      ],
+      [
+        {
+          "profile_score": -2.918405271268945
+        },
+        {
+          "profile_score": -4.588850004039274
+        },
+        {
+          "profile_score": -4.1922193412609365
+        },
+        {
+          "profile_score": -2.7076190016486112
+        }
+      ],
+      [
+        {
+          "profile_score": -2.9864073462916894
+        },
+        {
+          "profile_score": -3.634306631551933
+        },
+        {
+          "profile_score": -3.553884143471526
+        },
+        {
+          "profile_score": -3.7067481715691573
+        }
+      ],
+      [
+        {
+          "profile_score": -2.668800596160947
+        },
+        {
+          "profile_score": -4.191099492356039
+        },
+        {
+          "profile_score": -3.727545179040659
+        },
+        {
+          "profile_score": -4.666001549409996
+        }
+      ],
+      [
+        {
+          "profile_score": -1.9194223815333942
+        },
+        {
+          "profile_score": -2.899989085291313
+        },
+        {
+          "profile_score": -3.91822167086035
+        },
+        {
+          "profile_score": -2.93206554443682
+        }
+      ],
+      [
+        {
+          "profile_score": -3.899289473814214
+        },
+        {
+          "profile_score": -2.446774390214335
+        },
+        {
+          "profile_score": -3.341820397617639
+        },
+        {
+          "profile_score": -2.8103747049159433
+        }
+      ],
+      [
+        {
+          "profile_score": -3.223044252510213
+        },
+        {
+          "profile_score": -2.7880613697769734
+        },
+        {
+          "profile_score": -2.8505262834964853
+        },
+        {
+          "profile_score": -2.908945821535418
+        }
+      ],
+      [
+        {
+          "profile_score": -3.354554817448108
+        },
+        {
+          "profile_score": -1.3588238512528323
+        },
+        {
+          "profile_score": -2.904044703835749
+        },
+        {
+          "profile_score": -2.4091289970572514
+        }
+      ],
+      [
+        {
+          "profile_score": -1.592210360005459
+        },
+        {
+          "profile_score": -1.7460579381439785
+        },
+        {
+          "profile_score": -1.6321304102735115
+        },
+        {
+          "profile_score": -2.556501879634286
+        }
+      ],
+      [
+        {
+          "profile_score": -2.431830141716978
+        },
+        {
+          "profile_score": -3.3411553781935726
+        },
+        {
+          "profile_score": -2.361356151146365
+        },
+        {
+          "profile_score": -2.4725112964084026
+        }
+      ],
+      [
+        {
+          "profile_score": -2.1373133945353473
+        },
+        {
+          "profile_score": -3.3881122430558914
+        },
+        {
+          "profile_score": -2.9897555078312124
+        },
+        {
+          "profile_score": -1.6532051186801409
+        }
+      ],
+      [
+        {
+          "profile_score": -2.8743864532611663
+        },
+        {
+          "profile_score": -2.7299013418277727
+        },
+        {
+          "profile_score": -2.438175370914344
+        },
+        {
+          "profile_score": -2.6547272662117494
+        }
+      ],
+      [
+        {
+          "profile_score": -3.8684523232785293
+        },
+        {
+          "profile_score": -3.3846922269273443
+        },
+        {
+          "profile_score": -2.8544631475338114
+        },
+        {
+          "profile_score": -2.716259864721842
+        }
+      ],
+      [
+        {
+          "profile_score": -2.7109434340704337
+        },
+        {
+          "profile_score": -3.919304314781027
+        },
+        {
+          "profile_score": -2.8064909043166777
+        },
+        {
+          "profile_score": -2.559665970005363
+        }
+      ],
+      [
+        {
+          "profile_score": -2.915134075339303
+        },
+        {
+          "profile_score": -2.6117585590248136
+        },
+        {
+          "profile_score": -3.390960442067279
+        },
+        {
+          "profile_score": -2.8949557503394114
+        }
+      ],
+      [
+        {
+          "profile_score": -4.090440490155419
+        },
+        {
+          "profile_score": -3.1250177996598327
+        },
+        {
+          "profile_score": -3.1849948857168093
+        },
+        {
+          "profile_score": -3.5280908172599257
+        }
+      ],
+      [
+        {
+          "profile_score": -2.3136673020338088
+        },
+        {
+          "profile_score": -3.564210234497817
+        },
+        {
+          "profile_score": -3.4390177673680604
+        },
+        {
+          "profile_score": -2.115817454386466
+        }
+      ],
+      [
+        {
+          "profile_score": -3.139334744685735
+        },
+        {
+          "profile_score": -4.485854467616834
+        },
+        {
+          "profile_score": -1.888999907015219
+        },
+        {
+          "profile_score": -3.291715295102311
+        }
+      ],
+      [
+        {
+          "profile_score": -2.3252947735639418
+        },
+        {
+          "profile_score": -2.571639299756504
+        },
+        {
+          "profile_score": -2.488857337182897
+        },
+        {
+          "profile_score": -3.4802311745326597
+        }
+      ],
+      [
+        {
+          "profile_score": -2.3859644910065683
+        },
+        {
+          "profile_score": -2.4293093721041736
+        },
+        {
+          "profile_score": -2.5991672640295187
+        },
+        {
+          "profile_score": -2.1286768855344462
+        }
+      ],
+      [
+        {
+          "profile_score": -2.7709884035851746
+        },
+        {
+          "profile_score": -3.9580049205112946
+        },
+        {
+          "profile_score": -2.7882503066839672
+        },
+        {
+          "profile_score": -2.5596500497204855
+        }
+      ]
+    ],
+    "query_memory_heads": [],
+    "query_current_heads": [],
+    "kv_memory_heads": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        10,
+        0
+      ],
+      [
+        10,
+        2
+      ],
+      [
+        11,
+        2
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        19,
+        2
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        22,
+        0
+      ],
+      [
+        24,
+        2
+      ],
+      [
+        27,
+        3
+      ]
+    ],
+    "kv_current_heads": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        11,
+        1
+      ],
+      [
+        14,
+        0
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        15,
+        3
+      ],
+      [
+        15,
+        2
+      ],
+      [
+        16,
+        0
+      ],
+      [
+        17,
+        3
+      ],
+      [
+        17,
+        0
+      ],
+      [
+        23,
+        0
+      ],
+      [
+        23,
+        2
+      ],
+      [
+        24,
+        1
+      ],
+      [
+        25,
+        3
+      ],
+      [
+        26,
+        0
+      ],
+      [
+        26,
+        2
+      ]
+    ],
+    "role_counts": {
+      "current": 23,
+      "mixed": 66,
+      "memory": 23
+    },
+    "mode_detail": "physical_per_kv_head_ragged_retention"
+  }
+}

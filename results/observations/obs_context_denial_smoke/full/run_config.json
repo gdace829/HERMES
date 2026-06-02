@@ -1,0 +1,46 @@
+{
+  "args": {
+    "model": "qwen2.5_vl_7b",
+    "anno_path": "data/streamingbench/streamingbench_realtime.json",
+    "sample_fps": 0.5,
+    "kv_size": 6000,
+    "compress_mode": "hermes",
+    "streaming": true,
+    "device": "cuda:0",
+    "setting": "full",
+    "seed": 0,
+    "max_mask_q_len": 512,
+    "tasks": "Counting,Causal Reasoning,Clips Summarize,Prospective Reasoning,Attribute Recognition,Object Recognition,Action Recognition",
+    "max_questions_per_task": 20,
+    "max_videos": null,
+    "num_layers": 28,
+    "num_heads": 28,
+    "head_classes": "results/observations/head_classes_prev_current/head_classes.json",
+    "profile_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_full/head_profile_scores.csv",
+    "metric": "b_log_per_token_ratio",
+    "quantile": 0.2,
+    "save_dir": "results/observations/obs_context_denial_smoke/full"
+  },
+  "filtered_anno": "results/observations/obs_context_denial_smoke/full/filtered_anno.json",
+  "task_counts": {
+    "Object Recognition": 20,
+    "Attribute Recognition": 20,
+    "Clips Summarize": 20,
+    "Prospective Reasoning": 20,
+    "Action Recognition": 20,
+    "Counting": 20,
+    "Causal Reasoning": 20
+  },
+  "head_classes": "results/observations/head_classes_prev_current/head_classes.json",
+  "context_denial_config": {
+    "setting": "full",
+    "seed": 0,
+    "num_query_heads": 28,
+    "max_mask_q_len": 512,
+    "num_selected_heads": 0,
+    "selected_heads": [],
+    "deny_previous_by_layer": {},
+    "deny_current_by_layer": {},
+    "mode": "qa_only_headwise_context_access_ablation"
+  }
+}

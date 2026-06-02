@@ -1,0 +1,22 @@
+{
+  "video_split_s_obs_corr": 0.9430124183572286,
+  "video_split_s_obs_left_videos": [
+    0,
+    1
+  ],
+  "video_split_s_obs_right_videos": [
+    2,
+    3
+  ],
+  "video_split_b_obs_corr": 0.9525898080912958,
+  "video_split_b_obs_left_videos": [
+    0,
+    1
+  ],
+  "video_split_b_obs_right_videos": [
+    2,
+    3
+  ],
+  "chunk_split_s_obs_corr": 0.7838543903047358,
+  "chunk_split_b_obs_corr": 0.8844008721620974
+}

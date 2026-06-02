@@ -1,0 +1,15 @@
+============================================================
+EVALUATION RESULTS (StreamingBench)
+============================================================
+#Samples: 5
+Average qa_acc: 80.00
+save_dir: results/qwen2.5_vl_7b/streamingbench/fps0.5-kv6000-hermes-layerbudget-sparsemm_qwen25-varlen
+
+============================================================
+TASK-SPECIFIC ACCURACY (StreamingBench)
+============================================================
+Attribute Recognition: 66.67% (n=3)
+Object Recognition: 100.00% (n=2)
+============================================================
+
+%Errors: 0.00

@@ -1,0 +1,62 @@
+<hr/>
+<h2>3.5 更直接的 Observation：历史 memory vs 最新 chunk 的注意力分配</h2>
+<callout emoji="✅" background-color="light-green" border-color="green">
+  <p><b>结论：</b>相比之前用时间中点 <code>t_mid</code> 切 early/recent，这个实验直接用本轮 <code>encode_video_chunk</code> 前后的 KV 长度切出边界，因此更适合支撑“head 对历史 streaming memory 与最新输入 chunk 的注意力偏好不同”这一 observation。</p>
+</callout>
+<p>测量对象仍然是 pseudo-query prefill attention，但切分方式换成真实的 cache 边界：本轮 encode 前的 visual KV 记为 previous visual cache，本轮刚 append 的 visual KV 记为 latest chunk。每次 observation 都发生在最新 chunk 编码之后、本轮 HERMES 压缩之前。</p>
+<table>
+  <colgroup><col span="1" width="180"/><col span="1" width="520"/></colgroup>
+  <thead><tr><th background-color="light-gray">区间</th><th background-color="light-gray">定义</th></tr></thead>
+  <tbody>
+    <tr><td>previous visual cache</td><td><code>[visual_start_idx, pre_len)</code>，即本轮 encode 之前已经保留在 KV cache 中的视觉 memory；在 <code>kv_size=6000</code> 的 HERMES 设置下，通常已经是前序轮次压缩后的 memory。</td></tr>
+    <tr><td>latest chunk visual KV</td><td><code>[pre_len, post_len)</code>，即本轮 <code>encode_video_chunk</code> 刚加入的视觉 KV，尚未经过本轮压缩。</td></tr>
+    <tr><td>pseudo query tokens</td><td><code>[post_len, attn_len)</code>，只用于产生 query，不计入 previous/current attention 统计。</td></tr>
+  </tbody>
+</table>
+<p>对每个 layer-head，分别统计 local/global pseudo query 的注意力质量：</p>
+<pre lang="text" caption="统计口径"><code>A_prev = attention mass on previous visual cache
+A_curr = attention mass on latest chunk visual KV
+current_share = A_curr / (A_prev + A_curr)
+current_to_prev_per_token_ratio =
+  (A_curr / #current_tokens) / (A_prev / #previous_tokens)</code></pre>
+<p>运行配置：Qwen2.5-VL-7B，HERMES，<code>kv_size=6000</code>，<code>sample_fps=0.5</code>，StreamingBench 前 4 个视频，共 82 个 chunk observations，64,288 条 layer-head observation。</p>
+<table>
+  <colgroup><col span="1" width="260"/><col span="1" width="160"/><col span="1" width="420"/></colgroup>
+  <thead><tr><th background-color="light-gray">指标</th><th background-color="light-gray">结果</th><th background-color="light-gray">解释</th></tr></thead>
+  <tbody>
+    <tr><td>mean local current_share</td><td>0.477</td><td>local pseudo query 的注意力约 47.7% 落在最新 chunk。</td></tr>
+    <tr><td>mean global current_share</td><td>0.481</td><td>global pseudo query 的注意力约 48.1% 落在最新 chunk。</td></tr>
+    <tr><td>mean current token fraction</td><td>0.718</td><td>latest chunk 的 token 数平均占 previous+current 的 71.8%。</td></tr>
+    <tr><td>global share - token fraction</td><td>-0.237</td><td>latest chunk token 数很多，但实际 attention share 明显低于按 token 数均匀分配的 baseline。</td></tr>
+    <tr><td>median global per-token ratio</td><td>0.320</td><td>按 token 数归一化后，latest chunk token 的 attention 密度约为 previous cache token 的 32.0%。</td></tr>
+  </tbody>
+</table>
+<callout emoji="📌" background-color="light-blue" border-color="blue">
+  <p><b>可写成论文 observation：</b>Although the latest chunk contains substantially more visual tokens, many heads allocate disproportionate attention to the previously retained streaming memory. This indicates heterogeneous head-level preferences between compressed history and newly appended visual evidence.</p>
+</callout>
+<p>图 3.5a 插图位置：local pseudo query 下，每个 layer-head 的 latest chunk attention share heatmap。</p>
+<p>图 3.5b 插图位置：global pseudo query 下，每个 layer-head 的 latest chunk attention share heatmap。</p>
+<p>图 3.5c 插图位置：global minus local 的 latest chunk share heatmap，用于观察 query type 是否改变 previous/current 分配。</p>
+<table>
+  <colgroup><col span="1" width="260"/><col span="1" width="180"/><col span="1" width="180"/><col span="1" width="180"/></colgroup>
+  <thead><tr><th background-color="light-gray">分布统计</th><th background-color="light-gray">p25</th><th background-color="light-gray">median</th><th background-color="light-gray">p75</th></tr></thead>
+  <tbody>
+    <tr><td>head-mean local current_share</td><td>0.356</td><td>0.455</td><td>0.574</td></tr>
+    <tr><td>head-mean global current_share</td><td>0.355</td><td>0.465</td><td>0.578</td></tr>
+  </tbody>
+</table>
+<p>按 head 聚合后，<code>global_current_share &lt; 0.25</code> 的 heads 有 43 个，<code>global_current_share &gt; 0.75</code> 的 heads 有 79 个，说明不同 heads 在历史 memory 和最新 chunk 之间存在明显异质性。</p>
+<table>
+  <colgroup><col span="1" width="180"/><col span="1" width="180"/><col span="1" width="420"/></colgroup>
+  <thead><tr><th background-color="light-gray">层级示例</th><th background-color="light-gray">global current_share</th><th background-color="light-gray">解释</th></tr></thead>
+  <tbody>
+    <tr><td>Layer 0</td><td>0.784</td><td>浅层更偏向最新 chunk。</td></tr>
+    <tr><td>Layer 1</td><td>0.789</td><td>浅层同样强烈偏向最新输入。</td></tr>
+    <tr><td>Layer 22</td><td>0.283</td><td>较深层明显更偏向 previous compressed memory。</td></tr>
+    <tr><td>Layer 27</td><td>0.278</td><td>最深层对历史 memory 的 attention 密度更高。</td></tr>
+  </tbody>
+</table>
+<callout emoji="⚠️" background-color="light-yellow" border-color="yellow">
+  <p><b>边界说明：</b>这里的 previous visual cache 不是原始未压缩全历史，而是当前 streaming 状态下 encode 最新 chunk 之前已经保留的 KV memory；在 HERMES 模式中，它通常已经包含前序压缩的结果。因此该实验支持的是“previous retained streaming memory vs newly appended chunk”，不是“uncompressed full history vs current frame”。</p>
+</callout>
+<p>对应脚本与结果路径：<code>head_analysis/obs_prev_current_chunk_attention.py</code>；结果目录 <code>results/observations/obs_prev_current_chunk_attention_n4/</code>。</p>

@@ -1,0 +1,18 @@
+<callout emoji="✅" background-color="light-green" border-color="green">
+  <p><b>实跑补充（2026-05-20）：Observation 1 已有正向证据。</b>基于 <code>results/head_analysis/pseudo-qwen2.5_vl_7b-kv6000-hermes/head_pseudo.npz</code> 重新生成逐头热力图后，可以看到 28 层 × 28 头之间存在清晰的 temporal shift 分化。</p>
+</callout>
+<table>
+  <colgroup><col width="220"/><col width="180"/><col width="360"/></colgroup>
+  <thead>
+    <tr><th background-color="light-gray">指标</th><th background-color="light-gray">数值</th><th background-color="light-gray">解释</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Temporal shift 范围</td><td>-0.0785 ~ +0.1153</td><td>不同 head 对 early visual tokens 的响应方向和强度不同。</td></tr>
+    <tr><td>全局标准差</td><td>0.0160</td><td>head-level 差异不是单点噪声，而是在全模型范围内存在分布宽度。</td></tr>
+    <tr><td>正向 specialized heads</td><td>104</td><td>按 10% max-abs 阈值，global query 下明显更偏 early tokens。</td></tr>
+    <tr><td>负向 specialized heads</td><td>137</td><td>按相同阈值，global query 下明显更偏 recent/local tokens。</td></tr>
+    <tr><td>平均层内标准差</td><td>0.0136</td><td>同一层内部也存在 head 差异，支持 head-wise 而非仅 layer-wise 的分析。</td></tr>
+  </tbody>
+</table>
+<p><b>代表性头：</b>最强正向头包括 L27-H12 (+0.1153)、L27-H7 (+0.0802)、L27-H11 (+0.0701)、L14-H6 (+0.0668)；最强负向头包括 L14-H2 (-0.0785)、L18-H7 (-0.0783)、L16-H0 (-0.0745)、L27-H20 (-0.0710)。</p>
+<p><b>本地结果文件：</b><code>results/observations/obs1_heatmap/temporal_head_heatmap.png</code>、<code>results/observations/obs1_heatmap/within_layer_diversity.png</code>、<code>results/observations/obs1_heatmap/summary.json</code>。</p>

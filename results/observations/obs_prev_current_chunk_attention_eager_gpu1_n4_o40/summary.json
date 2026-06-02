@@ -1,0 +1,17 @@
+{
+  "attention_source": "eager_output_attentions_for_pseudo_query_only",
+  "num_rows": 29792,
+  "num_unique_observations": 38,
+  "num_layers": 28,
+  "num_heads": 28,
+  "raw_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/raw_prev_current_attention.csv",
+  "per_layer_summary_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_o40/per_layer_summary.csv",
+  "mean_local_current_share": 0.1975086353897545,
+  "mean_global_current_share": 0.20261126252276426,
+  "mean_current_token_fraction": 0.7519539957765665,
+  "mean_global_minus_local_current_share": 0.005102627132814651,
+  "median_local_current_to_prev_per_token_ratio": 0.03379236347973347,
+  "median_global_current_to_prev_per_token_ratio": 0.036083877086639404,
+  "mean_prev_visual_tokens": 5984.868421052632,
+  "mean_current_chunk_tokens": 19614.842105263157
+}

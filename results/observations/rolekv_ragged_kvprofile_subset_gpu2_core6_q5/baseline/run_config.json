@@ -1,0 +1,120 @@
+{
+  "args": {
+    "model": "qwen2.5_vl_7b",
+    "anno_path": "data/streamingbench/streamingbench_realtime.json",
+    "filtered_anno": null,
+    "sample_fps": 0.5,
+    "kv_size": 6000,
+    "compress_mode": "hermes",
+    "streaming": true,
+    "device": "cuda:0",
+    "mode": "baseline",
+    "head_classes": "results/observations/head_classes_prev_current/head_classes.json",
+    "kv_profile_scores": "results/observations/obs_prev_current_chunk_attention_eager_gpu1_n4_full_kv/kv_head_profile_scores.csv",
+    "kv_profile_metric": "b_log_per_token_ratio",
+    "kv_profile_quantile": 0.2,
+    "quota_ratio": 0.7,
+    "lambda_memory": 0.2,
+    "lambda_current": 0.2,
+    "role_min_votes": 1,
+    "seed": 0,
+    "tasks": "Object Recognition,Attribute Recognition,Clips Summarize,Prospective Reasoning,Counting,Causal Reasoning",
+    "max_questions_per_task": 5,
+    "max_videos": null,
+    "kv_head_budget_scores": "sparsemm_qwen25",
+    "kv_head_budget_scheme": "sparsemm",
+    "kv_head_budget_sparsemm_ratio": 0.1,
+    "kv_head_budget_sparsemm_window_size": 32,
+    "save_dir": "results/observations/rolekv_ragged_kvprofile_subset_gpu2_core6_q5/baseline",
+    "dry_run": false
+  },
+  "filtered_anno": "results/observations/rolekv_ragged_kvprofile_subset_gpu2_core6_q5/baseline/filtered_anno.json",
+  "filter_counts": {
+    "Object Recognition": 5,
+    "Attribute Recognition": 5,
+    "Clips Summarize": 5,
+    "Prospective Reasoning": 5,
+    "Counting": 5,
+    "Causal Reasoning": 5
+  },
+  "annotation_summary": {
+    "num_videos": 7,
+    "num_questions": 30,
+    "task_counts": {
+      "Attribute Recognition": 5,
+      "Causal Reasoning": 5,
+      "Clips Summarize": 5,
+      "Counting": 5,
+      "Object Recognition": 5,
+      "Prospective Reasoning": 5
+    },
+    "videos": [
+      {
+        "video_id": 1,
+        "num_questions": 5,
+        "tasks": {
+          "Attribute Recognition": 3,
+          "Object Recognition": 2
+        }
+      },
+      {
+        "video_id": 2,
+        "num_questions": 5,
+        "tasks": {
+          "Clips Summarize": 5
+        }
+      },
+      {
+        "video_id": 3,
+        "num_questions": 5,
+        "tasks": {
+          "Prospective Reasoning": 5
+        }
+      },
+      {
+        "video_id": 4,
+        "num_questions": 3,
+        "tasks": {
+          "Attribute Recognition": 2,
+          "Object Recognition": 1
+        }
+      },
+      {
+        "video_id": 6,
+        "num_questions": 2,
+        "tasks": {
+          "Object Recognition": 2
+        }
+      },
+      {
+        "video_id": 11,
+        "num_questions": 5,
+        "tasks": {
+          "Counting": 5
+        }
+      },
+      {
+        "video_id": 23,
+        "num_questions": 5,
+        "tasks": {
+          "Causal Reasoning": 5
+        }
+      }
+    ]
+  },
+  "kv_head_budget_config": {
+    "num_query_heads": 28,
+    "num_kv_heads": 4,
+    "group_size": 7,
+    "strength": 0.75,
+    "min_ratio": 0.75,
+    "max_ratio": 1.25,
+    "budget_scheme": "sparsemm",
+    "sparsemm_ratio": 0.1,
+    "sparsemm_window_size": 32,
+    "union_cap_ratio": 1.0,
+    "max_mask_q_len": 128,
+    "mode": "logical_per_kv_head_dense_union"
+  },
+  "rolekv_ragged_config": null
+}

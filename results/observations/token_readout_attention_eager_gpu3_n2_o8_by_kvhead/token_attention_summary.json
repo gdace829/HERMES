@@ -1,0 +1,39 @@
+{
+  "num_observations": 8,
+  "num_bins_per_region": 200,
+  "num_videos_requested": 2,
+  "max_questions": 4,
+  "head_classes": "results/observations/head_classes_prev_current/head_classes_kv_pooled_median_profile16.json",
+  "plot_kv_heads": true,
+  "kv_profile_csv": "results/observations/obs_prev_current_chunk_attention_eager_gpu2_n16_o500_paper_kv/kv_head_profile_scores.csv",
+  "csv": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/region_aligned_token_attention_bins.csv",
+  "whole_cache_csv": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_token_attention_bins.csv",
+  "mean_previous_token_fraction": 0.22249561943820012,
+  "figures": {
+    "density": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/region_aligned_token_attention_density.png",
+    "density_log": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/region_aligned_token_attention_density_log.png",
+    "whole_cache_density": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_token_attention_density.png",
+    "whole_cache_density_log": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_token_attention_density_log.png",
+    "mass_share": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/region_attention_mass_share.png",
+    "class_csv": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_head_class.csv",
+    "class_linear": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_head_class.png",
+    "class_log": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_head_class_log.png",
+    "class_mean_previous_token_fraction": 0.22249561943820015,
+    "whole_cache_attention_by_kv_id_csv": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_kv_id.csv",
+    "whole_cache_attention_by_kv_id_linear": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_kv_id.png",
+    "whole_cache_attention_by_kv_id_log": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_kv_id_log.png",
+    "whole_cache_attention_by_kv_id_mean_previous_token_fraction": 0.22249561943820012,
+    "whole_cache_attention_by_selected_kv_heads_csv": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_selected_kv_heads.csv",
+    "whole_cache_attention_by_selected_kv_heads_linear": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_selected_kv_heads.png",
+    "whole_cache_attention_by_selected_kv_heads_log": "results/observations/token_readout_attention_eager_gpu3_n2_o8_by_kvhead/whole_cache_attention_by_selected_kv_heads_log.png",
+    "whole_cache_attention_by_selected_kv_heads_mean_previous_token_fraction": 0.22249561943820012
+  },
+  "local_region_share": {
+    "previous": 0.7222007804636443,
+    "current": 0.27779921953635534
+  },
+  "global_region_share": {
+    "previous": 0.7224992173241909,
+    "current": 0.27750078267580874
+  }
+}

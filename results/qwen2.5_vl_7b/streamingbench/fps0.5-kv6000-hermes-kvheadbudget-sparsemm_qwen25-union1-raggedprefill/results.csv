@@ -1,0 +1,6 @@
+"video_id","question","choices","answer","correct_choice","pred_answer","pred_choice","qa_acc","task"
+1,"What can be seen in the cockpit's center screen right now?","['A compass.', 'A map.', 'An altitude meter.', 'A weather radar.']","A map.","B","B) A map.","B",100.0,"Object Recognition"
+1,"What colors are the pilot's handheld controls right now?","['Black.', 'Red and green.', 'Yellow and blue.', 'Black and orange.']","Black.","A","D) Black and orange.","D",0.0,"Attribute Recognition"
+1,"What are the visible weather conditions right now?","['Clear sky with scattered clouds.', 'Overcast sky with rain.', 'Foggy with low visibility.', 'Thunderstorms with lightning.']","Clear sky with scattered clouds.","A","A) Clear sky with scattered clouds.","A",100.0,"Attribute Recognition"
+1,"What are colors of the curved flight path right now?","['Yellow and blue.', 'Blue and white.', 'Green and ograne.', 'Red and blue.']","Red and blue.","D","D) Red and blue.","D",100.0,"Attribute Recognition"
+1,"What is located to the bottom-left of the cockpit's central control panel right now?","['A blue handle.', 'A red button.', 'An altitude meter.', 'A compass.']","A blue handle.","A","A) A blue handle.","A",100.0,"Object Recognition"

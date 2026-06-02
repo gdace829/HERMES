@@ -1,0 +1,227 @@
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+The image processor of type `Qwen2VLImageProcessor` is now loaded as a fast processor by default, even if the model checkpoint was saved with a slow processor. This is a breaking change and may produce slightly different outputs. To continue using the slow processor, instantiate this class with `use_fast=False`. Note that this behavior will be extended to all models in a future release.
+`torch_dtype` is deprecated! Use `dtype` instead!
+[RoleKV runner] loading qwen2.5_vl_7b from models/Qwen2.5-VL-7B-Instruct
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.13it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.26it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.31it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.81it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.53it/s]
+[I 260521 05:37:35 qwenvl_hermes:977] n_init: 14
+[I 260521 05:37:35 qwenvl_hermes:978] kv_size: 6000
+[RoleKV] Installed role-aware head voting: mode=rolekv, memory_heads=157, current_heads=157, lambda=(0.2, 0.2)
+  0%|          | 0/1 [00:00<?, ?it/s][D 260521 05:37:35 base:232] video_id: 1
+[h264 @ 0x60ca8e98e0c0] mmco: unref short failure
+[h264 @ 0x60ca8e98e0c0] mmco: unref short failure
+[h264 @ 0x60ca8e98e0c0] mmco: unref short failure
+[h264 @ 0x60ca8e98e0c0] mmco: unref short failure
+[h264 @ 0x60ca8e98e0c0] mmco: unref short failure
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[D 260521 05:39:16 hermes_vqa:44] sample: {'question': "What can be seen in the cockpit's center screen right now?", 'answer': 'A map.', 'choices': ['A compass.', 'A map.', 'An altitude meter.', 'A weather radar.'], 'end_time': 6.0, 'task': 'Object Recognition', 'time_stamp': '00:00:06', 'required_ability': 'working memory'}
+[I 260521 05:39:18 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:39:18 qwenvl_hermes:898] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:02<00:09,  2.29s/it][A[D 260521 05:39:18 hermes_vqa:44] sample: {'question': "What colors are the pilot's handheld controls right now?", 'answer': 'Black.', 'choices': ['Black.', 'Red and green.', 'Yellow and blue.', 'Black and orange.'], 'end_time': 157.0, 'task': 'Attribute Recognition', 'time_stamp': '00:02:37', 'required_ability': 'working memory'}
+[I 260521 05:39:26 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:39:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:39:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:39:34 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:39:34 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:39:34 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:39:42 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:39:43 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:39:43 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:39:50 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:39:50 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:39:50 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:39:56 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:39:56 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:39:56 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:39:56 qwenvl_hermes:898] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:39<01:09, 23.12s/it][A[D 260521 05:39:56 hermes_vqa:44] sample: {'question': 'What are the visible weather conditions right now?', 'answer': 'Clear sky with scattered clouds.', 'choices': ['Clear sky with scattered clouds.', 'Overcast sky with rain.', 'Foggy with low visibility.', 'Thunderstorms with lightning.'], 'end_time': 301.0, 'task': 'Attribute Recognition', 'time_stamp': '00:05:01', 'required_ability': 'working memory'}
+[I 260521 05:40:03 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:40:04 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:04 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:40:11 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:40:11 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:11 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:40:19 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:40:19 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:19 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:40:26 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:40:27 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:27 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:40:30 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:40:30 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:30 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:40:30 qwenvl_hermes:898] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [01:14<00:56, 28.25s/it][A[D 260521 05:40:30 hermes_vqa:44] sample: {'question': 'What are colors of the curved flight path right now?', 'answer': 'Red and blue.', 'choices': ['Yellow and blue.', 'Blue and white.', 'Green and ograne.', 'Red and blue.'], 'end_time': 435.0, 'task': 'Attribute Recognition', 'time_stamp': '00:07:15', 'required_ability': 'working memory'}
+[I 260521 05:40:38 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:40:38 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:38 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:40:45 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:40:46 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:46 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:40:53 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 2
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 16.61696767807007 GB
+TTFT: 0.04696846194565296 seconds
+Answering Cache lengths: min=5396, max=5396
+Pred Answer:  B) A map.
+Encoding frames 3 to 18
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.053558349609375 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 19 to 34
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.261356830596924 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 35 to 50
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.261356830596924 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 51 to 66
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 67 to 78
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+TTFT: 0.030287761241197586 seconds
+Answering Cache lengths: min=6014, max=6014
+Pred Answer:  D) Black and orange.
+Encoding frames 79 to 94
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 95 to 110
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 111 to 126
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 127 to 142
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 143 to 150
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+TTFT: 0.03485331777483225 seconds
+Answering Cache lengths: min=6014, max=6014
+Pred Answer:  A) Clear sky with scattered clouds.
+Encoding frames 151 to 166
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 167 to 182
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 183 to 198
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.[I 260521 05:40:53 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:40:53 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:01 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:41:01 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:41:01 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:03 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:41:03 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:41:03 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:03 qwenvl_hermes:898] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [01:46<00:29, 29.98s/it][A[D 260521 05:41:03 hermes_vqa:44] sample: {'question': "What is located to the bottom-left of the cockpit's central control panel right now?", 'answer': 'A blue handle.', 'choices': ['A blue handle.', 'A red button.', 'An altitude meter.', 'A compass.'], 'end_time': 573.0, 'task': 'Object Recognition', 'time_stamp': '00:09:33', 'required_ability': 'working memory'}
+[I 260521 05:41:10 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:41:11 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:41:11 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:18 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:41:18 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:41:18 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:26 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:41:26 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:41:26 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:33 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:41:34 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:41:34 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:36 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260521 05:41:36 qwenvl_hermes:325] Layer-wise shrink completed. Lengths: min=6014, max=6014, first=6014, last=6014
+[I 260521 05:41:36 qwenvl_hermes:456] Strict-shrunk KV cache. New length: 6014
+[I 260521 05:41:36 qwenvl_hermes:898] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [02:20<00:00, 31.20s/it][A100%|██████████| 5/5 [02:20<00:00, 28.07s/it]
+100%|██████████| 1/1 [04:00<00:00, 240.92s/it]100%|██████████| 1/1 [04:00<00:00, 240.92s/it]
+
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 199 to 214
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 215 to 217
+Local question: Find recent details related to: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the visible weather conditions right now? Answer: Clear sky with scattered clouds.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+TTFT: 0.029678180813789368 seconds
+Answering Cache lengths: min=6014, max=6014
+Pred Answer:  D) Red and blue.
+Encoding frames 218 to 233
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 234 to 249
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 250 to 265
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 266 to 281
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+Encoding frames 282 to 286
+Local question: Find recent details related to: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are colors of the curved flight path right now? Answer: Red and blue.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 25.262076377868652 GB
+Applying KV-Cache compression due to k_states > 6000
+TTFT: 0.02721827756613493 seconds
+Answering Cache lengths: min=6014, max=6014
+Pred Answer:  A) A blue handle.
+{
+  "n": 5,
+  "overall": 0.8,
+  "tasks": {
+    "Attribute Recognition": {
+      "n": 3,
+      "acc": 0.6666666666666666
+    },
+    "Object Recognition": {
+      "n": 2,
+      "acc": 1.0
+    }
+  }
+}

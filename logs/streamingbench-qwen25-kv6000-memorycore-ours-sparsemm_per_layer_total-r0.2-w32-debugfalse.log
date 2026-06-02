@@ -1,0 +1,1203 @@
+Execute streamingbench evaluation
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/sjs/.conda/envs/hermes-qwen/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+[I 260528 11:30:51 base:351] seed: 2024
+[I 260528 11:30:51 base:356] Loading VideoQA model: models/Qwen2.5-VL-7B-Instruct
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s][I 260528 11:30:52 base:351] seed: 2024
+[I 260528 11:30:52 base:356] Loading VideoQA model: models/Qwen2.5-VL-7B-Instruct
+Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:02,  1.46it/s][I 260528 11:30:53 base:351] seed: 2024
+[I 260528 11:30:53 base:356] Loading VideoQA model: models/Qwen2.5-VL-7B-Instruct
+[I 260528 11:30:53 base:351] seed: 2024
+[I 260528 11:30:53 base:356] Loading VideoQA model: models/Qwen2.5-VL-7B-Instruct
+Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:01,  1.56it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:01<00:01,  1.58it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.15it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.46it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.98it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.74it/s]
+[I 260528 11:30:55 qwenvl_hermes:977] n_init: 14
+[I 260528 11:30:55 qwenvl_hermes:978] kv_size: 6000
+[kv_head_budget] Loaded scores. Range: [0.0002, 0.0044]
+[kv_head_budget] Installed logical per-KV-head eviction. q_heads=28, kv_heads=4, group=7, budget_scheme=sparsemm_per_layer_total, sparsemm_ratio=0.2, sparsemm_window=32, union_cap_ratio=1.0, max_mask_q_len=128.
+[kv_head_ragged_prefill] Installed physical per-KV-head ragged prefill/chunk/decode path.
+  0%|          | 0/125 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:00<00:03,  1.24it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.27it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:01<00:02,  1.40it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.59s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.32it/s]Loading checkpoint shards:  60%|██████    | 3/5 [00:02<00:01,  1.48it/s]Loading checkpoint shards:  40%|████      | 2/5 [00:02<00:03,  1.19s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:03<00:00,  1.35it/s]Loading checkpoint shards:  80%|████████  | 4/5 [00:02<00:00,  1.53it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  2.09it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:02<00:00,  1.74it/s]
+[I 260528 11:30:57 qwenvl_hermes:977] n_init: 14
+[I 260528 11:30:57 qwenvl_hermes:978] kv_size: 6000
+Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.84it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:03<00:00,  1.55it/s]
+[kv_head_budget] Loaded scores. Range: [0.0002, 0.0044]
+[kv_head_budget] Installed logical per-KV-head eviction. q_heads=28, kv_heads=4, group=7, budget_scheme=sparsemm_per_layer_total, sparsemm_ratio=0.2, sparsemm_window=32, union_cap_ratio=1.0, max_mask_q_len=128.
+[kv_head_ragged_prefill] Installed physical per-KV-head ragged prefill/chunk/decode path.
+  0%|          | 0/125 [00:00<?, ?it/s][I 260528 11:30:57 qwenvl_hermes:977] n_init: 14
+[I 260528 11:30:57 qwenvl_hermes:978] kv_size: 6000
+[kv_head_budget] Loaded scores. Range: [0.0002, 0.0044]
+[kv_head_budget] Installed logical per-KV-head eviction. q_heads=28, kv_heads=4, group=7, budget_scheme=sparsemm_per_layer_total, sparsemm_ratio=0.2, sparsemm_window=32, union_cap_ratio=1.0, max_mask_q_len=128.
+[kv_head_ragged_prefill] Installed physical per-KV-head ragged prefill/chunk/decode path.
+  0%|          | 0/123 [00:00<?, ?it/s][h264 @ 0x560b2a7e4bc0] mmco: unref short failure
+Loading checkpoint shards:  60%|██████    | 3/5 [00:03<00:02,  1.06s/it][h264 @ 0x5d0ead6d1a40] mmco: unref short failure
+Loading checkpoint shards:  80%|████████  | 4/5 [00:04<00:00,  1.04it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.45it/s]Loading checkpoint shards: 100%|██████████| 5/5 [00:04<00:00,  1.13it/s]
+[I 260528 11:30:58 qwenvl_hermes:977] n_init: 14
+[I 260528 11:30:58 qwenvl_hermes:978] kv_size: 6000
+[kv_head_budget] Loaded scores. Range: [0.0002, 0.0044]
+[kv_head_budget] Installed logical per-KV-head eviction. q_heads=28, kv_heads=4, group=7, budget_scheme=sparsemm_per_layer_total, sparsemm_ratio=0.2, sparsemm_window=32, union_cap_ratio=1.0, max_mask_q_len=128.
+[kv_head_ragged_prefill] Installed physical per-KV-head ragged prefill/chunk/decode path.
+  0%|          | 0/125 [00:00<?, ?it/s][h264 @ 0x5d0ead6d1a40] mmco: unref short failure
+[h264 @ 0x5d0ead6d1a40] mmco: unref short failure
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[h264 @ 0x5d0ead6d1a40] mmco: unref short failure
+[h264 @ 0x5d0ead6d1a40] mmco: unref short failure
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:31:22 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[h264 @ 0x5bfe4d316200] mmco: unref short failure
+[I 260528 11:31:22 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:02<00:08,  2.07s/it][A[I 260528 11:31:25 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:29 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:32 hermes_vqa:61] Triggering question prediction and KV compression
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:31:33 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:33 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:12<00:21,  7.26s/it][A[I 260528 11:31:36 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:36 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:36 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:03<00:15,  3.95s/it][A[I 260528 11:31:39 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:42 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:43 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:45 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:47 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:48 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [00:27<00:21, 10.68s/it][A[I 260528 11:31:49 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:51 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 5
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 16.46491527557373 GB
+TTFT: 0.09432474989444017 seconds
+Answering Cache lengths: min=3602, max=3602
+Pred Answer:  A) How the distributive property helps in simplifying equations.
+Encoding frames 6 to 21
+Local question: Find recent details related to: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.639799118041992 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 22 to 37
+Local question: Find recent details related to: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.639799118041992 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 38 to 53
+Local question: Find recent details related to: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.639799118041992 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 54 to 59
+Local question: Find recent details related to: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker explain next? Answer: How the distributive property helps in simplifying equations.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.639799118041992 GB
+TTFT: 0.044552288949489594 seconds
+Answering Cache lengths: min=5181, max=5605
+Pred Answer:  D) How to use distributive property to the example.
+Encoding frames 60 to 75
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 76 to 91
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 92 to 107
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 108 to 123
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 124 to 134
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: How to use distributive property to the example.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.06066294014453888 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Why the two ways get the same answer.
+Encoding frames 135 to 150
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.[I 260528 11:31:54 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:55 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:31:57 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:00 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:01 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:01 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:02 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [00:41<00:12, 12.02s/it][A[I 260528 11:32:03 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:04 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:31<00:53, 17.68s/it][A[I 260528 11:32:05 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:08 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:09 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:11 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:14 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:15 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [00:54<00:00, 12.25s/it][A100%|██████████| 5/5 [00:54<00:00, 10.89s/it]
+  1%|          | 1/123 [01:17<2:38:32, 77.97s/it][h264 @ 0x560b62143340] mmco: unref short failure
+[I 260528 11:32:16 hermes_vqa:61] Triggering question prediction and KV compression
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:32:22 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:23 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [00:50<00:37, 18.51s/it][A[I 260528 11:32:25 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 6
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.682762622833252 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.0531363133341074 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Securing it with a black strap or garter.
+Encoding frames 7 to 22
+Local question: Find recent details related to: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 23 to 38
+Local question: Find recent details related to: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 39 to 54
+Local question: Find recent details related to: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 55 to 70
+Local question: Find recent details related to: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 71 to 74
+Local question: Find recent details related to: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the woman doing to secure the sock in place? Answer: Securing it with a black strap or garter.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.040474467910826206 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) They are adjusting her clothing items.
+Encoding frames 75 to 90
+Local question: Find recent details related to: Question: What do the two standing women do to the seated woman? Answer: They are adjusting her clothing items.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What do the two standing women do to the seated woman? Answer: They are adjusting her clothing items.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 91 to 106
+Local question: Find recent details related to: Question: What do the two standing women do to the seated woman? Answer: They are adjusting her clothing items.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What do the two standing women do to the seated woman? Answer: They are adjusting her clothing items.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 107 to 121
+Local question: Find recent details related to: Question: What do the two standing women do to the seated woman? Answer: They are adjusting her clothing items.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What do the two standing women do to the seated woman? Answer: They are adjusting her clothing items.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.06887778360396624 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  A) To the left of the central woman.
+Encoding frames 122 to 124
+Local question: Find recent details related to: Question: Where is the table with a white tablecloth positioned in the room? Answer: To the left of the central woman.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Where is the table with a white tablecloth positioned in the room? Answer: To the left of the central woman.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.9778413772583 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0[I 260528 11:32:25 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [00:53<00:12, 12.10s/it][A[I 260528 11:32:27 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:30 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:08<00:34,  8.58s/it][A[I 260528 11:32:32 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x560b62143340] mmco: unref short failure
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[h264 @ 0x560b62143340] mmco: unref short failure
+[I 260528 11:32:36 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x560b62143340] mmco: unref short failure
+[h264 @ 0x560b62143340] mmco: unref short failure
+[I 260528 11:32:37 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:01<00:07,  1.96s/it][A[I 260528 11:32:38 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:41 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:43 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:44 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:48 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:50 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:50 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x560b62143340] mmco: unref short failure
+[h264 @ 0x560b62143340] mmco: unref short failure
+[I 260528 11:32:51 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:52 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [01:19<00:00, 17.20s/it][A100%|██████████| 5/5 [01:19<00:00, 15.85s/it]
+  1%|          | 1/125 [01:56<4:01:40, 116.94s/it][I 260528 11:32:54 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:32:56 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x560b62143340] mmco: unref short failure
+[h264 @ 0x560b62143340] mmco: unref short failure
+[h264 @ 0x560b62143340] mmco: unref short failure
+[h264 @ 0x560b62143340] mmco: unref short failure
+[I 260528 11:33:01 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:02 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:40<01:07, 22.43s/it][A[I 260528 11:33:02 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:07 hermes_vqa:61] Triggering question prediction and KV compression
+
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 151 to 166
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 167 to 182
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 183 to 198
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 199 to 201
+Local question: Find recent details related to: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker discuss next? Answer: Why the two ways get the same answer.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+TTFT: 0.060889492742717266 seconds
+Answering Cache lengths: min=3985, max=4409
+Pred Answer:  A) 5 times 7.
+Encoding frames 202 to 217
+Local question: Find recent details related to: Question: What might the speaker calculate next? Answer: 5 times 7.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker calculate next? Answer: 5 times 7.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 218 to 233
+Local question: Find recent details related to: Question: What might the speaker calculate next? Answer: 5 times 7.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker calculate next? Answer: 5 times 7.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 234 to 249
+Local question: Find recent details related to: Question: What might the speaker calculate next? Answer: 5 times 7.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker calculate next? Answer: 5 times 7.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 250 to 263
+Local question: Find recent details related to: Question: What might the speaker calculate next? Answer: 5 times 7.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What might the speaker calculate next? Answer: 5 times 7.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.728453636169434 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.05881141871213913 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  A) The example can not use distributive property.
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:33:07 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:32<00:56, 18.68s/it][A[h264 @ 0x5bfe831d20c0] mmco: unref short failure
+[h264 @ 0x5bfe831d20c0] mmco: unref short failure
+[I 260528 11:33:08 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:13 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:14 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:14 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:16 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:08<00:35,  8.81s/it][A[I 260528 11:33:19 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:21 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:25 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:26 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:26 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [01:04<00:46, 23.09s/it][A[I 260528 11:33:27 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:32 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:32 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:36 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:37 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+Encoding frames 0 to 2
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 16.58577013015747 GB
+TTFT: 0.060930727049708366 seconds
+Answering Cache lengths: min=5396, max=5396
+Pred Answer:  B) A map.
+Encoding frames 3 to 18
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 19 to 34
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 35 to 50
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 51 to 66
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 67 to 78
+Local question: Find recent details related to: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What can be seen in the cockpit's center screen right now? Answer: A map.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.036140271462500095 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  D) Black and orange.
+Encoding frames 79 to 94
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 95 to 110
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 111 to 126
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 127 to 142
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 143 to 150
+Local question: Find recent details related to: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What colors are the pilot's handheld controls right now? Answer: Black and orange.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.19308042526245 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.06805289722979069 seconds
+Answering Cache lengths: min=1593, max=2017
+ 60%|██████    | 3/5 [01:01<00:47, 23.65s/it][A[I 260528 11:33:38 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 6
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 17.682762622833252 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.22671131137758493 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  C) "Alcohol Ink Ornaments."
+Encoding frames 7 to 22
+Local question: Find recent details related to: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 23 to 38
+Local question: Find recent details related to: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 39 to 54
+Local question: Find recent details related to: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 55 to 69
+Local question: Find recent details related to: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What phrase appears right now? Answer: "Alcohol Ink Ornaments.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.07218887750059366 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Dispensing fluid into the ornament.
+Encoding frames 70 to 85
+Local question: Find recent details related to: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 86 to 101
+Local question: Find recent details related to: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 102 to 117
+Local question: Find recent details related to: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 118 to 129
+Local question: Find recent details related to: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the gloved hands doing just now? Answer: Dispensing fluid into the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.04614594206213951 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Applying additional golden ink to the ornament.
+Encoding frames 130 to 145
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 146 to 161
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.[I 260528 11:33:39 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:42 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:44 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:48 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:48 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:49 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:49 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [01:28<00:23, 23.25s/it][A[h264 @ 0x5bfe831d20c0] mmco: unref short failure
+
+TTFT: 0.04158993437886238 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Adjusting the central woman's clothing.
+Encoding frames 125 to 140
+Local question: Find recent details related to: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 141 to 156
+Local question: Find recent details related to: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 157 to 172
+Local question: Find recent details related to: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 173 to 188
+Local question: Find recent details related to: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 189 to 189
+Local question: Find recent details related to: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the two women wearing white caps and aprons doing? Answer: Adjusting the central woman's clothing.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+TTFT: 0.039381529204547405 seconds
+Answering Cache lengths: min=4284, max=4708
+Pred Answer:  B) On an intricately carved wooden chair.
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:33:55 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:55 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:55 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:55 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:33:56 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:03<00:13,  3.28s/it][A[I 260528 11:34:01 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:01 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:02 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:02 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:03 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:55<01:33, 31.18s/it][A[I 260528 11:34:03 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:04 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [01:29<00:25, 25.05s/it][A[I 260528 11:34:08 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:08 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:08 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:09 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:10 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:10 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [01:48<00:00, 22.37s/it][A100%|██████████| 5/5 [01:48<00:00, 21.78s/it]
+  1%|          | 1/125 [03:11<6:36:02, 191.63s/it][I 260528 11:34:15 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:15 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:16 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:21 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:21 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:28<00:49, 16.46s/it][A[I 260528 11:34:22 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:22 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:27 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:28 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:28 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 9
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 18.23398208618164 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.10199448093771935 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  A) Sketching a helmeted figure.
+Encoding frames 10 to 25
+Local question: Find recent details related to: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 26 to 41
+Local question: Find recent details related to: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 42 to 57
+Local question: Find recent details related to: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 58 to 73
+Local question: Find recent details related to: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 74 to 89
+Local question: Find recent details related to: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the main activity depicted in the video so far? Answer: Sketching a helmeted figure.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.07273486256599426 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  A) A hand paints a helmet with silver and blue accents, focusing on refining
+Encoding frames 90 to 105
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 106 to 121
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 122 to 137
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 138 to 153
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.[I 260528 11:34:30 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:31 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [01:56<00:00, 25.86s/it][A100%|██████████| 5/5 [01:56<00:00, 23.28s/it]
+  1%|          | 1/125 [03:34<7:22:47, 214.25s/it][I 260528 11:34:33 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:34 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:39 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:40 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:44 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:44 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [00:52<00:38, 19.47s/it][A[I 260528 11:34:46 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:50 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 5
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.07834073901176453 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  C) A black bookmark with the name "Jamantha."
+Encoding frames 6 to 21
+Local question: Find recent details related to: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 22 to 37
+Local question: Find recent details related to: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 38 to 53
+Local question: Find recent details related to: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 54 to 69
+Local question: Find recent details related to: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the camera focusing on right now? Answer: A black bookmark with the name "Jamantha.". Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.04114899318665266 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  C) Stirring the mixture in a small container.
+Encoding frames 70 to 85
+Local question: Find recent details related to: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 86 to 101
+Local question: Find recent details related to: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 102 to 117
+Local question: Find recent details related to: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 118 to 129
+Local question: Find recent details related to: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What are the hands in black gloves doing right now? Answer: Stirring the mixture in a small container.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.05034795496612787 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  C) Pouring the gold mixture into the top compartment and adjusting the flakes.
+Encoding frames 130 to 145
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0[I 260528 11:34:53 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:56 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:34:59 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:02 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:05 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:06 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [01:58<01:31, 45.82s/it][A[I 260528 11:35:06 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [01:59<00:27, 27.91s/it][A[I 260528 11:35:08 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:09 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [01:16<00:21, 21.38s/it][A[I 260528 11:35:12 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:14 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:18 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:20 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:24 hermes_vqa:61] Triggering question prediction and KV compression
+
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 154 to 169
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 170 to 185
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 186 to 201
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 202 to 217
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 218 to 233
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 234 to 249
+Local question: Find recent details related to: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the painting process just shown in the video? Answer: A hand paints a helmet with silver and blue accents, focusing on refining. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.0603586845099926 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) The lower right portion.
+TTFT: 0.06723764166235924 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  D) The artist is applying blue and brown accents to a white background.
+Encoding frames 250 to 265
+Local question: Find recent details related to: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 266 to 281
+Local question: Find recent details related to: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 282 to 297
+Local question: Find recent details related to: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 162 to 177
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 178 to 189
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying additional golden ink to the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.04498758725821972 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Inspecting the ornament for any areas that might need further enhancement.
+Encoding frames 190 to 205
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 206 to 221
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 222 to 237
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 238 to 239
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Inspecting the ornament for any areas that might need further enhancement.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+TTFT: 0.062455324456095695 seconds
+Answering Cache lengths: min=4284, max=4708
+Pred Answer:  B) A white tool labeled 'cricut'.
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:35:26 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:26 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:26 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:01<00:07,  1.87s/it][A[I 260528 11:35:30 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:30 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:31 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [01:38<00:00, 21.72s/it][A100%|██████████| 5/5 [01:38<00:00, 19.73s/it]
+  2%|▏         | 2/125 [04:36<4:50:42, 141.81s/it][h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:35:32 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:33 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:34 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [02:26<00:00, 27.70s/it][A100%|██████████| 5/5 [02:26<00:00, 29.33s/it]
+  2%|▏         | 2/123 [04:36<5:00:32, 149.03s/it][h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:35:38 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:35:45 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:35:51 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:53 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:35:53 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:28<00:49, 16.66s/it][A[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[h264 @ 0x560b62bc14c0] mmco: unref short failure
+[I 260528 11:35:59 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:36:06 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:36:12 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:36:19 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:36:21 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 3
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.978617191314697 GB
+TTFT: 0.045025015249848366 seconds
+Answering Cache lengths: min=5396, max=5396
+Pred Answer:  B) Click on the 'Upload Image' button.
+Encoding frames 4 to 19
+Local question: Find recent details related to: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 20 to 35
+Local question: Find recent details related to: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 36 to 51
+Local question: Find recent details related to: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 52 to 67
+Local question: Find recent details related to: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 68 to 69
+Local question: Find recent details related to: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the cursor do just now? Answer: Click on the 'Upload Image' button.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+TTFT: 0.07051545474678278 seconds
+Answering Cache lengths: min=4284, max=4708
+Pred Answer:  C) Tearing off the paper from the back of the white ring.
+Encoding frames 70 to 85
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 86 to 101
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 102 to 117
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 118 to 133
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 134 to 137
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Tearing off the paper from the back of the white ring.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.033525122329592705 seconds[I 260528 11:36:22 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [00:57<00:43, 21.89s/it][A[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:36:27 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:36:33 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:36:40 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:36:41 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:36:41 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 4
+
+ 80%|████████  | 4/5 [01:16<00:20, 20.96s/it][A[I 260528 11:36:48 hermes_vqa:61] Triggering question prediction and KV compression
+
+Global question: Context summary: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 298 to 313
+Local question: Find recent details related to: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 314 to 320
+Local question: Find recent details related to: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: Which of the following best summarizes the artist's activity shown in the video just now? Answer: The artist is applying blue and brown accents to a white background.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.037690699100494385 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Paint tubes and brushes.
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:36:54 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:36:54 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:36:55 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:05<00:21,  5.46s/it][A[I 260528 11:37:00 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:00 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:37:05 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:05 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 5
+
+100%|██████████| 5/5 [01:40<00:00, 22.18s/it][A100%|██████████| 5/5 [01:40<00:00, 20.18s/it]
+  2%|▏         | 2/125 [06:07<6:13:18, 182.10s/it][I 260528 11:37:06 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:12 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:18 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:24 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:25 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 2
+
+ 40%|████      | 2/5 [00:35<01:00, 20.06s/it][A[I 260528 11:37:31 hermes_vqa:61] Triggering question prediction and KV compression
+[h264 @ 0x5bfe85ab86c0] mmco: unref short failure
+[I 260528 11:37:37 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:43 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:49 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:37:55 hermes_vqa:61] Triggering question prediction and KV compression
+Encoding frames 0 to 12
+Local question: Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.04059597756713629 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  D) Holding a pink ornament with a funnel.
+Encoding frames 13 to 28
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 29 to 44
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 45 to 60
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 61 to 76
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 77 to 91
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Holding a pink ornament with a funnel.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.03251292835921049 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  C) Remove the syringe from the ornament.
+Encoding frames 92 to 107
+Local question: Find recent details related to: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 108 to 123
+Local question: Find recent details related to: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 124 to 139
+Local question: Find recent details related to: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 140 to 155
+Local question: Find recent details related to: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 156 to 169
+Local question: Find recent details related to: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What did the person just do? Answer: Remove the syringe from the ornament.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.97937297821045 GB
+[I 260528 11:37:55 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 3
+
+ 60%|██████    | 3/5 [01:06<00:49, 24.77s/it][A
+Encoding frames 146 to 161
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 162 to 177
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 178 to 192
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Pouring the gold mixture into the top compartment and adjusting the flakes.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.04055918846279383 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) The cutting tool is engraving letters.
+Encoding frames 193 to 208
+Local question: Find recent details related to: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 209 to 224
+Local question: Find recent details related to: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 225 to 240
+Local question: Find recent details related to: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 241 to 249
+Local question: Find recent details related to: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is happening with the gold sheet right now? Answer: The cutting tool is engraving letters.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 19.98331928253174 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.0408756323158741 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  B) Supplementing the edges of the black nameplate with gold.
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:38:01 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:38:05 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:38:05 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:04<00:16,  4.06s/it][A[I 260528 11:38:08 hermes_vqa:61] Triggering question prediction and KV compression
+
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  C) Removing the thin film from the surface of the green tennis ball icon.
+Encoding frames 138 to 153
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 154 to 169
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 170 to 185
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 186 to 187
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Removing the thin film from the surface of the green tennis ball icon.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+TTFT: 0.04433598183095455 seconds
+Answering Cache lengths: min=4284, max=4708
+Pred Answer:  B) Applying the "Nathan" name card to the baseball sticker.
+Encoding frames 188 to 203
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 204 to 219
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 220 to 235
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+Encoding frames 236 to 249
+Local question: Find recent details related to: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Describe the current scene in detail, focusing on specific objects, fine-grained actions, and spatial relationships.
+Global question: Context summary: Question: What is the person doing right now? Answer: Applying the "Nathan" name card to the baseball sticker.. Summarize the video narrative, identifying main characters, key events, timeline changes, and the overall theme.
+GPU memory usage: 20.191036701202393 GB
+Applying ragged KV-Cache compression via default-ragged due to max head_len > 6000
+[kv_head_ragged_prefill] prune stats: kv_budget=[1225, 2003], visible=[1239, 2017], head_lens=[1239, 2017], mean=1514.0
+TTFT: 0.041299126110970974 seconds
+Answering Cache lengths: min=1593, max=2017
+Pred Answer:  D) Holding the cup and bottle separately.
+[kv_head_ragged_prefill] init cache converted to ragged: min=14, max=14, mean=14.0
+
+  0%|          | 0/5 [00:00<?, ?it/s][A[I 260528 11:38:11 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:38:12 hermes_vqa:61] Triggering question prediction and KV compression
+[I 260528 11:38:12 hermes_kv_head_ragged_prefill:738] Saved conversation to history. Total conversations: 1
+
+ 20%|██        | 1/5 [00:03<00:12,  3.23s/it][A[I 260528 11:38:14 hermes_vqa:61] Triggering question prediction and KV compression

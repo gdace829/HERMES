@@ -1,0 +1,19 @@
+<callout emoji="✅" background-color="light-green" border-color="green">
+  <p><b>实跑补充（2026-05-20）：分类稳定性已有初步正向证据。</b>我们重新跑了 4 个视频的 pseudo observation，共收集 67,120 条逐头观测记录，并在 raw rows 上做 split-half 稳定性检验。</p>
+</callout>
+<table>
+  <colgroup><col width="240"/><col width="180"/><col width="360"/></colgroup>
+  <thead>
+    <tr><th background-color="light-gray">指标</th><th background-color="light-gray">结果</th><th background-color="light-gray">含义</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Raw observations</td><td>67,120</td><td>来自 4 个 StreamingBench 视频的 pseudo local/global attention 观测。</td></tr>
+    <tr><td>有效 heads</td><td>781 / 784</td><td>绝大多数 layer-head 都有可用统计。</td></tr>
+    <tr><td>Pearson correlation</td><td>0.928</td><td>两半数据聚合出的 temporal shift 高度线性一致。</td></tr>
+    <tr><td>Spearman correlation</td><td>0.905</td><td>head 排名也较稳定。</td></tr>
+    <tr><td>Top-50 positive overlap</td><td>0.76</td><td>长期偏好头集合在 split 后有较高重合。</td></tr>
+    <tr><td>Top-50 negative overlap</td><td>0.72</td><td>近期/局部偏好头集合在 split 后也较稳定。</td></tr>
+  </tbody>
+</table>
+<p><b>限制：</b>这次 raw CSV 尚未记录 <code>video_id</code> / <code>question_id</code>，因此当前 split 是 row-level preliminary split，不是严格的 video-level split。论文里应补一版带 metadata 的 capture，再报告 video split / question split 的相关系数与 top-k overlap。</p>
+<p><b>本地结果文件：</b><code>results/observations/obs2_pseudo_raw_n4/raw_obs.csv</code>、<code>results/observations/obs2_stability_n4/split_correlation.png</code>、<code>results/observations/obs2_stability_n4/summary.json</code>。</p>

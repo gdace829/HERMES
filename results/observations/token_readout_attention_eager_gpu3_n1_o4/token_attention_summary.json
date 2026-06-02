@@ -1,0 +1,20 @@
+{
+  "num_observations": 1,
+  "num_bins_per_region": 100,
+  "num_videos_requested": 1,
+  "max_questions": 1,
+  "csv": "results/observations/token_readout_attention_eager_gpu3_n1_o4/region_aligned_token_attention_bins.csv",
+  "figures": {
+    "density": "results/observations/token_readout_attention_eager_gpu3_n1_o4/region_aligned_token_attention_density.png",
+    "density_log": "results/observations/token_readout_attention_eager_gpu3_n1_o4/region_aligned_token_attention_density_log.png",
+    "mass_share": "results/observations/token_readout_attention_eager_gpu3_n1_o4/region_attention_mass_share.png"
+  },
+  "local_region_share": {
+    "previous": 0.0,
+    "current": 0.0
+  },
+  "global_region_share": {
+    "previous": 0.0,
+    "current": 0.0
+  }
+}

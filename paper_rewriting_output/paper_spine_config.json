@@ -1,0 +1,25 @@
+{
+  "workflow": "build_from_materials",
+  "scene": "conference",
+  "tier": "pro",
+  "output_language": "en",
+  "target_name": "CCF-A style ML/VLM conference paper",
+  "materials_dir": "paper_materials_memo",
+  "draft_path": "",
+  "user_motivation": "Memory attention is not memory retrieval. MemoSelect identifies boundary-aware internal-memory selector heads whose selected memory tokens are future-reusable, and uses them to guide fixed-budget streaming video KV cache eviction.",
+  "official_urls": [],
+  "special_requirements": [
+    "Do not claim semantic head roles.",
+    "Do not present SparseMM visual-head scores as the main method.",
+    "Emphasize boundary-aware internal-memory utility.",
+    "All experiment claims must be supported by local result files.",
+    "MemoSelect results are pending until top/random/bottom selector experiments are run."
+  ],
+  "word_output": "none",
+  "translation_package": "zh",
+  "reference_mode": "specified_paths",
+  "reference_paths": [
+    "paper_materials_memo/references"
+  ],
+  "citation_target_count": 20
+}

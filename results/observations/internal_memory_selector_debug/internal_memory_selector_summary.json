@@ -1,0 +1,33 @@
+{
+  "attention_source": "eager_output_attentions_for_pseudo_and_future_query",
+  "future_attention_usage": "offline_profile_only_not_used_for_online_eviction",
+  "num_chunk_observations": 4,
+  "num_layer_kv_observations": 448,
+  "num_layers": 28,
+  "num_kv_heads": 4,
+  "num_query_heads": 28,
+  "top_k": 128,
+  "boundary_window": 64,
+  "future_head_pool": "same_kv",
+  "raw_csv": "results/observations/internal_memory_selector_debug/raw_internal_memory_coverage.csv",
+  "score_csv": "results/observations/internal_memory_selector_debug/internal_memory_selector_scores.csv",
+  "head_classes_json": "results/observations/internal_memory_selector_debug/head_classes_internal_memory_selector.json",
+  "figures": {
+    "u_int_mean": "results/observations/internal_memory_selector_debug/internal_memory_utility_heatmap.png",
+    "boundary_ratio_mean": "results/observations/internal_memory_selector_debug/boundary_ratio_heatmap.png",
+    "utility_vs_boundary_ratio_scatter": "results/observations/internal_memory_selector_debug/utility_vs_boundary_ratio_scatter.png",
+    "top_random_bottom_coverage_bar": "results/observations/internal_memory_selector_debug/top_random_bottom_coverage_bar.png"
+  },
+  "mean_u_int": 0.9586005511628681,
+  "median_u_int": 0.9850930814744969,
+  "mean_cov_int": 0.757798824039553,
+  "mean_cov_rand_int": 0.02193031353507231,
+  "mean_cov_oracle_int": 0.786208613538801,
+  "mean_boundary_ratio": 0.4314939804030953,
+  "class_counts": {
+    "memory_selector_heads": 23,
+    "weak_selector_heads": 23,
+    "mixed_heads": 66,
+    "total": 112
+  }
+}

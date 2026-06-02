@@ -1,0 +1,1369 @@
+{
+  "granularity": "kv",
+  "score": "boundary_aware_internal_memory_utility",
+  "score_column": "u_int_mean",
+  "quantile": 0.2,
+  "boundary_window": 64,
+  "top_k": 128,
+  "future_head_pool": "same_kv",
+  "num_query_heads": 28,
+  "num_kv_heads": 4,
+  "memory_selector_heads": [
+    [
+      9,
+      2
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "weak_selector_heads": [
+    [
+      0,
+      3
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      14,
+      0
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      19,
+      3
+    ],
+    [
+      26,
+      3
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      22,
+      3
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      20,
+      3
+    ],
+    [
+      21,
+      0
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      21,
+      2
+    ]
+  ],
+  "mixed_heads": [
+    [
+      17,
+      0
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      27,
+      3
+    ],
+    [
+      25,
+      3
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      23,
+      2
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      15,
+      0
+    ],
+    [
+      24,
+      2
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      21,
+      3
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      27,
+      2
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      23,
+      0
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      25,
+      2
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      16,
+      3
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      19,
+      0
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      25,
+      0
+    ],
+    [
+      22,
+      2
+    ],
+    [
+      24,
+      1
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      23,
+      3
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      10,
+      3
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      18,
+      0
+    ]
+  ],
+  "counts": {
+    "memory_selector_heads": 23,
+    "weak_selector_heads": 23,
+    "mixed_heads": 66,
+    "total": 112
+  },
+  "scores": [
+    {
+      "layer": 0,
+      "kv_head": 0,
+      "u_int_mean": 0.9996841936736126,
+      "u_int_median": 0.9996529073131253,
+      "boundary_ratio_mean": 0.5500768557805835,
+      "num_observations": 4
+    },
+    {
+      "layer": 0,
+      "kv_head": 1,
+      "u_int_mean": 0.9646660143262469,
+      "u_int_median": 0.9978306350046282,
+      "boundary_ratio_mean": 0.5389329182878665,
+      "num_observations": 4
+    },
+    {
+      "layer": 0,
+      "kv_head": 2,
+      "u_int_mean": 0.9966779155901286,
+      "u_int_median": 0.997863988004851,
+      "boundary_ratio_mean": 0.4118794520985402,
+      "num_observations": 4
+    },
+    {
+      "layer": 0,
+      "kv_head": 3,
+      "u_int_mean": 0.7496266751114556,
+      "u_int_median": 0.9993515469486132,
+      "boundary_ratio_mean": 0.46892141651465813,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 0,
+      "u_int_mean": 0.9988467436542903,
+      "u_int_median": 0.9996298365235774,
+      "boundary_ratio_mean": 0.5796595389437927,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 1,
+      "u_int_mean": 0.9854443984999126,
+      "u_int_median": 0.9994090020427822,
+      "boundary_ratio_mean": 0.5229193771542122,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 2,
+      "u_int_mean": 0.9992655105294216,
+      "u_int_median": 0.9997207913891353,
+      "boundary_ratio_mean": 0.5270969476631471,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 3,
+      "u_int_mean": 0.9978348232966141,
+      "u_int_median": 0.9986082087569623,
+      "boundary_ratio_mean": 0.5045308848921689,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 0,
+      "u_int_mean": 0.9941481169071862,
+      "u_int_median": 0.9991203554791761,
+      "boundary_ratio_mean": 0.36067300294728966,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 1,
+      "u_int_mean": 0.9972191672041179,
+      "u_int_median": 0.9974599840750502,
+      "boundary_ratio_mean": 0.39155133900972516,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 2,
+      "u_int_mean": 0.9990558240755387,
+      "u_int_median": 0.9992448284394563,
+      "boundary_ratio_mean": 0.48682476647023776,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 3,
+      "u_int_mean": 0.9950776105198254,
+      "u_int_median": 0.9984047404365315,
+      "boundary_ratio_mean": 0.45349722188348046,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 0,
+      "u_int_mean": 0.9898541212230683,
+      "u_int_median": 0.9991349964882392,
+      "boundary_ratio_mean": 0.4866675361918865,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 1,
+      "u_int_mean": 0.9871943589547286,
+      "u_int_median": 0.9879237146781819,
+      "boundary_ratio_mean": 0.45391301056878397,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 2,
+      "u_int_mean": 0.9961767573446542,
+      "u_int_median": 0.9964994598959002,
+      "boundary_ratio_mean": 0.5761638245396518,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 3,
+      "u_int_mean": 0.9960813717046246,
+      "u_int_median": 0.9975773856150749,
+      "boundary_ratio_mean": 0.486091765873784,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 0,
+      "u_int_mean": 0.9947743427238271,
+      "u_int_median": 0.9986991818668928,
+      "boundary_ratio_mean": 0.5202202287988721,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 1,
+      "u_int_mean": 0.8424436949945961,
+      "u_int_median": 0.9044964535026806,
+      "boundary_ratio_mean": 0.1752520561260872,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 2,
+      "u_int_mean": 0.9951154125823596,
+      "u_int_median": 0.995426467017329,
+      "boundary_ratio_mean": 0.5539117948485112,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 3,
+      "u_int_mean": 0.9863362690094702,
+      "u_int_median": 0.984125963910254,
+      "boundary_ratio_mean": 0.3975014388747095,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 0,
+      "u_int_mean": 0.9663261476413434,
+      "u_int_median": 0.9852457295814092,
+      "boundary_ratio_mean": 0.47013018601722584,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 1,
+      "u_int_mean": 0.9980800956484299,
+      "u_int_median": 0.9978115945484568,
+      "boundary_ratio_mean": 0.5517705879838063,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 2,
+      "u_int_mean": 0.979978911197262,
+      "u_int_median": 0.9877790737014193,
+      "boundary_ratio_mean": 0.4329923467850582,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 3,
+      "u_int_mean": 0.9721587248157818,
+      "u_int_median": 0.9711603131016315,
+      "boundary_ratio_mean": 0.38914012321507135,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 0,
+      "u_int_mean": 0.9956206386540479,
+      "u_int_median": 0.9970181462376404,
+      "boundary_ratio_mean": 0.47726836952594376,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 1,
+      "u_int_mean": 0.9984425588514823,
+      "u_int_median": 0.9983646703167279,
+      "boundary_ratio_mean": 0.514454411850797,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 2,
+      "u_int_mean": 0.9926790933875731,
+      "u_int_median": 0.992297134589426,
+      "boundary_ratio_mean": 0.5148288464125939,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 3,
+      "u_int_mean": 0.9663449252571642,
+      "u_int_median": 0.9963524723497466,
+      "boundary_ratio_mean": 0.48344443727747166,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 0,
+      "u_int_mean": 0.9974794995251983,
+      "u_int_median": 0.9972967671134745,
+      "boundary_ratio_mean": 0.544131880312011,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 1,
+      "u_int_mean": 0.9971352014959185,
+      "u_int_median": 0.9981035351897447,
+      "boundary_ratio_mean": 0.5072078754943644,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 2,
+      "u_int_mean": 0.9975817211905964,
+      "u_int_median": 0.9980435193102679,
+      "boundary_ratio_mean": 0.5044736690997464,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 3,
+      "u_int_mean": 0.9965103897586085,
+      "u_int_median": 0.9962837179685844,
+      "boundary_ratio_mean": 0.504984688600656,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 0,
+      "u_int_mean": 0.9968800692174106,
+      "u_int_median": 0.9990506875039635,
+      "boundary_ratio_mean": 0.45575800514653053,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 1,
+      "u_int_mean": 0.9934712319427462,
+      "u_int_median": 0.9942323468043878,
+      "boundary_ratio_mean": 0.3494025396355945,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 2,
+      "u_int_mean": 0.9862594749206516,
+      "u_int_median": 0.9864604969930926,
+      "boundary_ratio_mean": 0.4438212258868588,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 3,
+      "u_int_mean": 0.8863241243320636,
+      "u_int_median": 0.9341596291566145,
+      "boundary_ratio_mean": 0.24238942625604587,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 0,
+      "u_int_mean": 0.9899595875176841,
+      "u_int_median": 0.9911787022086571,
+      "boundary_ratio_mean": 0.4462597420036472,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 1,
+      "u_int_mean": 0.9960398493237475,
+      "u_int_median": 0.9986150342826012,
+      "boundary_ratio_mean": 0.5152693547761497,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 2,
+      "u_int_mean": 0.9954352430175559,
+      "u_int_median": 0.9950491297205505,
+      "boundary_ratio_mean": 0.4790119972475862,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 3,
+      "u_int_mean": 0.9946671793346019,
+      "u_int_median": 0.9956514885983854,
+      "boundary_ratio_mean": 0.42603238134524607,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 0,
+      "u_int_mean": 0.9920719644079208,
+      "u_int_median": 0.9920110071090917,
+      "boundary_ratio_mean": 0.5308394238159914,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 1,
+      "u_int_mean": 0.9958615619043057,
+      "u_int_median": 0.998147441311724,
+      "boundary_ratio_mean": 0.4941555894110831,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 2,
+      "u_int_mean": 0.9968438573348409,
+      "u_int_median": 0.9967141727120982,
+      "boundary_ratio_mean": 0.5056029893077889,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 3,
+      "u_int_mean": 0.9916386717527117,
+      "u_int_median": 0.9928949637487834,
+      "boundary_ratio_mean": 0.5271367128773017,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 0,
+      "u_int_mean": 0.9918156426691178,
+      "u_int_median": 0.9914929845780478,
+      "boundary_ratio_mean": 0.415015013282841,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 1,
+      "u_int_mean": 0.9945524502280437,
+      "u_int_median": 0.9967147358325824,
+      "boundary_ratio_mean": 0.45446183468620166,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 2,
+      "u_int_mean": 0.9808732866751566,
+      "u_int_median": 0.9801613287826338,
+      "boundary_ratio_mean": 0.4256158535241516,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 3,
+      "u_int_mean": 0.9636954852738842,
+      "u_int_median": 0.9806299873204014,
+      "boundary_ratio_mean": 0.3764402197295205,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 0,
+      "u_int_mean": 0.9974380721344809,
+      "u_int_median": 0.9973386941269422,
+      "boundary_ratio_mean": 0.6486778894645256,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 1,
+      "u_int_mean": 0.966761783238604,
+      "u_int_median": 0.9774605126600402,
+      "boundary_ratio_mean": 0.40930823623808565,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 2,
+      "u_int_mean": 0.9978286967766288,
+      "u_int_median": 0.9982481403855341,
+      "boundary_ratio_mean": 0.5001562969528655,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 3,
+      "u_int_mean": 0.9202707305520303,
+      "u_int_median": 0.9366310993903263,
+      "boundary_ratio_mean": 0.3975076526869935,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 0,
+      "u_int_mean": 0.9935451129593833,
+      "u_int_median": 0.9929793436061927,
+      "boundary_ratio_mean": 0.5855531732339542,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 1,
+      "u_int_mean": 0.9778734127242213,
+      "u_int_median": 0.9770977093525972,
+      "boundary_ratio_mean": 0.4213026907738108,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 2,
+      "u_int_mean": 0.9859527928090456,
+      "u_int_median": 0.9856840280958289,
+      "boundary_ratio_mean": 0.44377636852208246,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 3,
+      "u_int_mean": 0.9898563885351732,
+      "u_int_median": 0.9890760403877602,
+      "boundary_ratio_mean": 0.4561555793308903,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 0,
+      "u_int_mean": 0.798167573011369,
+      "u_int_median": 0.8594810119883034,
+      "boundary_ratio_mean": 0.2789589031192734,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 1,
+      "u_int_mean": 0.7975582720862389,
+      "u_int_median": 0.8260234029727964,
+      "boundary_ratio_mean": 0.34070293292735404,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 2,
+      "u_int_mean": 0.9715796058141187,
+      "u_int_median": 0.9773395053398469,
+      "boundary_ratio_mean": 0.4161927940020676,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 3,
+      "u_int_mean": 0.9693171489157342,
+      "u_int_median": 0.9830138300754047,
+      "boundary_ratio_mean": 0.47406958707281754,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 0,
+      "u_int_mean": 0.9477698551266377,
+      "u_int_median": 0.9631887787877287,
+      "boundary_ratio_mean": 0.39906443337322905,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 1,
+      "u_int_mean": 0.9843064917798511,
+      "u_int_median": 0.9834735004617403,
+      "boundary_ratio_mean": 0.3601599695679561,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 2,
+      "u_int_mean": 0.9001058907202522,
+      "u_int_median": 0.9369325774499075,
+      "boundary_ratio_mean": 0.2887435135594155,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 3,
+      "u_int_mean": 0.9780420114152288,
+      "u_int_median": 0.980631162825077,
+      "boundary_ratio_mean": 0.5434309764268896,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 0,
+      "u_int_mean": 0.9477271255763109,
+      "u_int_median": 0.9727885803494035,
+      "boundary_ratio_mean": 0.3657141003520414,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 1,
+      "u_int_mean": 0.9607738719670195,
+      "u_int_median": 0.9888068404225665,
+      "boundary_ratio_mean": 0.36030967002161446,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 2,
+      "u_int_mean": 0.9008684035392689,
+      "u_int_median": 0.918938328049616,
+      "boundary_ratio_mean": 0.43449833760804935,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 3,
+      "u_int_mean": 0.9717604234908637,
+      "u_int_median": 0.9771032295077584,
+      "boundary_ratio_mean": 0.649297556717948,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 0,
+      "u_int_mean": 0.9325506557805964,
+      "u_int_median": 0.9306717919449259,
+      "boundary_ratio_mean": 0.49468730143513445,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 1,
+      "u_int_mean": 0.9632523467391573,
+      "u_int_median": 0.9850862830556657,
+      "boundary_ratio_mean": 0.4401447689482712,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 2,
+      "u_int_mean": 0.9262794185719746,
+      "u_int_median": 0.9683883056748765,
+      "boundary_ratio_mean": 0.44257171933726486,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 3,
+      "u_int_mean": 0.8902178053920549,
+      "u_int_median": 0.8965071625899479,
+      "boundary_ratio_mean": 0.40253412055951393,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 0,
+      "u_int_mean": 0.9953043332285569,
+      "u_int_median": 0.9956511933818237,
+      "boundary_ratio_mean": 0.6126956842533403,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 1,
+      "u_int_mean": 0.9755203888742309,
+      "u_int_median": 0.981195008744025,
+      "boundary_ratio_mean": 0.6243544064186238,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 2,
+      "u_int_mean": 0.902985378972617,
+      "u_int_median": 0.9063805998393943,
+      "boundary_ratio_mean": 0.46983957921771463,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 3,
+      "u_int_mean": 0.9885943297523033,
+      "u_int_median": 0.9920386990168961,
+      "boundary_ratio_mean": 0.636952710762584,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 0,
+      "u_int_mean": 0.9756968781312544,
+      "u_int_median": 0.9844024465618049,
+      "boundary_ratio_mean": 0.3838031943258275,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 1,
+      "u_int_mean": 0.9648285624048026,
+      "u_int_median": 0.9671913540303844,
+      "boundary_ratio_mean": 0.5619639921976102,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 2,
+      "u_int_mean": 0.7967142177416288,
+      "u_int_median": 0.8069581716418346,
+      "boundary_ratio_mean": 0.2882769098428826,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 3,
+      "u_int_mean": 0.8556067826857674,
+      "u_int_median": 0.8961562175855491,
+      "boundary_ratio_mean": 0.3193764601875815,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 0,
+      "u_int_mean": 0.9372081304043112,
+      "u_int_median": 0.9471237559521217,
+      "boundary_ratio_mean": 0.385415678500532,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 1,
+      "u_int_mean": 0.921443880325542,
+      "u_int_median": 0.9215305843534922,
+      "boundary_ratio_mean": 0.35919524318573914,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 2,
+      "u_int_mean": 0.9221906766975134,
+      "u_int_median": 0.9080937438159942,
+      "boundary_ratio_mean": 0.29377387947609596,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 3,
+      "u_int_mean": 0.9224609898703088,
+      "u_int_median": 0.9400291033260235,
+      "boundary_ratio_mean": 0.29182640325264864,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 0,
+      "u_int_mean": 0.9235869181287608,
+      "u_int_median": 0.9228908561710631,
+      "boundary_ratio_mean": 0.3224229566383934,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 1,
+      "u_int_mean": 0.9589314810817866,
+      "u_int_median": 0.9578210386323802,
+      "boundary_ratio_mean": 0.4303221008323871,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 2,
+      "u_int_mean": 0.9309121490727262,
+      "u_int_median": 0.9348238087572929,
+      "boundary_ratio_mean": 0.36585734862073105,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 3,
+      "u_int_mean": 0.9578357672991621,
+      "u_int_median": 0.9726113875183213,
+      "boundary_ratio_mean": 0.31773012502678827,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 0,
+      "u_int_mean": 0.823920321519895,
+      "u_int_median": 0.863014281816685,
+      "boundary_ratio_mean": 0.2890041746441534,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 1,
+      "u_int_mean": 0.9356284755837085,
+      "u_int_median": 0.9495929159717147,
+      "boundary_ratio_mean": 0.3000499777041328,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 2,
+      "u_int_mean": 0.9818540933585408,
+      "u_int_median": 0.9835188359171626,
+      "boundary_ratio_mean": 0.3127590441478919,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 3,
+      "u_int_mean": 0.9155481229969924,
+      "u_int_median": 0.9462852161243739,
+      "boundary_ratio_mean": 0.27719762574737405,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 0,
+      "u_int_mean": 0.9670249076695026,
+      "u_int_median": 0.9655599836326492,
+      "boundary_ratio_mean": 0.2765137739851673,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 1,
+      "u_int_mean": 0.8990580706327385,
+      "u_int_median": 0.9404219976747319,
+      "boundary_ratio_mean": 0.3043301255857561,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 2,
+      "u_int_mean": 0.9453908050643021,
+      "u_int_median": 0.9511293479496225,
+      "boundary_ratio_mean": 0.3515495189387343,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 3,
+      "u_int_mean": 0.9878630423841435,
+      "u_int_median": 0.9878432290665748,
+      "boundary_ratio_mean": 0.629254951256461,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 0,
+      "u_int_mean": 0.9418324774856496,
+      "u_int_median": 0.9651866821222614,
+      "boundary_ratio_mean": 0.3652183015024681,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 1,
+      "u_int_mean": 0.9840362657269379,
+      "u_int_median": 0.9860316100010773,
+      "boundary_ratio_mean": 0.2880093545427946,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 2,
+      "u_int_mean": 0.9528912132520544,
+      "u_int_median": 0.9616779747527943,
+      "boundary_ratio_mean": 0.33684388511216773,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 3,
+      "u_int_mean": 0.8868837794943305,
+      "u_int_median": 0.8825531595435129,
+      "boundary_ratio_mean": 0.3246779984643639,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 0,
+      "u_int_mean": 0.9812218947831725,
+      "u_int_median": 0.9868131074432668,
+      "boundary_ratio_mean": 0.5221976095594922,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 1,
+      "u_int_mean": 0.9596446218008468,
+      "u_int_median": 0.9641742966174713,
+      "boundary_ratio_mean": 0.28397040908788435,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 2,
+      "u_int_mean": 0.9697525035043878,
+      "u_int_median": 0.9730117213485945,
+      "boundary_ratio_mean": 0.5749676487847377,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 3,
+      "u_int_mean": 0.9384954067356681,
+      "u_int_median": 0.9434300375947523,
+      "boundary_ratio_mean": 0.33507070466992717,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 0,
+      "u_int_mean": 0.962942373945794,
+      "u_int_median": 0.9640062076030622,
+      "boundary_ratio_mean": 0.3646956306119316,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 1,
+      "u_int_mean": 0.977784340312402,
+      "u_int_median": 0.9771363226767132,
+      "boundary_ratio_mean": 0.5290376997468649,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 2,
+      "u_int_mean": 0.9471488501547343,
+      "u_int_median": 0.9544646486261554,
+      "boundary_ratio_mean": 0.27770994964929935,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 3,
+      "u_int_mean": 0.8853964211003732,
+      "u_int_median": 0.8694126804120559,
+      "boundary_ratio_mean": 0.3327990119367433,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 0,
+      "u_int_mean": 0.9577916883732676,
+      "u_int_median": 0.9557510833364237,
+      "boundary_ratio_mean": 0.37095985526972697,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 1,
+      "u_int_mean": 0.9908937438476221,
+      "u_int_median": 0.9925484249449958,
+      "boundary_ratio_mean": 0.492568401875834,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 2,
+      "u_int_mean": 0.962078330580637,
+      "u_int_median": 0.964743951986591,
+      "boundary_ratio_mean": 0.24366232520068132,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 3,
+      "u_int_mean": 0.9383043164044813,
+      "u_int_median": 0.9386998607497018,
+      "boundary_ratio_mean": 0.2986274731752836,
+      "num_observations": 4
+    }
+  ]
+}

@@ -1,0 +1,1592 @@
+{
+  "granularity": "kv",
+  "score": "true_query_internal_memory_readout_shape",
+  "score_column": "readout_shape_score",
+  "quantile": 0.2,
+  "boundary_window": 64,
+  "top_k": 32,
+  "num_query_heads": 28,
+  "num_kv_heads": 4,
+  "effective_readout_heads": [
+    [
+      21,
+      3
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      16,
+      2
+    ],
+    [
+      25,
+      1
+    ],
+    [
+      23,
+      2
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      17,
+      2
+    ],
+    [
+      22,
+      3
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      14,
+      0
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      22,
+      2
+    ],
+    [
+      25,
+      3
+    ],
+    [
+      26,
+      0
+    ],
+    [
+      19,
+      0
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      27,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      27,
+      2
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      24,
+      1
+    ]
+  ],
+  "weak_readout_heads": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      15,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      11,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      17,
+      0
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      24,
+      0
+    ],
+    [
+      10,
+      3
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      15,
+      3
+    ]
+  ],
+  "mixed_heads": [
+    [
+      0,
+      2
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      27,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      20,
+      0
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      15,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      18,
+      3
+    ],
+    [
+      23,
+      3
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      10,
+      0
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      16,
+      3
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      21,
+      2
+    ],
+    [
+      25,
+      0
+    ],
+    [
+      26,
+      3
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      18,
+      2
+    ],
+    [
+      13,
+      0
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      24,
+      2
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      20,
+      3
+    ],
+    [
+      25,
+      2
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      23,
+      1
+    ],
+    [
+      19,
+      3
+    ],
+    [
+      15,
+      2
+    ],
+    [
+      16,
+      0
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      19,
+      2
+    ],
+    [
+      9,
+      0
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      14,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      17,
+      1
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      23,
+      0
+    ],
+    [
+      21,
+      0
+    ]
+  ],
+  "counts": {
+    "effective_readout_heads": 23,
+    "weak_readout_heads": 23,
+    "mixed_heads": 66,
+    "total": 112
+  },
+  "scores": [
+    {
+      "layer": 0,
+      "kv_head": 0,
+      "readout_shape_score": 0.0013676834956859638,
+      "peak_readout_shape_score": 0.00015072140368602188,
+      "internal_readout_share": 0.05383672226659712,
+      "internal_topk_concentration": 0.21235221517547553,
+      "boundary_ratio": 0.8614648334918737,
+      "num_observations": 4
+    },
+    {
+      "layer": 0,
+      "kv_head": 1,
+      "readout_shape_score": 0.0007153573133114306,
+      "peak_readout_shape_score": 4.8676299922247695e-05,
+      "internal_readout_share": 0.04098381906770632,
+      "internal_topk_concentration": 0.12223159313093641,
+      "boundary_ratio": 0.736762436558505,
+      "num_observations": 4
+    },
+    {
+      "layer": 0,
+      "kv_head": 2,
+      "readout_shape_score": 0.007683157579341983,
+      "peak_readout_shape_score": 0.0011504348549855792,
+      "internal_readout_share": 0.10424438928751247,
+      "internal_topk_concentration": 0.20966188829548682,
+      "boundary_ratio": 0.626045547268729,
+      "num_observations": 4
+    },
+    {
+      "layer": 0,
+      "kv_head": 3,
+      "readout_shape_score": 0.0006524332373603613,
+      "peak_readout_shape_score": 3.1052804585068865e-05,
+      "internal_readout_share": 0.044799720164919905,
+      "internal_topk_concentration": 0.06581699515149239,
+      "boundary_ratio": 0.6112294885836943,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 0,
+      "readout_shape_score": 0.004611023239290698,
+      "peak_readout_shape_score": 0.0009485143986143241,
+      "internal_readout_share": 0.07411242801452698,
+      "internal_topk_concentration": 0.3378906266975144,
+      "boundary_ratio": 0.7803354521657317,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 1,
+      "readout_shape_score": 0.0038592747841750433,
+      "peak_readout_shape_score": 0.0003182449247998958,
+      "internal_readout_share": 0.12335994534241529,
+      "internal_topk_concentration": 0.2237879499038462,
+      "boundary_ratio": 0.724871765376317,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 2,
+      "readout_shape_score": 0.0027339399630745284,
+      "peak_readout_shape_score": 0.0003410850513265669,
+      "internal_readout_share": 0.0628632712101288,
+      "internal_topk_concentration": 0.2187107362746814,
+      "boundary_ratio": 0.7573774818338795,
+      "num_observations": 4
+    },
+    {
+      "layer": 1,
+      "kv_head": 3,
+      "readout_shape_score": 0.0020040237866419453,
+      "peak_readout_shape_score": 0.00031217480914865555,
+      "internal_readout_share": 0.052559050740371295,
+      "internal_topk_concentration": 0.23020265176086005,
+      "boundary_ratio": 0.6999850094735578,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 0,
+      "readout_shape_score": 0.024307999812727153,
+      "peak_readout_shape_score": 0.008491121632442611,
+      "internal_readout_share": 0.12958017886283046,
+      "internal_topk_concentration": 0.5901131822434917,
+      "boundary_ratio": 0.6492413652776794,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 1,
+      "readout_shape_score": 0.011182211681885918,
+      "peak_readout_shape_score": 0.0031984255887316337,
+      "internal_readout_share": 0.08698279337167275,
+      "internal_topk_concentration": 0.498014330976624,
+      "boundary_ratio": 0.6731115429740595,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 2,
+      "readout_shape_score": 0.015890607061692222,
+      "peak_readout_shape_score": 0.005489385743259545,
+      "internal_readout_share": 0.09440910462347515,
+      "internal_topk_concentration": 0.4970538859607713,
+      "boundary_ratio": 0.7052267560201483,
+      "num_observations": 4
+    },
+    {
+      "layer": 2,
+      "kv_head": 3,
+      "readout_shape_score": 0.012405974294303412,
+      "peak_readout_shape_score": 0.004547353646947306,
+      "internal_readout_share": 0.08783070239035998,
+      "internal_topk_concentration": 0.47631227686050304,
+      "boundary_ratio": 0.716638407120904,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 0,
+      "readout_shape_score": 0.005974057148991952,
+      "peak_readout_shape_score": 0.0017933305803026962,
+      "internal_readout_share": 0.062023871403965744,
+      "internal_topk_concentration": 0.5491064364813466,
+      "boundary_ratio": 0.7408583734656511,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 1,
+      "readout_shape_score": 0.013838735148282731,
+      "peak_readout_shape_score": 0.0051810296286828985,
+      "internal_readout_share": 0.08572036813792547,
+      "internal_topk_concentration": 0.4617513211281168,
+      "boundary_ratio": 0.7192856251158843,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 2,
+      "readout_shape_score": 0.035870151332895756,
+      "peak_readout_shape_score": 0.009132957358726683,
+      "internal_readout_share": 0.17644783413487483,
+      "internal_topk_concentration": 0.5261124589214188,
+      "boundary_ratio": 0.6811750572532251,
+      "num_observations": 4
+    },
+    {
+      "layer": 3,
+      "kv_head": 3,
+      "readout_shape_score": 0.004521641453804857,
+      "peak_readout_shape_score": 0.0008516942447766121,
+      "internal_readout_share": 0.05706406352352521,
+      "internal_topk_concentration": 0.41768658228827243,
+      "boundary_ratio": 0.7259252426679341,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 0,
+      "readout_shape_score": 0.06352574065163447,
+      "peak_readout_shape_score": 0.029589599254530616,
+      "internal_readout_share": 0.17882949442275806,
+      "internal_topk_concentration": 0.5733470831117891,
+      "boundary_ratio": 0.6935449701909596,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 1,
+      "readout_shape_score": 0.0970268186837107,
+      "peak_readout_shape_score": 0.044193237293859676,
+      "internal_readout_share": 0.2408688591382786,
+      "internal_topk_concentration": 0.47950540018439847,
+      "boundary_ratio": 0.6659314524181029,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 2,
+      "readout_shape_score": 0.013215353979292653,
+      "peak_readout_shape_score": 0.0051704323012895705,
+      "internal_readout_share": 0.08070244877460163,
+      "internal_topk_concentration": 0.41158825894668105,
+      "boundary_ratio": 0.7823942771797978,
+      "num_observations": 4
+    },
+    {
+      "layer": 4,
+      "kv_head": 3,
+      "readout_shape_score": 0.021767579227356487,
+      "peak_readout_shape_score": 0.004210681360437597,
+      "internal_readout_share": 0.1441536554356643,
+      "internal_topk_concentration": 0.30851586009428866,
+      "boundary_ratio": 0.5822093259434404,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 0,
+      "readout_shape_score": 0.013495153988563758,
+      "peak_readout_shape_score": 0.003718835337682299,
+      "internal_readout_share": 0.11933971967915881,
+      "internal_topk_concentration": 0.32765993120477227,
+      "boundary_ratio": 0.62487897454989,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 1,
+      "readout_shape_score": 0.04322834401663827,
+      "peak_readout_shape_score": 0.021220984069625616,
+      "internal_readout_share": 0.13861111806934867,
+      "internal_topk_concentration": 0.5159777772045093,
+      "boundary_ratio": 0.7122782753249167,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 2,
+      "readout_shape_score": 0.022112610622509948,
+      "peak_readout_shape_score": 0.009507759890901427,
+      "internal_readout_share": 0.13338193426424996,
+      "internal_topk_concentration": 0.4235683667682313,
+      "boundary_ratio": 0.8020215705645155,
+      "num_observations": 4
+    },
+    {
+      "layer": 5,
+      "kv_head": 3,
+      "readout_shape_score": 0.00943765191731425,
+      "peak_readout_shape_score": 0.004242424800901186,
+      "internal_readout_share": 0.060927567946054105,
+      "internal_topk_concentration": 0.4676310891830585,
+      "boundary_ratio": 0.790650449446541,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 0,
+      "readout_shape_score": 0.003356920917582075,
+      "peak_readout_shape_score": 0.0012411529754186709,
+      "internal_readout_share": 0.028100122568053592,
+      "internal_topk_concentration": 0.632610688717596,
+      "boundary_ratio": 0.8333201901996505,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 1,
+      "readout_shape_score": 0.031469454820430266,
+      "peak_readout_shape_score": 0.015261592459434255,
+      "internal_readout_share": 0.1219076787478554,
+      "internal_topk_concentration": 0.4783893441041759,
+      "boundary_ratio": 0.706152026368404,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 2,
+      "readout_shape_score": 0.004418734915600713,
+      "peak_readout_shape_score": 0.0007963635850386475,
+      "internal_readout_share": 0.05334392183611289,
+      "internal_topk_concentration": 0.366621335473833,
+      "boundary_ratio": 0.7205135178180163,
+      "num_observations": 4
+    },
+    {
+      "layer": 6,
+      "kv_head": 3,
+      "readout_shape_score": 0.024127089462054756,
+      "peak_readout_shape_score": 0.006349230564845384,
+      "internal_readout_share": 0.12029872343458864,
+      "internal_topk_concentration": 0.3804653133257496,
+      "boundary_ratio": 0.6728691774279174,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 0,
+      "readout_shape_score": 0.010506479786410904,
+      "peak_readout_shape_score": 0.005861456623985909,
+      "internal_readout_share": 0.04234823839035674,
+      "internal_topk_concentration": 0.580922746608787,
+      "boundary_ratio": 0.8433558153203444,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 1,
+      "readout_shape_score": 0.01603434486924765,
+      "peak_readout_shape_score": 0.00757405435179986,
+      "internal_readout_share": 0.08521284379679447,
+      "internal_topk_concentration": 0.5529270953181283,
+      "boundary_ratio": 0.7824996199921551,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 2,
+      "readout_shape_score": 0.026924982071522167,
+      "peak_readout_shape_score": 0.010665560003414763,
+      "internal_readout_share": 0.13367520539011066,
+      "internal_topk_concentration": 0.5279425196183005,
+      "boundary_ratio": 0.769959981281594,
+      "num_observations": 4
+    },
+    {
+      "layer": 7,
+      "kv_head": 3,
+      "readout_shape_score": 0.03637704451522556,
+      "peak_readout_shape_score": 0.014924045847471633,
+      "internal_readout_share": 0.15620796524272554,
+      "internal_topk_concentration": 0.5230919429742504,
+      "boundary_ratio": 0.6825264714469181,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 0,
+      "readout_shape_score": 0.02147251124146615,
+      "peak_readout_shape_score": 0.010714597767775058,
+      "internal_readout_share": 0.09718706782056384,
+      "internal_topk_concentration": 0.5053317945629306,
+      "boundary_ratio": 0.6861714953337507,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 1,
+      "readout_shape_score": 0.04419016044469564,
+      "peak_readout_shape_score": 0.014447182909141465,
+      "internal_readout_share": 0.15469228884240382,
+      "internal_topk_concentration": 0.42819374472657973,
+      "boundary_ratio": 0.6701702435074858,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 2,
+      "readout_shape_score": 0.009650187298986462,
+      "peak_readout_shape_score": 0.0034683085147104082,
+      "internal_readout_share": 0.07072383591345344,
+      "internal_topk_concentration": 0.5621098537930408,
+      "boundary_ratio": 0.7065187082568828,
+      "num_observations": 4
+    },
+    {
+      "layer": 8,
+      "kv_head": 3,
+      "readout_shape_score": 0.05674578661869441,
+      "peak_readout_shape_score": 0.029262501645265847,
+      "internal_readout_share": 0.16105705765648043,
+      "internal_topk_concentration": 0.5669749732945043,
+      "boundary_ratio": 0.6830175050483025,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 0,
+      "readout_shape_score": 0.04336982110176601,
+      "peak_readout_shape_score": 0.024688740327795503,
+      "internal_readout_share": 0.1239711125300918,
+      "internal_topk_concentration": 0.44382273611806144,
+      "boundary_ratio": 0.6945895915793826,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 1,
+      "readout_shape_score": 0.04164309381033535,
+      "peak_readout_shape_score": 0.022755445720613977,
+      "internal_readout_share": 0.11780807379076816,
+      "internal_topk_concentration": 0.4762645466830677,
+      "boundary_ratio": 0.7507879439634468,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 2,
+      "readout_shape_score": 0.01758104150209736,
+      "peak_readout_shape_score": 0.005988650243271167,
+      "internal_readout_share": 0.09790421959228952,
+      "internal_topk_concentration": 0.3966807912470346,
+      "boundary_ratio": 0.6961146983867947,
+      "num_observations": 4
+    },
+    {
+      "layer": 9,
+      "kv_head": 3,
+      "readout_shape_score": 0.02624485039449839,
+      "peak_readout_shape_score": 0.013211842803188593,
+      "internal_readout_share": 0.1135652853675135,
+      "internal_topk_concentration": 0.440895474943997,
+      "boundary_ratio": 0.6618063569997992,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 0,
+      "readout_shape_score": 0.012417056715410268,
+      "peak_readout_shape_score": 0.003073156681358393,
+      "internal_readout_share": 0.09500504960582364,
+      "internal_topk_concentration": 0.3174527918900115,
+      "boundary_ratio": 0.6877688358253733,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 1,
+      "readout_shape_score": 0.02114254730016748,
+      "peak_readout_shape_score": 0.01404175582618996,
+      "internal_readout_share": 0.05994038830994575,
+      "internal_topk_concentration": 0.43592596957135754,
+      "boundary_ratio": 0.7739843870099316,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 2,
+      "readout_shape_score": 0.0024256658885566684,
+      "peak_readout_shape_score": 0.000792567457580092,
+      "internal_readout_share": 0.043313703793994296,
+      "internal_topk_concentration": 0.3898578657055297,
+      "boundary_ratio": 0.7301388395133743,
+      "num_observations": 4
+    },
+    {
+      "layer": 10,
+      "kv_head": 3,
+      "readout_shape_score": 0.005792285376520749,
+      "peak_readout_shape_score": 0.0016234126244459531,
+      "internal_readout_share": 0.05602161205409571,
+      "internal_topk_concentration": 0.4981412799774785,
+      "boundary_ratio": 0.7926224689886932,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 0,
+      "readout_shape_score": 0.003608681527456773,
+      "peak_readout_shape_score": 0.0006437477104121552,
+      "internal_readout_share": 0.04977246206492395,
+      "internal_topk_concentration": 0.28508928408557854,
+      "boundary_ratio": 0.5755409774604837,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 1,
+      "readout_shape_score": 0.006032750426575715,
+      "peak_readout_shape_score": 0.0024756011596936463,
+      "internal_readout_share": 0.05351352409928521,
+      "internal_topk_concentration": 0.38353458456789213,
+      "boundary_ratio": 0.805458912713238,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 2,
+      "readout_shape_score": 0.008424388836531462,
+      "peak_readout_shape_score": 0.0018676545906952317,
+      "internal_readout_share": 0.06374497196203587,
+      "internal_topk_concentration": 0.4770703952933224,
+      "boundary_ratio": 0.6965607475890336,
+      "num_observations": 4
+    },
+    {
+      "layer": 11,
+      "kv_head": 3,
+      "readout_shape_score": 0.02028018209462166,
+      "peak_readout_shape_score": 0.007676073595790459,
+      "internal_readout_share": 0.11112620328322748,
+      "internal_topk_concentration": 0.33981887027621094,
+      "boundary_ratio": 0.7477528972200995,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 0,
+      "readout_shape_score": 0.006773773635505673,
+      "peak_readout_shape_score": 0.0018352498973822212,
+      "internal_readout_share": 0.06964194517394527,
+      "internal_topk_concentration": 0.312152451082024,
+      "boundary_ratio": 0.826481368729833,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 1,
+      "readout_shape_score": 0.01041666952199431,
+      "peak_readout_shape_score": 0.0024729271873142953,
+      "internal_readout_share": 0.08493458399795233,
+      "internal_topk_concentration": 0.2209994716989297,
+      "boundary_ratio": 0.6278963472586805,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 2,
+      "readout_shape_score": 0.03210557824359562,
+      "peak_readout_shape_score": 0.015336558678940931,
+      "internal_readout_share": 0.12263171738761083,
+      "internal_topk_concentration": 0.4515211897253572,
+      "boundary_ratio": 0.7633397909159688,
+      "num_observations": 4
+    },
+    {
+      "layer": 12,
+      "kv_head": 3,
+      "readout_shape_score": 0.006237489360434133,
+      "peak_readout_shape_score": 0.002075280813529822,
+      "internal_readout_share": 0.06481799646786511,
+      "internal_topk_concentration": 0.40000896670909536,
+      "boundary_ratio": 0.7690198710741982,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 0,
+      "readout_shape_score": 0.02267674083483676,
+      "peak_readout_shape_score": 0.008840066279722988,
+      "internal_readout_share": 0.10831115955065518,
+      "internal_topk_concentration": 0.36647486642417054,
+      "boundary_ratio": 0.7404914965642659,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 1,
+      "readout_shape_score": 0.005118534883528546,
+      "peak_readout_shape_score": 0.0009926316262933539,
+      "internal_readout_share": 0.05776647729526262,
+      "internal_topk_concentration": 0.2278680454502997,
+      "boundary_ratio": 0.738290673002932,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 2,
+      "readout_shape_score": 0.016267258501565393,
+      "peak_readout_shape_score": 0.007768708906748572,
+      "internal_readout_share": 0.09293179460081506,
+      "internal_topk_concentration": 0.3621232360785869,
+      "boundary_ratio": 0.6323748787530753,
+      "num_observations": 4
+    },
+    {
+      "layer": 13,
+      "kv_head": 3,
+      "readout_shape_score": 0.011626894254653505,
+      "peak_readout_shape_score": 0.0027474087361760414,
+      "internal_readout_share": 0.094811973266609,
+      "internal_topk_concentration": 0.25492960894403016,
+      "boundary_ratio": 0.64733796987414,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 0,
+      "readout_shape_score": 0.06984620387866754,
+      "peak_readout_shape_score": 0.03842112636693417,
+      "internal_readout_share": 0.214974458830618,
+      "internal_topk_concentration": 0.5933967517238266,
+      "boundary_ratio": 0.6866474451830308,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 1,
+      "readout_shape_score": 0.044697145926016084,
+      "peak_readout_shape_score": 0.01811014119947199,
+      "internal_readout_share": 0.1662206307390033,
+      "internal_topk_concentration": 0.5708296412351934,
+      "boundary_ratio": 0.5900095498446868,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 2,
+      "readout_shape_score": 0.0342863506116504,
+      "peak_readout_shape_score": 0.011164886737187123,
+      "internal_readout_share": 0.21443748617182085,
+      "internal_topk_concentration": 0.512492682469605,
+      "boundary_ratio": 0.664395964962815,
+      "num_observations": 4
+    },
+    {
+      "layer": 14,
+      "kv_head": 3,
+      "readout_shape_score": 0.027557118239553178,
+      "peak_readout_shape_score": 0.009810732586009566,
+      "internal_readout_share": 0.14284646367115658,
+      "internal_topk_concentration": 0.4116322359655122,
+      "boundary_ratio": 0.6181122778303745,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 0,
+      "readout_shape_score": 0.010714607560827745,
+      "peak_readout_shape_score": 0.0017995459755425682,
+      "internal_readout_share": 0.09616692956701918,
+      "internal_topk_concentration": 0.19757902489389428,
+      "boundary_ratio": 0.4528439409630576,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 1,
+      "readout_shape_score": 0.0014937600456261955,
+      "peak_readout_shape_score": 0.00022671966734325038,
+      "internal_readout_share": 0.02994779186456466,
+      "internal_topk_concentration": 0.23801492878392977,
+      "boundary_ratio": 0.6280559624549347,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 2,
+      "readout_shape_score": 0.038888790077170485,
+      "peak_readout_shape_score": 0.016341151846676668,
+      "internal_readout_share": 0.14737271048865747,
+      "internal_topk_concentration": 0.5204717589351475,
+      "boundary_ratio": 0.6153376313701381,
+      "num_observations": 4
+    },
+    {
+      "layer": 15,
+      "kv_head": 3,
+      "readout_shape_score": 0.006961295540791944,
+      "peak_readout_shape_score": 0.0011221351337022322,
+      "internal_readout_share": 0.08298913965292291,
+      "internal_topk_concentration": 0.20207119557385705,
+      "boundary_ratio": 0.6773715379131496,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 0,
+      "readout_shape_score": 0.03997396946177839,
+      "peak_readout_shape_score": 0.01448433368675009,
+      "internal_readout_share": 0.17858734955334724,
+      "internal_topk_concentration": 0.43301227154558414,
+      "boundary_ratio": 0.5489407788301552,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 1,
+      "readout_shape_score": 0.1389778373949623,
+      "peak_readout_shape_score": 0.08206351660359436,
+      "internal_readout_share": 0.28733702408383704,
+      "internal_topk_concentration": 0.6246258529342998,
+      "boundary_ratio": 0.6602867797526069,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 2,
+      "readout_shape_score": 0.05714759582226487,
+      "peak_readout_shape_score": 0.02743879193161994,
+      "internal_readout_share": 0.2041606945460117,
+      "internal_topk_concentration": 0.5716653766837004,
+      "boundary_ratio": 0.6320657987640648,
+      "num_observations": 4
+    },
+    {
+      "layer": 16,
+      "kv_head": 3,
+      "readout_shape_score": 0.01676174735450934,
+      "peak_readout_shape_score": 0.005632510680862895,
+      "internal_readout_share": 0.0910343851374944,
+      "internal_topk_concentration": 0.4486039819833192,
+      "boundary_ratio": 0.7697957926360702,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 0,
+      "readout_shape_score": 0.004922967468779466,
+      "peak_readout_shape_score": 0.0015777998813810625,
+      "internal_readout_share": 0.052903244415260633,
+      "internal_topk_concentration": 0.319968789481215,
+      "boundary_ratio": 0.7453708413459866,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 1,
+      "readout_shape_score": 0.046456809998404146,
+      "peak_readout_shape_score": 0.02173589026300779,
+      "internal_readout_share": 0.17280635132695227,
+      "internal_topk_concentration": 0.51631208679447,
+      "boundary_ratio": 0.7371299153031775,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 2,
+      "readout_shape_score": 0.06517635986168928,
+      "peak_readout_shape_score": 0.03427192433843488,
+      "internal_readout_share": 0.2109417745147345,
+      "internal_topk_concentration": 0.5314770642576053,
+      "boundary_ratio": 0.6941164495014656,
+      "num_observations": 4
+    },
+    {
+      "layer": 17,
+      "kv_head": 3,
+      "readout_shape_score": 0.019330498012748526,
+      "peak_readout_shape_score": 0.004668704329951876,
+      "internal_readout_share": 0.1387199719254375,
+      "internal_topk_concentration": 0.31179522571740736,
+      "boundary_ratio": 0.5504844481314728,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 0,
+      "readout_shape_score": 0.009489555978873803,
+      "peak_readout_shape_score": 0.0033573303931967034,
+      "internal_readout_share": 0.07003067812128708,
+      "internal_topk_concentration": 0.39619316833341656,
+      "boundary_ratio": 0.7818087196356734,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 1,
+      "readout_shape_score": 0.014598088398812145,
+      "peak_readout_shape_score": 0.006235832521407322,
+      "internal_readout_share": 0.09567058689272552,
+      "internal_topk_concentration": 0.4947359036500253,
+      "boundary_ratio": 0.7657526216235769,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 2,
+      "readout_shape_score": 0.022592992731716513,
+      "peak_readout_shape_score": 0.004994963988219311,
+      "internal_readout_share": 0.17377601895655015,
+      "internal_topk_concentration": 0.31436500261811534,
+      "boundary_ratio": 0.6067987827939316,
+      "num_observations": 4
+    },
+    {
+      "layer": 18,
+      "kv_head": 3,
+      "readout_shape_score": 0.011775864864505553,
+      "peak_readout_shape_score": 0.004573690350000596,
+      "internal_readout_share": 0.08662003495575175,
+      "internal_topk_concentration": 0.4000941314328805,
+      "boundary_ratio": 0.7443723250916996,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 0,
+      "readout_shape_score": 0.08225997148613641,
+      "peak_readout_shape_score": 0.0324232227682806,
+      "internal_readout_share": 0.26398789320537785,
+      "internal_topk_concentration": 0.4488688208784245,
+      "boundary_ratio": 0.5783465742602415,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 1,
+      "readout_shape_score": 0.006603909288070064,
+      "peak_readout_shape_score": 0.001013760726796072,
+      "internal_readout_share": 0.09040632115149017,
+      "internal_topk_concentration": 0.2336099094593594,
+      "boundary_ratio": 0.6939376563986648,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 2,
+      "readout_shape_score": 0.04327134829765886,
+      "peak_readout_shape_score": 0.013389656745832597,
+      "internal_readout_share": 0.2207904111584893,
+      "internal_topk_concentration": 0.4168026801076689,
+      "boundary_ratio": 0.5953252285473397,
+      "num_observations": 4
+    },
+    {
+      "layer": 19,
+      "kv_head": 3,
+      "readout_shape_score": 0.0387745590781532,
+      "peak_readout_shape_score": 0.009966755909431298,
+      "internal_readout_share": 0.23837489385499874,
+      "internal_topk_concentration": 0.32879564212269274,
+      "boundary_ratio": 0.5066823008847232,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 0,
+      "readout_shape_score": 0.010494341367741085,
+      "peak_readout_shape_score": 0.002227000142411359,
+      "internal_readout_share": 0.09169613668347701,
+      "internal_topk_concentration": 0.23707981186302554,
+      "boundary_ratio": 0.5060154293127052,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 1,
+      "readout_shape_score": 0.07198894313712272,
+      "peak_readout_shape_score": 0.024630341074757124,
+      "internal_readout_share": 0.3096405716801356,
+      "internal_topk_concentration": 0.4506409408169983,
+      "boundary_ratio": 0.6104496078460268,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 2,
+      "readout_shape_score": 0.020027397122377992,
+      "peak_readout_shape_score": 0.0030081534003142557,
+      "internal_readout_share": 0.2212747759761863,
+      "internal_topk_concentration": 0.18167478689887273,
+      "boundary_ratio": 0.5122205348224953,
+      "num_observations": 4
+    },
+    {
+      "layer": 20,
+      "kv_head": 3,
+      "readout_shape_score": 0.028245720660048337,
+      "peak_readout_shape_score": 0.005537229358630644,
+      "internal_readout_share": 0.20180293308975497,
+      "internal_topk_concentration": 0.26630938348485617,
+      "boundary_ratio": 0.4450097010639522,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 0,
+      "readout_shape_score": 0.05099243882735722,
+      "peak_readout_shape_score": 0.01423348777858342,
+      "internal_readout_share": 0.2571459295560255,
+      "internal_topk_concentration": 0.3921971882608879,
+      "boundary_ratio": 0.5259390507948096,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 1,
+      "readout_shape_score": 0.028147664671169532,
+      "peak_readout_shape_score": 0.0073381465427580705,
+      "internal_readout_share": 0.18531876792134536,
+      "internal_topk_concentration": 0.3516010521948365,
+      "boundary_ratio": 0.6592285364887625,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 2,
+      "readout_shape_score": 0.018081481486510367,
+      "peak_readout_shape_score": 0.005435204571659303,
+      "internal_readout_share": 0.14447401470222682,
+      "internal_topk_concentration": 0.3838208324899094,
+      "boundary_ratio": 0.7366595166400339,
+      "num_observations": 4
+    },
+    {
+      "layer": 21,
+      "kv_head": 3,
+      "readout_shape_score": 0.05623548153444811,
+      "peak_readout_shape_score": 0.01874934435767556,
+      "internal_readout_share": 0.2541437951127466,
+      "internal_topk_concentration": 0.45446368174545454,
+      "boundary_ratio": 0.5257978571727999,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 0,
+      "readout_shape_score": 0.10629301904601442,
+      "peak_readout_shape_score": 0.04595549297109535,
+      "internal_readout_share": 0.3164619050561224,
+      "internal_topk_concentration": 0.5569519406574954,
+      "boundary_ratio": 0.6329761667972652,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 1,
+      "readout_shape_score": 0.04577942241330746,
+      "peak_readout_shape_score": 0.013993891250970945,
+      "internal_readout_share": 0.2482994583261032,
+      "internal_topk_concentration": 0.36563309175498043,
+      "boundary_ratio": 0.6045705695073521,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 2,
+      "readout_shape_score": 0.07288877034383293,
+      "peak_readout_shape_score": 0.020645221089333265,
+      "internal_readout_share": 0.3148868313491032,
+      "internal_topk_concentration": 0.3454382089754846,
+      "boundary_ratio": 0.434925806226491,
+      "num_observations": 4
+    },
+    {
+      "layer": 22,
+      "kv_head": 3,
+      "readout_shape_score": 0.06525906258362194,
+      "peak_readout_shape_score": 0.025375401701985677,
+      "internal_readout_share": 0.27841015486860865,
+      "internal_topk_concentration": 0.4968470282397238,
+      "boundary_ratio": 0.6383508872051273,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 0,
+      "readout_shape_score": 0.048405308678927464,
+      "peak_readout_shape_score": 0.013318116027339278,
+      "internal_readout_share": 0.24774450759755323,
+      "internal_topk_concentration": 0.3432227260326669,
+      "boundary_ratio": 0.446049507494782,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 1,
+      "readout_shape_score": 0.038770275809699876,
+      "peak_readout_shape_score": 0.01461336220999274,
+      "internal_readout_share": 0.2107824916937614,
+      "internal_topk_concentration": 0.4836204409519886,
+      "boundary_ratio": 0.715075930253045,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 2,
+      "readout_shape_score": 0.061661784496346954,
+      "peak_readout_shape_score": 0.024234751582844626,
+      "internal_readout_share": 0.2578280197295418,
+      "internal_topk_concentration": 0.49464316897086014,
+      "boundary_ratio": 0.6432307308804193,
+      "num_observations": 4
+    },
+    {
+      "layer": 23,
+      "kv_head": 3,
+      "readout_shape_score": 0.012001981559666792,
+      "peak_readout_shape_score": 0.00207765516058503,
+      "internal_readout_share": 0.10449607951632273,
+      "internal_topk_concentration": 0.2874175209846231,
+      "boundary_ratio": 0.6401826747801685,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 0,
+      "readout_shape_score": 0.005569717118377388,
+      "peak_readout_shape_score": 0.0005723591811877672,
+      "internal_readout_share": 0.0972140060514991,
+      "internal_topk_concentration": 0.1479552579293814,
+      "boundary_ratio": 0.5399255746882748,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 1,
+      "readout_shape_score": 0.261478804946243,
+      "peak_readout_shape_score": 0.11717523622257389,
+      "internal_readout_share": 0.5612639023971023,
+      "internal_topk_concentration": 0.556332938669154,
+      "boundary_ratio": 0.41295460949000945,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 2,
+      "readout_shape_score": 0.024890493355171434,
+      "peak_readout_shape_score": 0.007238772867443327,
+      "internal_readout_share": 0.1587198592675895,
+      "internal_topk_concentration": 0.3400618690413266,
+      "boundary_ratio": 0.5745707179923695,
+      "num_observations": 4
+    },
+    {
+      "layer": 24,
+      "kv_head": 3,
+      "readout_shape_score": 0.04833022078117155,
+      "peak_readout_shape_score": 0.01416400248412106,
+      "internal_readout_share": 0.27693966654599694,
+      "internal_topk_concentration": 0.38974314660072096,
+      "boundary_ratio": 0.5475236742667513,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 0,
+      "readout_shape_score": 0.01811265809761998,
+      "peak_readout_shape_score": 0.00370228261358631,
+      "internal_readout_share": 0.13966410192509993,
+      "internal_topk_concentration": 0.2492839689933442,
+      "boundary_ratio": 0.5854391780448388,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 1,
+      "readout_shape_score": 0.059965902331228386,
+      "peak_readout_shape_score": 0.020634769810546225,
+      "internal_readout_share": 0.26813613640305284,
+      "internal_topk_concentration": 0.4193791901904393,
+      "boundary_ratio": 0.5607129349573888,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 2,
+      "readout_shape_score": 0.029861971319483174,
+      "peak_readout_shape_score": 0.00875611337716597,
+      "internal_readout_share": 0.16908426067290572,
+      "internal_topk_concentration": 0.359543360822646,
+      "boundary_ratio": 0.6836733078235591,
+      "num_observations": 4
+    },
+    {
+      "layer": 25,
+      "kv_head": 3,
+      "readout_shape_score": 0.07837251293684384,
+      "peak_readout_shape_score": 0.029674991591756423,
+      "internal_readout_share": 0.30558959180353445,
+      "internal_topk_concentration": 0.4903862606840408,
+      "boundary_ratio": 0.5901617293032845,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 0,
+      "readout_shape_score": 0.08184974786336821,
+      "peak_readout_shape_score": 0.034061519927266665,
+      "internal_readout_share": 0.28292004112537256,
+      "internal_topk_concentration": 0.45682758040674204,
+      "boundary_ratio": 0.5423616828557919,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 1,
+      "readout_shape_score": 0.06815594037059589,
+      "peak_readout_shape_score": 0.025783971488434396,
+      "internal_readout_share": 0.2742571281249703,
+      "internal_topk_concentration": 0.5283754855974803,
+      "boundary_ratio": 0.6152456976749575,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 2,
+      "readout_shape_score": 0.10717657242455586,
+      "peak_readout_shape_score": 0.04411728993145212,
+      "internal_readout_share": 0.34906932134064395,
+      "internal_topk_concentration": 0.5040210999583157,
+      "boundary_ratio": 0.5228728461593605,
+      "num_observations": 4
+    },
+    {
+      "layer": 26,
+      "kv_head": 3,
+      "readout_shape_score": 0.018948390445367766,
+      "peak_readout_shape_score": 0.005239692281256891,
+      "internal_readout_share": 0.14208397824199873,
+      "internal_topk_concentration": 0.3130351811685695,
+      "boundary_ratio": 0.6292581467222712,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 0,
+      "readout_shape_score": 0.08381860955477743,
+      "peak_readout_shape_score": 0.03346505194564082,
+      "internal_readout_share": 0.29803817074832806,
+      "internal_topk_concentration": 0.5040432266707917,
+      "boundary_ratio": 0.5809288032997565,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 1,
+      "readout_shape_score": 0.010195579185241572,
+      "peak_readout_shape_score": 0.0018328336770285173,
+      "internal_readout_share": 0.11130939704313952,
+      "internal_topk_concentration": 0.4569087260935296,
+      "boundary_ratio": 0.5350373778522943,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 2,
+      "readout_shape_score": 0.1095717829889156,
+      "peak_readout_shape_score": 0.04245746958242892,
+      "internal_readout_share": 0.37335213555338215,
+      "internal_topk_concentration": 0.4936629901932638,
+      "boundary_ratio": 0.5067113585157962,
+      "num_observations": 4
+    },
+    {
+      "layer": 27,
+      "kv_head": 3,
+      "readout_shape_score": 0.08780067667099194,
+      "peak_readout_shape_score": 0.030222196478675353,
+      "internal_readout_share": 0.35533782369187544,
+      "internal_topk_concentration": 0.4491051856239161,
+      "boundary_ratio": 0.5257391058599752,
+      "num_observations": 4
+    }
+  ]
+}
